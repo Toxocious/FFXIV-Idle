@@ -80,7 +80,6 @@
   max-height: 85vh;
   overflow-x: hidden;
   overflow-y: auto;
-  width: 100%;
   position: relative;
 }
 
@@ -122,6 +121,7 @@
 
 .panel > .body > .content > .body .list .item
 {
+  gap: 10px;
   font-size: .8rem;
   display: -webkit-flex;
   display: flex;
@@ -136,6 +136,7 @@
 
 .panel > .body > .content > .body .list .item .description
 {
+  text-indent: 1em;
   -webkit-flex: 1 1;
   flex: 1 1;
   margin: 0;
@@ -177,7 +178,7 @@
 .panel > .body > .footer
 {
   min-height: 2rem;
-  padding: .4rem .8rem;
+  padding: 0rem .8rem;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
