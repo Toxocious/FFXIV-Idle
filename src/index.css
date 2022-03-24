@@ -1,5 +1,10 @@
 html, body {
-  background: #191919;
+  background: #000;
+  background-image: url('/src/assets/images/endwalker-title-screen-bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 body {
