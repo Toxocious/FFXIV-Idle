@@ -1,0 +1,14 @@
+a {
+  color: #eee1c5;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #bca98a;
+}
