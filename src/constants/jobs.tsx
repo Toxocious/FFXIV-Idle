@@ -221,7 +221,7 @@ export const JOBS = {
     name: 'Blacksmith',
     type: 'Crafter',
     level: 1,
-    iconName: 'icon-job-bs,',
+    iconName: 'icon-job-bsm',
     className: 'job-type-crafter',
   },
   ARM: {
