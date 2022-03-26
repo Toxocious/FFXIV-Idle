@@ -3,6 +3,8 @@ import { useStore } from '../../context/game-context';
 
 import { JOBS } from '../../constants/jobs';
 
+import './index.css';
+
 // @ts-ignore
 const JobEntry = ({ jobID, jobs }) => {
   // @ts-ignore
@@ -46,14 +48,7 @@ export const Jobs = () => {
   const { jobs } = useStore();
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        flexWrap: 'wrap',
-        flexFlow: 'wrap',
-      }}
-    >
+    <div className='job-container'>
       {Object.keys(JOBS).map((jobID) => (
         <JobEntry key={jobID} jobID={jobID} jobs={jobs} />
       ))}

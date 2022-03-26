@@ -1,0 +1,10 @@
+.job-container
+{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  flex-wrap: wrap;
+
+  max-width: 450px;
+}

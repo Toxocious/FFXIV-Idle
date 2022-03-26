@@ -1,5 +1,6 @@
 import React from 'react';
-import { Jobs } from './components/job';
+import { GameWindow } from './components/game-window';
+import { Jobs } from './components/job-list';
 
 import './App.css';
 
@@ -10,6 +11,7 @@ export default function App() {
 
       <div className='container'>
         <Jobs />
+        <GameWindow />
       </div>
     </div>
   );
