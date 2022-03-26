@@ -1,0 +1,13 @@
+.game-container
+{
+  display: flex;
+  height: fit-content;
+  max-height: 600px;
+  width: calc(100% - 450px);
+}
+
+.game-container > .panel
+{
+  min-width: 2em;
+  width: 100%;
+}
