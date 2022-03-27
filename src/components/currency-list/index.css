@@ -1,7 +1,21 @@
 .currency-container
 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 14px;
+
+  position: relative;
+
+  height: 400px;
+
+  left: -14px;
+  right: 0;
+  top: 16px;
+}
+
+.currency-container > .panel
+{
+  margin: 0px;
 }

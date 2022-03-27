@@ -15,7 +15,7 @@ const JobEntry = ({ jobID, jobs }) => {
   }
 
   return (
-    <div className='panel' style={{ minWidth: 200, width: '2em' }}>
+    <div className='panel' style={{ minWidth: 218, width: '2em' }}>
       <div className='body'>
         <div className='header'>
           <div className='view'>

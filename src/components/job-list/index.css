@@ -1,13 +1,14 @@
 .job-container
 {
-  justify-content: center;
   display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
+  justify-content: flex-end;
+  flex-direction: column;
+  flex-flow: column;
   flex-wrap: wrap;
 
-  max-height: 100vh;
-  max-width: 460px;
+  position: relative;
 
-  overflow: auto;
+  height: 400px;
+
+  right: -24px;
 }
