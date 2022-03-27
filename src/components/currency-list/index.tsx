@@ -3,6 +3,8 @@ import { useStore } from '../../context/game-context';
 
 import { CURRENCIES } from '../../constants/currencies';
 
+import './index.css';
+
 // @ts-ignore
 const CurrencyEntry = ({ currencyID, currencies }) => {
   // @ts-ignore
