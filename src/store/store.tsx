@@ -27,7 +27,8 @@ export const getInitialStore = () => {
     // @ts-ignore
     const CURRENCY_DATA: any = CURRENCIES[currencyID];
 
-    STORE.currencies[currencyID] = Object.assign({}, CURRENCY_DATA);
+    if (CURRENCY_DATA.unlocked)
+      STORE.currencies[currencyID] = Object.assign({}, CURRENCY_DATA);
   });
 
   saveStore(STORE);

@@ -10,6 +10,8 @@ const CurrencyEntry = ({ currencyID, currencies }) => {
   // @ts-ignore
   const CURRENCY_DATA: any = currencies[currencyID];
 
+  if (typeof CURRENCY_DATA === 'undefined') return <></>;
+
   return (
     <div className='panel' style={{ minWidth: 218, width: '2em' }}>
       <div className='body'>
