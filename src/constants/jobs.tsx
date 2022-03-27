@@ -8,6 +8,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-gla',
     className: 'job-type-tank',
+    unlocked: true,
+    active: false,
   },
   PLD: {
     name: 'Paladin',
@@ -15,6 +17,8 @@ export const JOBS = {
     level: 30,
     iconName: 'icon-job-pld',
     className: 'job-type-tank',
+    unlocked: false,
+    active: false,
   },
   MRD: {
     name: 'Marauder',
@@ -22,6 +26,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-mrd',
     className: 'job-type-tank',
+    unlocked: true,
+    active: false,
   },
   WAR: {
     name: 'Warrior',
@@ -29,13 +35,17 @@ export const JOBS = {
     level: 30,
     iconName: 'icon-job-war',
     className: 'job-type-tank',
+    unlocked: false,
+    active: false,
   },
   DRK: {
     name: 'Dark Knight',
     type: 'Tank',
-    level: 1,
+    level: 50,
     iconName: 'icon-job-drk',
     className: 'job-type-tank',
+    unlocked: false,
+    active: false,
   },
   GNB: {
     name: 'Gunbreaker',
@@ -43,6 +53,8 @@ export const JOBS = {
     level: 60,
     iconName: 'icon-job-gnb',
     className: 'job-type-tank',
+    unlocked: false,
+    active: false,
   },
 
   /**
@@ -54,6 +66,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-cnj',
     className: 'job-type-dps',
+    unlocked: true,
+    active: false,
   },
   WHM: {
     name: 'White Mage',
@@ -61,6 +75,8 @@ export const JOBS = {
     level: 30,
     iconName: 'icon-job-whm',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
   SCH: {
     name: 'Scholar',
@@ -68,6 +84,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-sch',
     className: 'job-type-dps',
+    unlocked: true,
+    active: false,
   },
   AST: {
     name: 'Astrologian',
@@ -75,6 +93,8 @@ export const JOBS = {
     level: 30,
     iconName: 'icon-job-ast',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
   SGE: {
     name: 'Sage',
@@ -82,6 +102,8 @@ export const JOBS = {
     level: 70,
     iconName: 'icon-job-sge',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
 
   /**
@@ -93,6 +115,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-pgl',
     className: 'job-type-dps',
+    unlocked: true,
+    active: false,
   },
   MNK: {
     name: 'Monk',
@@ -100,6 +124,8 @@ export const JOBS = {
     level: 30,
     iconName: 'icon-job-mnk',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
   LNC: {
     name: 'Lancer',
@@ -107,6 +133,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-lnc',
     className: 'job-type-dps',
+    unlocked: true,
+    active: false,
   },
   DRG: {
     name: 'Dragoon',
@@ -114,6 +142,8 @@ export const JOBS = {
     level: 30,
     iconName: 'icon-job-drg',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
   ROG: {
     name: 'Rogue',
@@ -121,6 +151,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-rog',
     className: 'job-type-dps',
+    unlocked: true,
+    active: false,
   },
   NIN: {
     name: 'Ninja',
@@ -128,6 +160,8 @@ export const JOBS = {
     level: 30,
     iconName: 'icon-job-nin',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
   ARC: {
     name: 'Archer',
@@ -135,6 +169,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-arc',
     className: 'job-type-dps',
+    unlocked: true,
+    active: false,
   },
   BRD: {
     name: 'Bard',
@@ -142,6 +178,8 @@ export const JOBS = {
     level: 30,
     iconName: 'icon-job-brd',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
   THM: {
     name: 'Thaumaturge',
@@ -149,6 +187,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-thm',
     className: 'job-type-dps',
+    unlocked: true,
+    active: false,
   },
   BLM: {
     name: 'Black Mage',
@@ -156,6 +196,8 @@ export const JOBS = {
     level: 30,
     iconName: 'icon-job-blm',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
   ACN: {
     name: 'Arcanist',
@@ -163,6 +205,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-acn',
     className: 'job-type-dps',
+    unlocked: true,
+    active: false,
   },
   SMN: {
     name: 'Summoner',
@@ -170,6 +214,8 @@ export const JOBS = {
     level: 30,
     iconName: 'icon-job-smn',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
   SAM: {
     name: 'Samurai',
@@ -177,6 +223,8 @@ export const JOBS = {
     level: 50,
     iconName: 'icon-job-sam',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
   MCH: {
     name: 'Machinist',
@@ -184,6 +232,8 @@ export const JOBS = {
     level: 50,
     iconName: 'icon-job-mch',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
   DNC: {
     name: 'Dancer',
@@ -191,6 +241,8 @@ export const JOBS = {
     level: 60,
     iconName: 'icon-job-dnc',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
   RPR: {
     name: 'Reaper',
@@ -198,6 +250,8 @@ export const JOBS = {
     level: 70,
     iconName: 'icon-job-rpr',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
   BLU: {
     name: 'Blue Mage',
@@ -205,6 +259,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-blu',
     className: 'job-type-dps',
+    unlocked: false,
+    active: false,
   },
 
   /**
@@ -216,6 +272,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-crp',
     className: 'job-type-crafter',
+    unlocked: true,
+    active: false,
   },
   BSM: {
     name: 'Blacksmith',
@@ -223,6 +281,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-bsm',
     className: 'job-type-crafter',
+    unlocked: true,
+    active: false,
   },
   ARM: {
     name: 'Armorer',
@@ -230,6 +290,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-arm',
     className: 'job-type-crafter',
+    unlocked: true,
+    active: false,
   },
   GSM: {
     name: 'Goldsmith',
@@ -237,6 +299,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-gsm',
     className: 'job-type-crafter',
+    unlocked: true,
+    active: false,
   },
   LTW: {
     name: 'Leatherworker',
@@ -244,6 +308,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-ltw',
     className: 'job-type-crafter',
+    unlocked: true,
+    active: false,
   },
   WVR: {
     name: 'Weaver',
@@ -251,6 +317,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-wvr',
     className: 'job-type-crafter',
+    unlocked: true,
+    active: false,
   },
   ALC: {
     name: 'Alchemist',
@@ -258,6 +326,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-alc',
     className: 'job-type-crafter',
+    unlocked: true,
+    active: false,
   },
   CUL: {
     name: 'Culinarian',
@@ -265,6 +335,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-cul',
     className: 'job-type-crafter',
+    unlocked: true,
+    active: false,
   },
 
   /**
@@ -276,6 +348,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-btn',
     className: 'job-type-gatherer',
+    unlocked: true,
+    active: false,
   },
   MIN: {
     name: 'Miner',
@@ -283,6 +357,8 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-min',
     className: 'job-type-gatherer',
+    unlocked: true,
+    active: false,
   },
   FSH: {
     name: 'Fisher',
@@ -290,5 +366,7 @@ export const JOBS = {
     level: 1,
     iconName: 'icon-job-fsh',
     className: 'job-type-gatherer',
+    unlocked: true,
+    active: false,
   },
 };

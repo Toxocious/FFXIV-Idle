@@ -20,15 +20,18 @@ export const getInitialStore = () => {
     // @ts-ignore
     const JOB_DATA: any = JOBS[JobID];
 
-    if (JOB_DATA.level === 1) STORE.jobs[JobID] = Object.assign({}, JOB_DATA);
+    if (JOB_DATA.unlocked) {
+      STORE.jobs[JobID] = Object.assign({}, JOB_DATA);
+    }
   });
 
   Object.keys(CURRENCIES).forEach((currencyID) => {
     // @ts-ignore
     const CURRENCY_DATA: any = CURRENCIES[currencyID];
 
-    if (CURRENCY_DATA.unlocked)
+    if (CURRENCY_DATA.unlocked) {
       STORE.currencies[currencyID] = Object.assign({}, CURRENCY_DATA);
+    }
   });
 
   saveStore(STORE);
