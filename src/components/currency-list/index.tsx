@@ -28,7 +28,14 @@ const CurrencyEntry = ({ currencyID, currencies }) => {
                   style={{ height: 32, width: 32 }}
                 />
               </div>
-              <div>
+              <div
+                style={{
+                  textOverflow: 'ellipsis',
+                  overflow: 'auto',
+                  width: 136,
+                }}
+                title={CURRENCY_DATA.name}
+              >
                 <b style={{ fontSize: '100%' }}>{CURRENCY_DATA.name}</b>
                 <br />
                 {CURRENCY_DATA.value.toLocaleString()}
