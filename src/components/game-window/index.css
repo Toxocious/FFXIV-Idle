@@ -1,6 +1,7 @@
 .game-container
 {
   display: flex;
+  flex-wrap: wrap;
   height: fit-content;
   max-height: 600px;
   width: calc(100% - 450px);

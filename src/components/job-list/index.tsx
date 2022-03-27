@@ -23,7 +23,7 @@ const JobEntry = ({ jobID, jobs }) => {
               className={JOB_DATA.className}
               style={{
                 display: 'flex',
-                alignContent: 'center',
+                alignItems: 'center',
                 gap: '1rem',
               }}
             >

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useStore } from '../../context/game-context';
 
+import { Currencies } from '../currency-list';
+
 import './index.css';
 
 // @ts-ignore
@@ -45,6 +47,8 @@ export const GameWindow = ({}) => {
           </div>
         </div>
       </div>
+
+      <Currencies />
     </div>
   );
 };
