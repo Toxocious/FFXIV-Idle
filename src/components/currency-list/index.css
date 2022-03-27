@@ -8,14 +8,8 @@
 
   position: relative;
 
-  height: 400px;
+  height: 370px;
 
-  left: -14px;
+  left: -12px;
   right: 0;
-  padding-top: 32px;
-}
-
-.currency-container > .panel
-{
-  margin: 0px;
 }

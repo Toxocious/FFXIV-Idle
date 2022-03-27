@@ -2,13 +2,12 @@
 {
   display: flex;
   justify-content: flex-end;
-  flex-direction: column;
   flex-flow: column;
   flex-wrap: wrap;
 
   position: relative;
 
-  height: 400px;
+  height: 370px;
 
-  right: -24px;
+  right: -12px;
 }
