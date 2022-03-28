@@ -1,0 +1,13 @@
+.navigation-container
+{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.navigation-container a
+{
+  display: block;
+  font-size: 16px;
+  text-align: center;
+}
