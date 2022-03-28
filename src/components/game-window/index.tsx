@@ -1,6 +1,13 @@
 import React from 'react';
 import { useStore } from '../../context/game-context';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import { ChangelogWindow } from '../../routes/changelog';
+import { BattleWindow } from '../../routes/battle';
+import { CraftingWindow } from '../../routes/crafting';
+import { GatheringWindow } from '../../routes/gathering';
+
 // import './index.css';
 
 // @ts-ignore
@@ -30,14 +37,12 @@ export const GameWindow = ({}) => {
             minHeight: 300,
           }}
         >
-          &bull; Render current game tab content
-          <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; &bull; Battle Window
-          <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; &bull; Crafting Window
-          <br />
-          &nbsp;&nbsp;&nbsp;&nbsp; &bull; Gathering Window
-          <br />
+          <Routes>
+            <Route path='/' element={<ChangelogWindow />} />
+            <Route path='/battle' element={<BattleWindow />} />
+            <Route path='/crafting' element={<CraftingWindow />} />
+            <Route path='/gathering' element={<GatheringWindow />} />
+          </Routes>
         </div>
 
         <div className='divider'></div>

@@ -10,7 +10,7 @@ const JobEntry = ({ jobID, jobs }) => {
   // @ts-ignore
   const JOB_DATA: any = jobs[jobID];
 
-  if (typeof JOB_DATA === 'undefined') {
+  if (typeof JOB_DATA === 'undefined' || JOB_DATA.active) {
     return <></>;
   }
 

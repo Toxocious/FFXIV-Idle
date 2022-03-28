@@ -1,6 +1,9 @@
 import React from 'react';
 
+import { BrowserRouter } from 'react-router-dom';
+
 import { GameWindow } from './components/game-window';
+import { Navigation } from './components/navigation';
 import { Jobs } from './components/job-list';
 import { Currencies } from './components/currency-list';
 
@@ -13,9 +16,14 @@ export default function App() {
 
       <div className='container'>
         <div className='game-container'>
-          <Jobs />
-          <GameWindow />
-          <Currencies />
+          <BrowserRouter>
+            <div className='left-sidebar-container'>
+              <Navigation />
+              <Jobs />
+            </div>
+            <GameWindow />
+            <Currencies />
+          </BrowserRouter>
         </div>
       </div>
     </div>

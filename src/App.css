@@ -72,3 +72,17 @@ a:hover {
   min-width: 2em;
   width: 100%;
 }
+
+.game-container > .left-sidebar-container
+{
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  flex-wrap: wrap;
+
+  position: relative;
+
+  height: 370px;
+
+  right: -12px;
+}
