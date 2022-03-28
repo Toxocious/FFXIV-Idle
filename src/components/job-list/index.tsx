@@ -46,7 +46,7 @@ const JobEntry = ({ jobID, jobs, showLevel }) => {
   );
 };
 
-export const Jobs = (showLevel: boolean = true) => {
+export const Jobs = (showLevel: any = true) => {
   // @ts-ignore
   const { jobs } = useStore();
 
