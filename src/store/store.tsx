@@ -5,12 +5,9 @@ import { schema } from '../store/schema';
 const STORE_KEY: string = 'ffxiv_incremental_beta_v_0_1';
 
 export const getInitialStore = () => {
-  console.log('Getting intial data store');
-
   const SAVE_DATA: any = localStorage.getItem(STORE_KEY);
 
   if (SAVE_DATA !== null) {
-    console.log('Save data found:', JSON.parse(SAVE_DATA));
     return JSON.parse(SAVE_DATA);
   }
 
@@ -35,7 +32,6 @@ export const getInitialStore = () => {
   });
 
   saveStore(STORE);
-  console.log('New save generated:', STORE);
   return STORE;
 };
 
