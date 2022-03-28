@@ -7,7 +7,7 @@ import { GameProvider } from './context/game-context';
 
 import { GameWindow } from './components/game-window';
 import { Navigation } from './components/navigation';
-import { Jobs } from './components/job-list';
+import { ActiveJob } from './components/active-job';
 import { Currencies } from './components/currency-list';
 
 import './main.css';
@@ -23,8 +23,9 @@ ReactDOM.render(
             <BrowserRouter>
               <div className='left-sidebar-container'>
                 <Navigation />
-                <Jobs />
+                <ActiveJob />
               </div>
+
               <GameWindow />
               <Currencies />
             </BrowserRouter>
