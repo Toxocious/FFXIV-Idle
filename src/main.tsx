@@ -10,7 +10,7 @@ import { Navigation } from './components/navigation';
 import { Jobs } from './components/job-list';
 import { Currencies } from './components/currency-list';
 
-import './index.css';
+import './main.css';
 
 ReactDOM.render(
   <React.StrictMode>
