@@ -1,4 +1,11 @@
 .job-container
 {
-  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+  justify-content: center;
+
+  overflow: auto;
+  max-height: 290px;
 }

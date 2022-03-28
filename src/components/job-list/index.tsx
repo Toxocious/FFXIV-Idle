@@ -5,16 +5,16 @@ import { JOBS } from '../../constants/jobs';
 import './index.css';
 
 // @ts-ignore
-const JobEntry = ({ jobID, jobs }) => {
+const JobEntry = ({ jobID, jobs, showLevel }) => {
   // @ts-ignore
   const JOB_DATA: any = jobs[jobID];
 
-  if (typeof JOB_DATA === 'undefined' || !JOB_DATA.active) {
+  if (typeof JOB_DATA === 'undefined') {
     return <></>;
   }
 
   return (
-    <div className='panel' style={{ minWidth: 218, width: '2em' }}>
+    <div className='panel' style={{ minWidth: 210, width: '2em' }}>
       <div className='body'>
         <div className='header'>
           <div className='view'>
@@ -34,22 +34,26 @@ const JobEntry = ({ jobID, jobs }) => {
 
         <div className='divider'></div>
 
-        <div className='bar'>
-          <b>Level:</b> {JOB_DATA.level}
-        </div>
+        {!showLevel.showLevel ? (
+          ''
+        ) : (
+          <div className='bar'>
+            <b>Level:</b> {JOB_DATA.level}
+          </div>
+        )}
       </div>
     </div>
   );
 };
 
-export const Jobs = () => {
+export const Jobs = (showLevel: boolean = true) => {
   // @ts-ignore
   const { jobs } = useStore();
 
   return (
     <div className='job-container'>
       {Object.keys(JOBS).map((jobID) => (
-        <JobEntry key={jobID} jobID={jobID} jobs={jobs} />
+        <JobEntry key={jobID} jobID={jobID} jobs={jobs} showLevel={showLevel} />
       ))}
     </div>
   );
