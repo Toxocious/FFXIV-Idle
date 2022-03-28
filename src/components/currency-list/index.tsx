@@ -1,4 +1,3 @@
-import React from 'react';
 import { useStore } from '../../context/game-context';
 
 import { CURRENCIES } from '../../constants/currencies';
@@ -10,7 +9,9 @@ const CurrencyEntry = ({ currencyID, currencies }) => {
   // @ts-ignore
   const CURRENCY_DATA: any = currencies[currencyID];
 
-  if (typeof CURRENCY_DATA === 'undefined') return <></>;
+  if (typeof CURRENCY_DATA === 'undefined') {
+    return <></>;
+  }
 
   return (
     <div className='panel' style={{ minWidth: 218, width: '2em' }}>

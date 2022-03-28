@@ -1,4 +1,3 @@
-import React from 'react';
 import { useStore } from '../../context/game-context';
 
 import { JOBS } from '../../constants/jobs';

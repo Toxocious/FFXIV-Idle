@@ -1,7 +1,4 @@
-import React from 'react';
-import { useStore } from '../../context/game-context';
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import { ChangelogWindow } from '../../routes/changelog';
 import { BattleWindow } from '../../routes/battle';
@@ -25,7 +22,7 @@ export const GameWindow = ({}) => {
       <div className='body'>
         <div className='header'>
           <div className='view'>
-            <b style={{ fontSize: 18 }}>Game Window &mdash; Current Tab Name</b>
+            <b style={{ fontSize: 18 }}>FFXIV &mdash; Incremental</b>
           </div>
         </div>
 
