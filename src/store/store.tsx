@@ -31,7 +31,6 @@ export const getInitialStore = () => {
     }
   });
 
-  saveStore(STORE);
   return STORE;
 };
 
