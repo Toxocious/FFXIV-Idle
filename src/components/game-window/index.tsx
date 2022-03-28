@@ -1,5 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 
+import { GetActiveJob } from '../../utils/get-active-job';
+
+import { JobSelector } from '../../components/job-selector';
+
 import { ChangelogWindow } from '../../routes/changelog';
 import { BattleWindow } from '../../routes/battle';
 import { CraftingWindow } from '../../routes/crafting';
@@ -9,6 +13,22 @@ import { GatheringWindow } from '../../routes/gathering';
 
 // @ts-ignore
 export const GameWindow = ({}) => {
+  const ActiveJob = GetActiveJob();
+
+  let WhatToRender: any;
+  if (typeof ActiveJob === 'undefined') {
+    WhatToRender = <JobSelector />;
+  } else {
+    WhatToRender = (
+      <Routes>
+        <Route path='/' element={<ChangelogWindow />} />
+        <Route path='/battle' element={<BattleWindow />} />
+        <Route path='/crafting' element={<CraftingWindow />} />
+        <Route path='/gathering' element={<GatheringWindow />} />
+      </Routes>
+    );
+  }
+
   return (
     <div
       className='panel'
@@ -34,12 +54,7 @@ export const GameWindow = ({}) => {
             minHeight: 300,
           }}
         >
-          <Routes>
-            <Route path='/' element={<ChangelogWindow />} />
-            <Route path='/battle' element={<BattleWindow />} />
-            <Route path='/crafting' element={<CraftingWindow />} />
-            <Route path='/gathering' element={<GatheringWindow />} />
-          </Routes>
+          {WhatToRender}
         </div>
 
         <div className='divider'></div>
