@@ -9,11 +9,10 @@ import { BattleWindow } from '../../routes/battle';
 import { CraftingWindow } from '../../routes/crafting';
 import { GatheringWindow } from '../../routes/gathering';
 
-// import './index.css';
-
-// @ts-ignore
 export const GameWindow = ({}) => {
   const ActiveJob = GetActiveJob();
+
+  console.log('[Game Window] Loaded.');
 
   let WhatToRender: any;
   if (typeof ActiveJob === 'undefined') {

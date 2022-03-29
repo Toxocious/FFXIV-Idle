@@ -1,11 +1,11 @@
-import { useStore } from '../../context/game-context';
-
+import { useDispatch, useStore } from '../../context/game-context';
 import { JOBS } from '../../constants/jobs';
+import { JobButton } from '../job-button';
 
 import './index.css';
 
 // @ts-ignore
-const JobEntry = ({ jobID, jobs, showLevel }) => {
+const JobEntry = ({ jobID, jobs, showLevel, clickToSwitch }) => {
   // @ts-ignore
   const JOB_DATA: any = jobs[jobID];
 
@@ -32,28 +32,46 @@ const JobEntry = ({ jobID, jobs, showLevel }) => {
           </div>
         </div>
 
-        <div className='divider'></div>
-
-        {!showLevel.showLevel ? (
+        {!showLevel ? (
           ''
         ) : (
-          <div className='bar'>
-            <b>Level:</b> {JOB_DATA.level}
-          </div>
+          <>
+            <div className='divider'></div>
+            <div className='bar'>
+              <b>Level:</b> {JOB_DATA.level}
+            </div>
+          </>
+        )}
+
+        {!clickToSwitch ? (
+          ''
+        ) : (
+          <>
+            <div className='divider'></div>
+            <div className='bar'>
+              <JobButton jobID={jobID} />
+            </div>
+          </>
         )}
       </div>
     </div>
   );
 };
 
-export const Jobs = (showLevel: any = true) => {
+export const Jobs = (props: any = null) => {
   // @ts-ignore
   const { jobs } = useStore();
 
   return (
     <div className='job-container'>
       {Object.keys(JOBS).map((jobID) => (
-        <JobEntry key={jobID} jobID={jobID} jobs={jobs} showLevel={showLevel} />
+        <JobEntry
+          key={jobID}
+          jobID={jobID}
+          jobs={jobs}
+          showLevel={props.showLevel ?? false}
+          clickToSwitch={props.clickToSwitch ?? false}
+        />
       ))}
     </div>
   );

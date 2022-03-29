@@ -1,11 +1,11 @@
 import { Jobs } from '../job-list';
 
-// @ts-ignore
 export const JobSelector = ({}) => {
   return (
     <div className='job-selector'>
-      <h2 style={{ textAlign: 'center' }}>Select A Job</h2>
-      <Jobs showLevel={false} />
+      <h2 style={{ margin: 0, textAlign: 'center' }}>Select Your Job Class</h2>
+      <br />
+      <Jobs showLevel={true} clickToSwitch={true} />
     </div>
   );
 };
