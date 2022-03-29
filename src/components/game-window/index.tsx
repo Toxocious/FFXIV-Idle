@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 import { GetActiveJob } from '../../utils/get-active-job';
 
@@ -11,8 +11,6 @@ import { GatheringWindow } from '../../routes/gathering';
 
 export const GameWindow = ({}) => {
   const ActiveJob = GetActiveJob();
-
-  console.log('[Game Window] Loaded.');
 
   let WhatToRender: any;
   if (typeof ActiveJob === 'undefined') {
@@ -59,7 +57,11 @@ export const GameWindow = ({}) => {
         <div className='divider'></div>
 
         <div className='footer'>
-          <div className='footer-in'></div>
+          <div className='footer-in'>
+            <Link to='/'>
+              <b>Changelog</b>
+            </Link>
+          </div>
           <div className='footer-link'>
             <b>Last Save</b>: 5 minutes ago
           </div>

@@ -17,10 +17,4 @@ export const GAME_PAGES = [
     link: '/crafting',
     unlocked: true,
   },
-  {
-    id: 4,
-    name: 'Changelog',
-    link: '/',
-    unlocked: true,
-  },
 ];
