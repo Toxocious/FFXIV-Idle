@@ -16,7 +16,12 @@ const CurrencyEntry = ({ currencyID, currencies }) => {
   return (
     <div className='panel' style={{ minWidth: 218, width: '2em' }}>
       <div className='body'>
-        <div className='header'>
+        <div
+          className='header'
+          style={{
+            padding: '0.2rem 0.8rem',
+          }}
+        >
           <div className='view'>
             <span
               style={{
