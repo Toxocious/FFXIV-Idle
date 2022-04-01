@@ -1,5 +1,8 @@
 import { Routes, Route, Link } from 'react-router-dom';
 
+import { useDispatch } from '../../context/game-context';
+import { ChangeActivePage } from '../../actions/actions';
+
 import { GetActiveJob } from '../../utils/get-active-job';
 
 import { JobSelector } from '../../components/job-selector';
@@ -11,6 +14,7 @@ import { CraftingWindow } from '../../routes/crafting';
 import { GatheringWindow } from '../../routes/gathering';
 
 export const GameWindow = ({}) => {
+  const dispatch = useDispatch();
   const ActiveJob = GetActiveJob();
 
   let WhatToRender: any;
@@ -60,10 +64,10 @@ export const GameWindow = ({}) => {
 
         <div className='footer'>
           <div className='footer-in'>
-            <Link to='/stats'>
+            <Link to='/stats' onClick={() => dispatch(ChangeActivePage(4))}>
               <b>Stats</b>
             </Link>
-            <Link to='/'>
+            <Link to='/' onClick={() => dispatch(ChangeActivePage(5))}>
               <b>Changelog</b>
             </Link>
           </div>
