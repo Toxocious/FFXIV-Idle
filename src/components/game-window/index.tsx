@@ -72,7 +72,7 @@ export const GameWindow = ({}) => {
             </Link>
           </div>
           <div className='footer-link'>
-            <b>Last Save</b>: 5 minutes ago
+            <b>Version</b>: 2022.1.4
           </div>
         </div>
       </div>
