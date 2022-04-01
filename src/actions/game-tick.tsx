@@ -5,11 +5,11 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
   const PENDING_EFFECTS: [] = [];
 
   const ACTIVE_PAGE: number = store.game.activePage;
-  const ACTIVE_JOB_ID = Object.keys(store.jobs).filter(
+  const ACTIVE_JOB_ID: string[] = Object.keys(store.jobs).filter(
     (job: any) => store.jobs[job].active
   );
   // @ts-ignore
-  const ACTIVE_JOB_DATA = store.jobs[ACTIVE_JOB_ID];
+  const ACTIVE_JOB_DATA: any = store.jobs[ACTIVE_JOB_ID];
 
   if (typeof ACTIVE_JOB_DATA === 'undefined') return;
 

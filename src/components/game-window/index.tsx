@@ -5,6 +5,7 @@ import { GetActiveJob } from '../../utils/get-active-job';
 import { JobSelector } from '../../components/job-selector';
 
 import { ChangelogWindow } from '../../routes/changelog';
+import { StatsWindow } from '../../routes/stats';
 import { BattleWindow } from '../../routes/battle';
 import { CraftingWindow } from '../../routes/crafting';
 import { GatheringWindow } from '../../routes/gathering';
@@ -19,6 +20,7 @@ export const GameWindow = ({}) => {
     WhatToRender = (
       <Routes>
         <Route path='/' element={<ChangelogWindow />} />
+        <Route path='/stats' element={<StatsWindow />} />
         <Route path='/battle' element={<BattleWindow />} />
         <Route path='/crafting' element={<CraftingWindow />} />
         <Route path='/gathering' element={<GatheringWindow />} />
@@ -58,6 +60,9 @@ export const GameWindow = ({}) => {
 
         <div className='footer'>
           <div className='footer-in'>
+            <Link to='/stats'>
+              <b>Stats</b>
+            </Link>
             <Link to='/'>
               <b>Changelog</b>
             </Link>
