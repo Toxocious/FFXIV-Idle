@@ -18,12 +18,7 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
      * Battle
      */
     case 1:
-      if (
-        ACTIVE_JOB_DATA.type !== 'DPS' &&
-        ACTIVE_JOB_DATA.type !== 'Tank' &&
-        ACTIVE_JOB_DATA.type !== 'Healer'
-      )
-        return;
+      if (!['DPS', 'Tank', 'Healer'].includes(ACTIVE_JOB_DATA.type)) return;
       console.log('[Game Tick] Processing Battle Page Data.');
 
       break;
