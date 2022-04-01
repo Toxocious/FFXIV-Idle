@@ -1,0 +1,13 @@
+h2
+{
+  margin: 5px;
+  text-align: center;
+}
+
+.battle-container
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

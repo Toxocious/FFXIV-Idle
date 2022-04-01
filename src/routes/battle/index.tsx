@@ -1,11 +1,16 @@
-import { ProgressBar } from '../../components/progress-bar';
+import { Enemy } from '../../components/enemy';
+
+import './index.css';
 
 export function BattleWindow() {
   return (
     <>
-      <h2>Battle Window</h2>
+      <h2>Battle</h2>
+      <br />
 
-      <ProgressBar />
+      <div className='battle-container'>
+        <Enemy enemyID={5} />
+      </div>
     </>
   );
 }
