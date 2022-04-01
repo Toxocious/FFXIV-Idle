@@ -7,8 +7,8 @@ export const ENEMIES = {
     attack: 8,
     defense: 5,
     drops: {
-      exp: 5,
-      gil: 6,
+      exp: { name: 'Exp', amount: 5 },
+      GIL: { name: 'Gil', amount: 6 },
     },
   },
   1: {
@@ -19,8 +19,8 @@ export const ENEMIES = {
     attack: 11,
     defense: 9,
     drops: {
-      exp: 7,
-      gil: 8,
+      exp: { name: 'Exp', amount: 7 },
+      GIL: { name: 'Gil', amount: 8 },
     },
   },
   2: {
@@ -31,8 +31,8 @@ export const ENEMIES = {
     attack: 14,
     defense: 13,
     drops: {
-      exp: 9,
-      gil: 10,
+      exp: { name: 'Exp', amount: 9 },
+      GIL: { name: 'Gil', amount: 10 },
     },
   },
 
@@ -44,8 +44,8 @@ export const ENEMIES = {
     attack: 15,
     defense: 16,
     drops: {
-      exp: 15,
-      gil: 20,
+      exp: { name: 'Exp', amount: 15 },
+      GIL: { name: 'Gil', amount: 20 },
     },
   },
   4: {
@@ -56,8 +56,8 @@ export const ENEMIES = {
     attack: 18,
     defense: 19,
     drops: {
-      exp: 20,
-      gil: 25,
+      exp: { name: 'Exp', amount: 20 },
+      GIL: { name: 'Gil', amount: 25 },
     },
   },
   5: {
@@ -68,8 +68,8 @@ export const ENEMIES = {
     attack: 22,
     defense: 23,
     drops: {
-      exp: 25,
-      gil: 30,
+      exp: { name: 'Exp', amount: 25 },
+      GIL: { name: 'Gil', amount: 30 },
     },
   },
 
@@ -81,8 +81,8 @@ export const ENEMIES = {
     attack: 30,
     defense: 30,
     drops: {
-      exp: 40,
-      gil: 60,
+      exp: { name: 'Exp', amount: 40 },
+      GIL: { name: 'Gil', amount: 60 },
     },
   },
   7: {
@@ -93,8 +93,8 @@ export const ENEMIES = {
     attack: 40,
     defense: 40,
     drops: {
-      exp: 50,
-      gil: 75,
+      exp: { name: 'Exp', amount: 50 },
+      GIL: { name: 'Gil', amount: 75 },
     },
   },
   8: {
@@ -105,8 +105,8 @@ export const ENEMIES = {
     attack: 50,
     defense: 50,
     drops: {
-      exp: 60,
-      gil: 90,
+      exp: { name: 'Exp', amount: 60 },
+      GIL: { name: 'Gil', amount: 90 },
     },
   },
 
@@ -118,9 +118,9 @@ export const ENEMIES = {
     attack: 80,
     defense: 70,
     drops: {
-      exp: 200,
-      GIL: 300,
-      ALLAGAN_TOMESTONE: 12,
+      exp: { name: 'Exp', amount: 200 },
+      GIL: { name: 'Gil', amount: 300 },
+      ALLAGAN_TOMESTONE: { name: 'Allagan Tomestome', amount: 12 },
     },
   },
 };
