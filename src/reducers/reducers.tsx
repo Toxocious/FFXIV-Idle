@@ -8,7 +8,6 @@ export const storeReducer = (store: any, action: any) => {
 
   switch (action.type) {
     case ACTIONS.CHANGE_JOB:
-      console.log('Changing active job.', store.jobs);
       const { jobID } = action;
 
       const JOB_LIST = cloneDeep(store.jobs);
@@ -28,6 +27,19 @@ export const storeReducer = (store: any, action: any) => {
         jobs: {
           ...JOB_LIST,
           [jobID]: Object.assign({}, JOB_LIST[jobID]),
+        },
+      };
+      break;
+
+    case ACTIONS.CHANGE_PAGE:
+      console.log('Changing active page.', action);
+      const GAME_STORE = cloneDeep(store.game);
+
+      return {
+        ...store,
+        game: {
+          ...GAME_STORE,
+          activePage: action.pageID,
         },
       };
       break;
