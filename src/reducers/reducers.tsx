@@ -44,8 +44,21 @@ export const storeReducer = (store: any, action: any) => {
       };
       break;
 
+    case ACTIONS.SET_ACTIVE_ENEMY:
+      console.log('[Reducer] Setting Active Enemy.', action);
+
+      const ENEMY_DATA = action.enemy;
+
+      return {
+        ...store,
+        activeEnemy: {
+          ENEMY_DATA,
+        },
+      };
+      break;
+
     default:
-      console.warn('Unknown action dispatched.');
+      console.warn('Unknown action dispatched.', action);
       break;
   }
 };
