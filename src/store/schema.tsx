@@ -5,6 +5,8 @@ export const schema = {
       activePage: 1,
     },
 
+    activeEnemy: {},
+
     currencies: {},
     jobs: {},
     items: {},
