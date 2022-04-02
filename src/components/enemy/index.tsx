@@ -2,10 +2,13 @@ import { GetEnemyData } from '../../utils/get-enemy-data';
 import { ProgressBar } from '../../components/progress-bar';
 
 // @ts-ignore
-export const Enemy = ({ enemyID }) => {
-  const ENEMY_DATA = GetEnemyData(enemyID);
+export const Enemy = ({ enemy }) => {
+  const ENEMY_DATA = enemy.ENEMY_DATA;
 
-  if (typeof enemyID === 'undefined' || typeof ENEMY_DATA === 'undefined') {
+  if (
+    typeof ENEMY_DATA === 'undefined' ||
+    Object.keys(ENEMY_DATA).length === 0
+  ) {
     return (
       <>
         <h2>An error occurred while parsing the selected enemy.</h2>
