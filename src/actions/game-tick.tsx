@@ -1,3 +1,6 @@
+import { SetEnemy } from '../utils/set-active-enemy';
+import { SetActiveEnemy } from '../actions/actions';
+
 // @ts-ignore
 export const gameTick = ({ store, dispatch }, delta: number) => {
   delta = Math.round(delta * 10) / 10;
@@ -11,7 +14,9 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
   // @ts-ignore
   const ACTIVE_JOB_DATA: any = store.jobs[ACTIVE_JOB_ID];
 
-  if (typeof ACTIVE_JOB_DATA === 'undefined') return;
+  if (typeof ACTIVE_JOB_DATA === 'undefined') {
+    return;
+  }
 
   switch (ACTIVE_PAGE) {
     /**
@@ -20,6 +25,15 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
     case 1:
       if (!['DPS', 'Tank', 'Healer'].includes(ACTIVE_JOB_DATA.type)) return;
       console.log('[Game Tick] Processing Battle Page Data.');
+
+      const ACTIVE_ENEMY = store.activeEnemy;
+
+      if (Object.keys(ACTIVE_ENEMY).length === 0) {
+        console.log('[Game Tick] Generating New Enemy');
+        dispatch(SetActiveEnemy(SetEnemy()));
+      } else {
+        console.log('[Game Tick] Attacking Enemy');
+      }
 
       break;
 
