@@ -32,7 +32,7 @@ export const Enemy = ({ enemy }) => {
           <h2>{ENEMY_DATA.name}</h2>
         </div>
         <div style={{ marginLeft: 'auto' }}>
-          <b>Health:</b> 50 / 100
+          <b>Health:</b> {ENEMY_DATA.currentHP} / {ENEMY_DATA.maxHP}
         </div>
 
         <ProgressBar />

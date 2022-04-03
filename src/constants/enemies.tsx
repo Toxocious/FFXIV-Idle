@@ -3,7 +3,8 @@ export const ENEMIES = {
     name: 'Enemy #1',
     boss: false,
     level: 1,
-    hp: 12,
+    maxHP: 12,
+    currentHP: null,
     attack: 8,
     defense: 5,
     drops: {
@@ -15,7 +16,8 @@ export const ENEMIES = {
     name: 'Enemy #2',
     boss: false,
     level: 1,
-    hp: 17,
+    maxHP: 17,
+    currentHP: null,
     attack: 11,
     defense: 9,
     drops: {
@@ -27,7 +29,8 @@ export const ENEMIES = {
     name: 'Enemy #3',
     boss: false,
     level: 1,
-    hp: 21,
+    maxHP: 21,
+    currentHP: null,
     attack: 14,
     defense: 13,
     drops: {
@@ -40,7 +43,8 @@ export const ENEMIES = {
     name: 'Enemy #4',
     boss: false,
     level: 2,
-    hp: 25,
+    maxHP: 25,
+    currentHP: null,
     attack: 15,
     defense: 16,
     drops: {
@@ -52,7 +56,8 @@ export const ENEMIES = {
     name: 'Enemy #5',
     boss: false,
     level: 2,
-    hp: 30,
+    maxHP: 30,
+    currentHP: null,
     attack: 18,
     defense: 19,
     drops: {
@@ -64,7 +69,8 @@ export const ENEMIES = {
     name: 'Enemy #6',
     boss: false,
     level: 2,
-    hp: 35,
+    maxHP: 35,
+    currentHP: null,
     attack: 22,
     defense: 23,
     drops: {
@@ -77,7 +83,8 @@ export const ENEMIES = {
     name: 'Enemy #7',
     boss: false,
     level: 3,
-    hp: 50,
+    maxHP: 50,
+    currentHP: null,
     attack: 30,
     defense: 30,
     drops: {
@@ -89,7 +96,8 @@ export const ENEMIES = {
     name: 'Enemy #8',
     boss: false,
     level: 3,
-    hp: 75,
+    maxHP: 75,
+    currentHP: null,
     attack: 40,
     defense: 40,
     drops: {
@@ -101,7 +109,8 @@ export const ENEMIES = {
     name: 'Enemy #9',
     boss: false,
     level: 3,
-    hp: 100,
+    maxHP: 100,
+    currentHP: null,
     attack: 50,
     defense: 50,
     drops: {
@@ -114,7 +123,8 @@ export const ENEMIES = {
     name: 'Bossman #1',
     boss: true,
     level: 4,
-    hp: 200,
+    maxHP: 200,
+    currentHP: null,
     attack: 80,
     defense: 70,
     drops: {

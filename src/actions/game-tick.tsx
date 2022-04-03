@@ -24,7 +24,6 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
      */
     case 1:
       if (!['DPS', 'Tank', 'Healer'].includes(ACTIVE_JOB_DATA.type)) return;
-      console.log('[Game Tick] Processing Battle Page Data.');
 
       const ACTIVE_ENEMY = store.activeEnemy;
 
