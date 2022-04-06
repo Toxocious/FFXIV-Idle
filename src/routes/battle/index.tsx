@@ -15,7 +15,7 @@ export function BattleWindow() {
 
       <div className='battle-container'>
         {Object.keys(ACTIVE_ENEMY).length === 0 ? (
-          <>There is no active enemy.</>
+          <h3 style={{ textAlign: 'center' }}>There is no active enemy.</h3>
         ) : (
           <Enemy enemy={ACTIVE_ENEMY} />
         )}
