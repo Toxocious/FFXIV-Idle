@@ -7,14 +7,11 @@ import { GAME_PAGES } from '../../constants/game-pages';
 
 import './index.css';
 
-interface Props {
-  page: any;
-}
-
-const NavigationEntry = (props: Props) => {
+const NavigationEntry = (props: any) => {
   const { page } = props;
+  const GAME_PAGE = GAME_PAGES[page];
 
-  if (!page.unlocked) {
+  if (!GAME_PAGE.unlocked) {
     return <></>;
   }
 
@@ -25,10 +22,10 @@ const NavigationEntry = (props: Props) => {
       <div className='body'>
         <div className='bar'>
           <Link
-            to={page.link}
-            onClick={() => dispatch(ChangeActivePage(page.id))}
+            to={GAME_PAGE.link}
+            onClick={() => dispatch(ChangeActivePage(GAME_PAGE.id))}
           >
-            <b>{page.name}</b>
+            <b>{GAME_PAGE.name}</b>
           </Link>
         </div>
       </div>
@@ -39,8 +36,8 @@ const NavigationEntry = (props: Props) => {
 export const Navigation = () => {
   return (
     <div className='navigation-container'>
-      {GAME_PAGES.map((page) => (
-        <NavigationEntry key={page.id} page={page} />
+      {Object.keys(GAME_PAGES).map((page) => (
+        <NavigationEntry key={page} page={page} />
       ))}
     </div>
   );

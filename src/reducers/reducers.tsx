@@ -15,10 +15,7 @@ export const storeReducer = (store: any, action: any) => {
       /**
        * Set all jobs to inactive, as only one job may be active at a time.
        */
-      Object.keys(JOB_LIST).forEach(
-        // @ts-ignore
-        (job: any) => (JOBS[job].active = false)
-      );
+      Object.keys(JOB_LIST).forEach((job) => (JOBS[job].active = false));
 
       JOB_LIST[jobID].active = true;
 
