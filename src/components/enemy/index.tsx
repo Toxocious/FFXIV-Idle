@@ -46,9 +46,8 @@ export const Enemy = (props: Props) => {
         style={{
           display: 'flex',
           flexWrap: 'wrap',
-          justifyContent: 'space-between',
+          justifyContent: 'center',
           fontSize: 14,
-          gap: 5,
         }}
       >
         <div>
@@ -60,7 +59,6 @@ export const Enemy = (props: Props) => {
               flexDirection: 'column',
               maxHeight: 146,
               overflow: 'scroll',
-              width: 160,
             }}
           >
             {Object.keys(ENEMY_DATA.drops).map((drop: any) => (
@@ -69,22 +67,6 @@ export const Enemy = (props: Props) => {
                 {ENEMY_DATA.drops[drop].amount}
               </div>
             ))}
-          </div>
-        </div>
-
-        <div>
-          <h2>Battle Log</h2>
-          <div
-            style={{
-              alignItems: 'center',
-              display: 'flex',
-              flexDirection: 'column',
-              maxHeight: 146,
-              overflow: 'scroll',
-              width: 280,
-            }}
-          >
-            <div>... log action data</div>
           </div>
         </div>
       </div>
