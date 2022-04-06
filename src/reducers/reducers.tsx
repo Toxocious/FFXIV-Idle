@@ -51,9 +51,7 @@ export const storeReducer = (store: any, action: any) => {
 
       return {
         ...store,
-        activeEnemy: {
-          ENEMY_DATA,
-        },
+        activeEnemy: ENEMY_DATA,
       };
       break;
 
