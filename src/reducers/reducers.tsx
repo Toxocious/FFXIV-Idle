@@ -4,7 +4,7 @@ import { ACTIONS } from '../actions/actions';
 import { JOBS } from '../constants/jobs';
 
 export const storeReducer = (store: any, action: any) => {
-  console.log('[Store Reducer] Store:', store, '|| Action:', action);
+  // console.log('[Store Reducer] Store:', store, '|| Action:', action);
 
   switch (action.type) {
     case ACTIONS.CHANGE_JOB:
@@ -12,9 +12,6 @@ export const storeReducer = (store: any, action: any) => {
 
       const JOB_LIST = cloneDeep(store.jobs);
 
-      /**
-       * Set all jobs to inactive, as only one job may be active at a time.
-       */
       Object.keys(JOB_LIST).forEach((job) => (JOBS[job].active = false));
 
       JOB_LIST[jobID].active = true;
@@ -26,10 +23,8 @@ export const storeReducer = (store: any, action: any) => {
           [jobID]: Object.assign({}, JOB_LIST[jobID]),
         },
       };
-      break;
 
     case ACTIONS.CHANGE_PAGE:
-      console.log('Changing active page.', action);
       const GAME_STORE = cloneDeep(store.game);
 
       return {
@@ -39,21 +34,20 @@ export const storeReducer = (store: any, action: any) => {
           activePage: action.pageID,
         },
       };
-      break;
 
     case ACTIONS.SET_ACTIVE_ENEMY:
-      console.log('[Reducer] Setting Active Enemy.', action);
-
-      const ENEMY_DATA = action.enemy;
+      let ENEMY_DATA = action.enemy;
+      ENEMY_DATA.currentHP -= action.damageDealt;
 
       return {
         ...store,
-        activeEnemy: ENEMY_DATA,
+        activeEnemy: Object.assign({}, ENEMY_DATA),
       };
-      break;
 
     default:
       console.warn('Unknown action dispatched.', action);
       break;
   }
+
+  return store;
 };

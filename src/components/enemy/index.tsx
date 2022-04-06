@@ -1,21 +1,18 @@
+import { useStore } from '../../context/game-context';
+
 import { ProgressBar } from '../../components/progress-bar';
 
-interface Props {
-  enemy: any;
-}
-
-export const Enemy = (props: Props) => {
-  const { enemy } = props;
-
-  const ENEMY_DATA = enemy;
+export const Enemy = () => {
+  console.log('[Enemy] Component has reloaded.');
+  const { activeEnemy } = useStore();
 
   if (
-    typeof ENEMY_DATA === 'undefined' ||
-    Object.keys(ENEMY_DATA).length === 0
+    typeof activeEnemy === 'undefined' ||
+    Object.keys(activeEnemy).length === 0
   ) {
     return (
       <>
-        <h2>An error occurred while parsing the selected enemy.</h2>
+        <h2>An error occurred while parsing the selected activeEnemy.</h2>
       </>
     );
   }
@@ -33,10 +30,10 @@ export const Enemy = (props: Props) => {
         }}
       >
         <div>
-          <h2>{ENEMY_DATA.name}</h2>
+          <h2>{activeEnemy.name}</h2>
         </div>
         <div style={{ marginLeft: 'auto' }}>
-          <b>Health:</b> {ENEMY_DATA.currentHP} / {ENEMY_DATA.maxHP}
+          <b>Health:</b> {activeEnemy.currentHP} / {activeEnemy.maxHP}
         </div>
 
         <ProgressBar />
@@ -61,10 +58,10 @@ export const Enemy = (props: Props) => {
               overflow: 'scroll',
             }}
           >
-            {Object.keys(ENEMY_DATA.drops).map((drop: any) => (
+            {Object.keys(activeEnemy.drops).map((drop: any) => (
               <div key={drop}>
-                <b>{ENEMY_DATA.drops[drop].name}</b>:{' '}
-                {ENEMY_DATA.drops[drop].amount}
+                <b>{activeEnemy.drops[drop].name}</b>:{' '}
+                {activeEnemy.drops[drop].amount}
               </div>
             ))}
           </div>

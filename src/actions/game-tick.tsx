@@ -23,15 +23,28 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
      * Battle
      */
     case 1:
-      if (!['DPS', 'Tank', 'Healer'].includes(ACTIVE_JOB_DATA.type)) return;
+      if (!['DPS', 'Tank', 'Healer'].includes(ACTIVE_JOB_DATA.type)) {
+        return;
+      }
 
-      const ACTIVE_ENEMY = store.activeEnemy;
+      let { activeEnemy } = store;
 
-      if (Object.keys(ACTIVE_ENEMY).length === 0) {
+      if (Object.keys(activeEnemy).length === 0) {
         console.log('[Game Tick] Generating New Enemy');
-        dispatch(SetActiveEnemy(SetEnemy()));
+        return dispatch(SetActiveEnemy(SetEnemy()));
+      }
+
+      console.log('Current Enemy HP:', activeEnemy.currentHP);
+
+      if (activeEnemy.currentHP > 0) {
+        let damageRoll = Math.floor(Math.random() * 5) + 1;
+        if (damageRoll > activeEnemy.currentHP) {
+          damageRoll = activeEnemy.currentHP;
+        }
+
+        dispatch(SetActiveEnemy(activeEnemy, damageRoll));
       } else {
-        console.log('[Game Tick] Attacking Enemy');
+        dispatch(SetActiveEnemy(SetEnemy()));
       }
 
       break;

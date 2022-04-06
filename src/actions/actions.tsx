@@ -14,7 +14,8 @@ export const ChangeActivePage = (pageID: any) => ({
   pageID,
 });
 
-export const SetActiveEnemy = (enemy: any) => ({
+export const SetActiveEnemy = (enemy: any, damageDealt: number = 0) => ({
   type: ACTIONS.SET_ACTIVE_ENEMY,
   enemy,
+  damageDealt,
 });
