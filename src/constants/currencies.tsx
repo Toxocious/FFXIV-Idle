@@ -1,4 +1,15 @@
-export const CURRENCIES = {
+interface Currency {
+  [currencyID: string]: CurrencyProps;
+}
+
+interface CurrencyProps {
+  name: string;
+  value: number;
+  imageName: string;
+  unlocked: boolean;
+}
+
+export const CURRENCIES: Currency = {
   GIL: {
     name: 'Gil',
     value: 0,

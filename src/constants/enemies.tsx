@@ -1,4 +1,28 @@
-export const ENEMIES = {
+interface Enemy {
+  [enemyIndex: number]: EnemyProps;
+}
+
+interface EnemyProps {
+  name: string;
+  boss: boolean;
+  level: number;
+  maxHP: number;
+  currentHP: number | null;
+  attack: number;
+  defense: number;
+  drops: EnemyDrop;
+}
+
+interface EnemyDrop {
+  [dropIndex: string]: EnemyDrops;
+}
+
+interface EnemyDrops {
+  name: string;
+  amount: number;
+}
+
+export const ENEMIES: Enemy = {
   0: {
     name: 'Enemy #1',
     boss: false,

@@ -1,4 +1,18 @@
-export const JOBS = {
+interface Props {
+  name: string;
+  type: string;
+  level: number;
+  iconName: string;
+  className: string;
+  unlocked: boolean;
+  active: boolean;
+}
+
+interface Jobs {
+  [jobName: string]: Props;
+}
+
+export const JOBS: Jobs = {
   /**
    * Tanks
    */
