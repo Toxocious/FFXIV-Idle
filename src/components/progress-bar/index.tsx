@@ -1,10 +1,13 @@
 import './index.css';
 
-// @ts-ignore
-export const ProgressBar = ({
-  progressValue = 50,
-  progressType = 'health',
-}) => {
+interface Props {
+  progressValue?: number;
+  progressType?: string;
+}
+
+export const ProgressBar = (props: Props) => {
+  const { progressValue = 100, progressType = 'health' } = props;
+
   const PROGRESS_BAR_WIDTH = `${progressValue}%`;
   const PROGRESS_BAR_CLASSNAME = `progress-bar-content ${progressType}`;
 

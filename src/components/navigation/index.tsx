@@ -7,8 +7,13 @@ import { GAME_PAGES } from '../../constants/game-pages';
 
 import './index.css';
 
-// @ts-ignore
-const NavigationEntry = ({ page }) => {
+interface Props {
+  page: any;
+}
+
+const NavigationEntry = (props: Props) => {
+  const { page } = props;
+
   if (!page.unlocked) {
     return <></>;
   }

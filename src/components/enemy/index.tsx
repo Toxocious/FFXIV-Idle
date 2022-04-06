@@ -1,9 +1,13 @@
-import { GetEnemyData } from '../../utils/get-enemy-data';
 import { ProgressBar } from '../../components/progress-bar';
 
-// @ts-ignore
-export const Enemy = ({ enemy }) => {
-  const ENEMY_DATA = enemy.ENEMY_DATA;
+interface Props {
+  enemy: any;
+}
+
+export const Enemy = (props: Props) => {
+  const { enemy } = props;
+
+  const ENEMY_DATA = enemy;
 
   if (
     typeof ENEMY_DATA === 'undefined' ||

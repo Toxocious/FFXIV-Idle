@@ -1,12 +1,18 @@
-import { useDispatch, useStore } from '../../context/game-context';
+import { useStore } from '../../context/game-context';
 import { JOBS } from '../../constants/jobs';
 import { JobButton } from '../job-button';
 
 import './index.css';
 
-// @ts-ignore
-const JobEntry = ({ jobID, jobs, showLevel, clickToSwitch }) => {
-  // @ts-ignore
+interface Props {
+  jobID?: any;
+  jobs?: any;
+  showLevel?: boolean;
+  clickToSwitch?: boolean;
+}
+
+const JobEntry = (props: Props) => {
+  const { jobID, jobs, showLevel, clickToSwitch } = props;
   const JOB_DATA: any = jobs[jobID];
 
   if (typeof JOB_DATA === 'undefined') {
@@ -58,8 +64,7 @@ const JobEntry = ({ jobID, jobs, showLevel, clickToSwitch }) => {
   );
 };
 
-export const Jobs = (props: any = null) => {
-  // @ts-ignore
+export const Jobs = (props: Props) => {
   const { jobs } = useStore();
 
   return (

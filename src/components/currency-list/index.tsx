@@ -1,12 +1,15 @@
 import { useStore } from '../../context/game-context';
-
 import { CURRENCIES } from '../../constants/currencies';
 
 import './index.css';
 
-// @ts-ignore
-const CurrencyEntry = ({ currencyID, currencies }) => {
-  // @ts-ignore
+interface Props {
+  readonly currencyID: any;
+  readonly currencies: [];
+}
+
+const CurrencyEntry = (props: Props) => {
+  const { currencies, currencyID } = props;
   const CURRENCY_DATA: any = currencies[currencyID];
 
   if (typeof CURRENCY_DATA === 'undefined') {
@@ -57,7 +60,6 @@ const CurrencyEntry = ({ currencyID, currencies }) => {
 };
 
 export const Currencies = () => {
-  // @ts-ignore
   const { currencies } = useStore();
 
   return (
