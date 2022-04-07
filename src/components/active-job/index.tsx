@@ -36,7 +36,12 @@ export const ActiveJob = ({}) => {
           <div className='divider'></div>
 
           <div className='bar'>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+              }}
+            >
               <span>
                 <b>Level:</b> {JOB_LEVEL_DATA.LEVEL}
               </span>
@@ -45,7 +50,7 @@ export const ActiveJob = ({}) => {
                 <i>
                   {JOB_LEVEL_DATA.EARNED_LEVEL_EXP.toLocaleString()}
                   &nbsp;/&nbsp;
-                  {JOB_LEVEL_DATA.TOTAL_LEVEL_EXP.toLocaleString()} xp
+                  {JOB_LEVEL_DATA.TOTAL_LEVEL_EXP.toLocaleString()}
                 </i>
                 )
               </span>
