@@ -3,7 +3,6 @@ import { useStore } from '../../context/game-context';
 import { ProgressBar } from '../../components/progress-bar';
 
 export const Enemy = () => {
-  console.log('[Enemy] Component has reloaded.');
   const { activeEnemy } = useStore();
 
   if (
@@ -36,7 +35,10 @@ export const Enemy = () => {
           <b>Health:</b> {activeEnemy.currentHP} / {activeEnemy.maxHP}
         </div>
 
-        <ProgressBar />
+        <ProgressBar
+          currentValue={activeEnemy.currentHP}
+          maxValue={activeEnemy.maxHP}
+        />
       </div>
 
       <div

@@ -30,14 +30,11 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
       let { activeEnemy } = store;
 
       if (Object.keys(activeEnemy).length === 0) {
-        console.log('[Game Tick] Generating New Enemy');
         return dispatch(SetActiveEnemy(SetEnemy()));
       }
 
-      console.log('Current Enemy HP:', activeEnemy.currentHP);
-
       if (activeEnemy.currentHP > 0) {
-        let damageRoll = Math.floor(Math.random() * 5) + 1;
+        let damageRoll = Math.floor(Math.random() * 15) + 1;
         if (damageRoll > activeEnemy.currentHP) {
           damageRoll = activeEnemy.currentHP;
         }
