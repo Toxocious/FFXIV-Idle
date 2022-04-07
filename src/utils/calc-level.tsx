@@ -11,7 +11,7 @@ export const CalcLevelFromExp = (exp: number = 0) => {
 
   return {
     LEVEL: CURRENT_LEVEL,
-    EARNED_LEVEL_EXP: NEXT_LEVEL_EXP_DATA.totalAccumulatedExp - exp,
+    EARNED_LEVEL_EXP: exp - CURRENT_LEVEL_EXP_DATA.totalAccumulatedExp,
     TOTAL_LEVEL_EXP:
       NEXT_LEVEL_EXP_DATA.totalAccumulatedExp -
       CURRENT_LEVEL_EXP_DATA.totalAccumulatedExp,
