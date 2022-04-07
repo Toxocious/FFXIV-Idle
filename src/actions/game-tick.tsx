@@ -1,5 +1,5 @@
 import { SetEnemy } from '../utils/set-active-enemy';
-import { SetActiveEnemy } from '../actions/actions';
+import { SetActiveEnemy, SetPlayerRewards } from '../actions/actions';
 
 // @ts-ignore
 export const gameTick = ({ store, dispatch }, delta: number) => {
@@ -41,6 +41,7 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
 
         dispatch(SetActiveEnemy(activeEnemy, damageRoll));
       } else {
+        dispatch(SetPlayerRewards(activeEnemy));
         dispatch(SetActiveEnemy(SetEnemy()));
       }
 

@@ -1,7 +1,11 @@
 import cloneDeep from 'lodash.clonedeep';
 
 import { ACTIONS } from '../actions/actions';
+
 import { JOBS } from '../constants/jobs';
+import { CURRENCIES } from '../constants/currencies';
+
+import { GetActiveJob } from '../utils/get-active-job';
 
 export const storeReducer = (store: any, action: any) => {
   // console.log('[Store Reducer] Store:', store, '|| Action:', action);
@@ -42,6 +46,32 @@ export const storeReducer = (store: any, action: any) => {
       return {
         ...store,
         activeEnemy: Object.assign({}, ENEMY_DATA),
+      };
+
+    case ACTIONS.SET_PLAYER_REWARDS:
+      const { drops } = action.enemy;
+
+      let Currencies = cloneDeep(store.currencies);
+      let Items = cloneDeep(store.items);
+      let Jobs = cloneDeep(store.jobs);
+
+      Object.keys(drops).map((dropID) => {
+        if (dropID in CURRENCIES) {
+          Currencies[dropID].value += drops[dropID].amount;
+        } else if (dropID === 'exp') {
+          const ACTIVE_JOB: any = Object.keys(Jobs).filter(
+            (job: any) => Jobs[job].active === true
+          );
+
+          Jobs[ACTIVE_JOB].exp += drops[dropID].amount;
+        }
+      });
+
+      return {
+        ...store,
+        currencies: Currencies,
+        items: Items,
+        jobs: Jobs,
       };
 
     default:
