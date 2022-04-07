@@ -33,7 +33,8 @@ export const ActiveJob = ({}) => {
           <div className='divider'></div>
 
           <div className='bar'>
-            <b>Level:</b> {JOB_DATA.level}
+            <b>Level:</b> {JOB_DATA.level} (
+            <i>{JOB_DATA.exp.toLocaleString()} xp</i>)
           </div>
         </div>
       </div>
