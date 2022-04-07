@@ -1,3 +1,4 @@
+import { CalcLevelFromExp } from '../../utils/calc-level';
 import { GetActiveJob } from '../../utils/get-active-job';
 
 import './index.css';
@@ -9,6 +10,8 @@ export const ActiveJob = ({}) => {
   if (typeof JOB_DATA === 'undefined') {
     return <></>;
   }
+
+  const JOB_LEVEL_DATA: any = CalcLevelFromExp(JOB_DATA.exp);
 
   return (
     <div className='active-job'>
@@ -33,8 +36,12 @@ export const ActiveJob = ({}) => {
           <div className='divider'></div>
 
           <div className='bar'>
-            <b>Level:</b> {JOB_DATA.level} (
-            <i>{JOB_DATA.exp.toLocaleString()} xp</i>)
+            <b>Level:</b> {JOB_LEVEL_DATA.LEVEL} (
+            <i>
+              {JOB_LEVEL_DATA.EARNED_LEVEL_EXP.toLocaleString()} /{' '}
+              {JOB_LEVEL_DATA.TOTAL_LEVEL_EXP.toLocaleString()} xp
+            </i>
+            )
           </div>
         </div>
       </div>
