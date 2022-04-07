@@ -8,6 +8,7 @@ import { GetActiveJob } from '../../utils/get-active-job';
 import { JobSelector } from '../../components/job-selector';
 
 import { ChangelogWindow } from '../../routes/changelog';
+import { ShopWindow } from '../../routes/shop';
 import { StatsWindow } from '../../routes/stats';
 import { BattleWindow } from '../../routes/battle';
 import { CraftingWindow } from '../../routes/crafting';
@@ -28,6 +29,7 @@ export const GameWindow = ({}) => {
         <Route path='/battle' element={<BattleWindow />} />
         <Route path='/crafting' element={<CraftingWindow />} />
         <Route path='/gathering' element={<GatheringWindow />} />
+        <Route path='/shop' element={<ShopWindow />} />
       </Routes>
     );
   }

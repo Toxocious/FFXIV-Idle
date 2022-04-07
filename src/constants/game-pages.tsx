@@ -28,4 +28,10 @@ export const GAME_PAGES: Page = {
     link: '/crafting',
     unlocked: true,
   },
+  3: {
+    id: 4,
+    name: 'Shop',
+    link: '/shop',
+    unlocked: true,
+  },
 };
