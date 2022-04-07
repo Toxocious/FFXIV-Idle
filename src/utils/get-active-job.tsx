@@ -1,4 +1,4 @@
-import { useStore } from '../context/game-context';
+import { useStore } from '../providers/game';
 
 export const GetActiveJob = () => {
   // @ts-ignore

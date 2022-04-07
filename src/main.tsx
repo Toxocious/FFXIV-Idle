@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import { BrowserRouter } from 'react-router-dom';
 
-import { GameProvider } from './context/game-context';
+import { GameProvider } from './providers/game';
 
 import { GameWindow } from './components/game-window';
 import { Navigation } from './components/navigation';

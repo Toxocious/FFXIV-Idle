@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { useDispatch } from '../../context/game-context';
+import { useDispatch } from '../../providers/game';
 import { ChangeActivePage } from '../../actions/actions';
 
 import { GAME_PAGES } from '../../constants/game-pages';

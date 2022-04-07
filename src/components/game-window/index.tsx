@@ -1,6 +1,6 @@
 import { Routes, Route, Link } from 'react-router-dom';
 
-import { useDispatch } from '../../context/game-context';
+import { useDispatch } from '../../providers/game';
 import { ChangeActivePage } from '../../actions/actions';
 
 import { GetActiveJob } from '../../utils/get-active-job';

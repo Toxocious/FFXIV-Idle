@@ -1,4 +1,4 @@
-import { useDispatch, useStore } from '../../context/game-context';
+import { useDispatch, useStore } from '../../providers/game';
 import { ChangeActiveJob } from '../../actions/actions';
 
 interface Props {
