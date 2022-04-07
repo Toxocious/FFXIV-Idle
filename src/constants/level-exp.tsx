@@ -1,4 +1,13 @@
-export const LEVEL_EXP = {
+interface Props {
+  expToNextLevel: number;
+  totalAccumulatedExp: number;
+}
+
+interface Levels {
+  [level: number]: Props;
+}
+
+export const LEVEL_EXP: Levels = {
   /* A Realm Reborn */
   1: { expToNextLevel: 0, totalAccumulatedExp: 0 },
   2: { expToNextLevel: 300, totalAccumulatedExp: 300 },
