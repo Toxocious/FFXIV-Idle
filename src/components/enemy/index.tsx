@@ -28,8 +28,13 @@ export const Enemy = () => {
           gap: 5,
         }}
       >
-        <div>
+        <div style={{
+          display: 'flex',
+          alignItems: 'baseline',
+          gap: 5
+        }}>
           <h2>{activeEnemy.name}</h2>
+          <b>Lv.</b> {activeEnemy.level}
         </div>
         <div style={{ marginLeft: 'auto' }}>
           <b>Health:</b> {activeEnemy.currentHP} / {activeEnemy.maxHP}
