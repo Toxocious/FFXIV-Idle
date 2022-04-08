@@ -1,9 +1,13 @@
+import { useStore } from '../providers/game';
 import { ENEMIES } from '../constants/enemies';
 
-export const GetRandomEnemy = () => {
-  const ENEMY_COUNT = Object.keys(ENEMIES).length;
-  const ENEMY_INDEX = Math.floor(Math.random() * ENEMY_COUNT);
+export const GetRandomEnemy = (level: number) => {
+  const POSSIBLE_ENEMIES: string[] = Object.keys(ENEMIES).filter(
+    (enemy: any) =>
+      ENEMIES[enemy].level > level - 5 && ENEMIES[enemy].level < level + 5
+  );
 
-  // @ts-ignore
-  return ENEMIES[ENEMY_INDEX];
+  const RANDOM_ENEMY = Math.floor(Math.random() * POSSIBLE_ENEMIES.length);
+
+  return ENEMIES[RANDOM_ENEMY];
 };

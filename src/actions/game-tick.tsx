@@ -42,7 +42,7 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
         dispatch(SetActiveEnemy(activeEnemy, damageRoll));
       } else {
         dispatch(SetPlayerRewards(activeEnemy));
-        dispatch(SetActiveEnemy(SetEnemy()));
+        dispatch(SetActiveEnemy(SetEnemy(ACTIVE_JOB_DATA.level)));
       }
 
       break;

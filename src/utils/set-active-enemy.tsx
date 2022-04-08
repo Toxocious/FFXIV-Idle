@@ -1,7 +1,7 @@
 import { GetRandomEnemy } from './get-random-enemy';
 
-export const SetEnemy = () => {
-  const RANDOM_ENEMY = GetRandomEnemy();
+export const SetEnemy = (level: number) => {
+  const RANDOM_ENEMY = GetRandomEnemy(level);
 
   RANDOM_ENEMY.currentHP = RANDOM_ENEMY.maxHP;
 
