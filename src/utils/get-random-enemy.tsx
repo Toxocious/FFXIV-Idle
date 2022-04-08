@@ -1,4 +1,3 @@
-import { useStore } from '../providers/game';
 import { ENEMIES } from '../constants/enemies';
 
 export const GetRandomEnemy = (level: number) => {
@@ -7,7 +6,8 @@ export const GetRandomEnemy = (level: number) => {
       ENEMIES[enemy].level > level - 2 && ENEMIES[enemy].level < level + 2
   );
 
-  const RANDOM_ENEMY = Math.floor(Math.random() * POSSIBLE_ENEMIES.length);
+  const RANDOM_ENEMY: any = Math.floor(Math.random() * POSSIBLE_ENEMIES.length);
 
-  return ENEMIES[RANDOM_ENEMY];
+  // @ts-ignore
+  return ENEMIES[POSSIBLE_ENEMIES[RANDOM_ENEMY]];
 };
