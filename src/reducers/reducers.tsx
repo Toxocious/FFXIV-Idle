@@ -5,7 +5,7 @@ import { ACTIONS } from '../actions/actions';
 import { JOBS } from '../constants/jobs';
 import { CURRENCIES } from '../constants/currencies';
 
-import { GetActiveJob } from '../utils/get-active-job';
+import { CalcLevelFromExp } from '../utils/calc-level';
 
 export const storeReducer = (store: any, action: any) => {
   // console.log('[Store Reducer] Store:', store, '|| Action:', action);
@@ -64,6 +64,7 @@ export const storeReducer = (store: any, action: any) => {
           );
 
           Jobs[ACTIVE_JOB].exp += drops[dropID].amount;
+          Jobs[ACTIVE_JOB].level = CalcLevelFromExp(Jobs[ACTIVE_JOB].exp).LEVEL;
         }
       });
 
