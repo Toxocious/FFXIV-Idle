@@ -4,6 +4,7 @@ import { ACTIONS } from '../actions/actions';
 
 import { JOBS } from '../constants/jobs';
 import { CURRENCIES } from '../constants/currencies';
+import { LEVEL_EXP } from '../constants/level-exp';
 
 import { CalcLevelFromExp } from '../utils/calc-level';
 
@@ -51,6 +52,9 @@ export const storeReducer = (store: any, action: any) => {
     case ACTIONS.SET_PLAYER_REWARDS:
       const { drops } = action.enemy;
 
+      const LEVEL_CAP_DATA =
+        Object.values(LEVEL_EXP)[Object.keys(LEVEL_EXP).length - 1];
+
       let Currencies = cloneDeep(store.currencies);
       let Items = cloneDeep(store.items);
       let Jobs = cloneDeep(store.jobs);
@@ -63,8 +67,20 @@ export const storeReducer = (store: any, action: any) => {
             (job: any) => Jobs[job].active === true
           );
 
-          Jobs[ACTIVE_JOB].exp += drops[dropID].amount;
-          Jobs[ACTIVE_JOB].level = CalcLevelFromExp(Jobs[ACTIVE_JOB].exp).LEVEL;
+          if (Jobs[ACTIVE_JOB].exp < LEVEL_CAP_DATA.totalAccumulatedExp) {
+            if (
+              JOBS[ACTIVE_JOB.exp] + drops[dropID].amount >
+              LEVEL_CAP_DATA.totalAccumulatedExp
+            ) {
+              Jobs[ACTIVE_JOB].exp = LEVEL_CAP_DATA.totalAccumulatedExp;
+            } else {
+              Jobs[ACTIVE_JOB].exp += drops[dropID].amount;
+            }
+
+            Jobs[ACTIVE_JOB].level = CalcLevelFromExp(
+              Jobs[ACTIVE_JOB].exp
+            ).LEVEL;
+          }
         }
       });
 
