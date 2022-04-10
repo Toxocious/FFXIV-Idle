@@ -63,15 +63,30 @@ export const Enemy = () => {
             style={{
               alignItems: 'center',
               display: 'flex',
-              flexDirection: 'column',
+              flexDirection: 'row',
+              gap: 10,
               maxHeight: 146,
               overflow: 'scroll',
             }}
           >
             {Object.keys(activeEnemy.drops).map((drop: any) => (
-              <div key={drop}>
-                <b>{activeEnemy.drops[drop].name}</b>:{' '}
-                {activeEnemy.drops[drop].amount.toLocaleString()}
+              <div
+                key={drop}
+                style={{
+                  alignItems: 'center',
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}
+              >
+                <div>
+                  <img
+                    src={activeEnemy.drops[drop].image}
+                    height={32}
+                    alt={activeEnemy.drops[drop].name}
+                    title={activeEnemy.drops[drop].name}
+                  />
+                </div>
+                <div>{activeEnemy.drops[drop].amount.toLocaleString()}</div>
               </div>
             ))}
           </div>
