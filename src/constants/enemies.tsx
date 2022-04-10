@@ -18,6 +18,7 @@ interface EnemyDrop {
 interface EnemyDrops {
   name: string;
   amount: number;
+  image: string;
 }
 
 export const ENEMIES: Enemy = {
@@ -30,10 +31,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 25,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 10,
       },
     },
@@ -47,10 +50,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 28,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 14,
       },
     },
@@ -64,10 +69,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 31,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 18,
       },
     },
@@ -81,10 +88,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 45,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 35,
       },
     },
@@ -98,10 +107,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 52,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 44,
       },
     },
@@ -115,10 +126,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 59,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 52,
       },
     },
@@ -132,10 +145,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 87,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 86,
       },
     },
@@ -149,10 +164,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 97,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 99,
       },
     },
@@ -166,10 +183,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 107,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 112,
       },
     },
@@ -183,10 +202,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 149,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 163,
       },
     },
@@ -200,10 +221,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 163,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 180,
       },
     },
@@ -217,10 +240,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 176,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 197,
       },
     },
@@ -234,14 +259,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 542,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 775,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 130,
       },
     },
@@ -255,14 +283,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 585,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 838,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 140,
       },
     },
@@ -276,14 +307,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 628,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 902,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 150,
       },
     },
@@ -297,10 +331,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 335,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 392,
       },
     },
@@ -314,10 +350,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 356,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 418,
       },
     },
@@ -331,10 +369,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 376,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 443,
       },
     },
@@ -348,10 +388,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 459,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 545,
       },
     },
@@ -365,10 +407,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 483,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 575,
       },
     },
@@ -382,10 +426,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 507,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 605,
       },
     },
@@ -399,10 +445,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 604,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 724,
       },
     },
@@ -416,10 +464,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 632,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 758,
       },
     },
@@ -433,10 +483,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 659,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 792,
       },
     },
@@ -450,10 +502,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 770,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 928,
       },
     },
@@ -467,10 +521,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 801,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 966,
       },
     },
@@ -484,10 +540,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 832,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 1004,
       },
     },
@@ -501,14 +559,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 2353,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 3452,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 555,
       },
     },
@@ -522,14 +583,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 2439,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 3580,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 575,
       },
     },
@@ -543,14 +607,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 2526,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 3707,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 595,
       },
     },
@@ -564,10 +631,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 1163,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 1412,
       },
     },
@@ -581,10 +650,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 1201,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 1459,
       },
     },
@@ -598,10 +669,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 1239,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 1506,
       },
     },
@@ -615,10 +688,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 1391,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 1693,
       },
     },
@@ -632,10 +707,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 1432,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 1744,
       },
     },
@@ -649,10 +726,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 1474,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 1795,
       },
     },
@@ -666,10 +745,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 1639,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 1999,
       },
     },
@@ -683,10 +764,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 1684,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 2054,
       },
     },
@@ -700,10 +783,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 1729,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 2109,
       },
     },
@@ -717,10 +802,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 1908,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 2330,
       },
     },
@@ -734,10 +821,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 1956,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 2390,
       },
     },
@@ -751,10 +840,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 2005,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 2449,
       },
     },
@@ -768,14 +859,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 5458,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 8042,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 1280,
       },
     },
@@ -789,14 +883,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 5588,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 8233,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 1310,
       },
     },
@@ -810,14 +907,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 5717,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 8425,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 1340,
       },
     },
@@ -831,10 +931,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 2509,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 3070,
       },
     },
@@ -848,10 +950,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 2564,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 3138,
       },
     },
@@ -865,10 +969,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 2619,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 3206,
       },
     },
@@ -882,10 +988,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 2840,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 3478,
       },
     },
@@ -899,10 +1007,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 2898,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 3550,
       },
     },
@@ -916,10 +1026,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 2957,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 3622,
       },
     },
@@ -933,10 +1045,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 3192,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 3911,
       },
     },
@@ -950,10 +1064,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 3254,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 3988,
       },
     },
@@ -967,10 +1083,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 3316,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 4064,
       },
     },
@@ -984,10 +1102,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 3564,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 4370,
       },
     },
@@ -1001,10 +1121,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 3630,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 4451,
       },
     },
@@ -1018,10 +1140,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 3695,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 4532,
       },
     },
@@ -1035,14 +1159,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 9857,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 14545,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 2305,
       },
     },
@@ -1056,14 +1183,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 10029,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 14800,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 2345,
       },
     },
@@ -1077,14 +1207,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 10202,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 15055,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 2385,
       },
     },
@@ -1098,10 +1231,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 4372,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 5365,
       },
     },
@@ -1115,10 +1250,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 4444,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 5454,
       },
     },
@@ -1132,10 +1269,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 4516,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 5543,
       },
     },
@@ -1149,10 +1288,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 4806,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 5900,
       },
     },
@@ -1166,10 +1307,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 4882,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 5994,
       },
     },
@@ -1183,10 +1326,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 4958,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 6087,
       },
     },
@@ -1200,10 +1345,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 5262,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 6461,
       },
     },
@@ -1217,10 +1364,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 5341,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 6559,
       },
     },
@@ -1234,10 +1383,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 5420,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 6657,
       },
     },
@@ -1251,10 +1402,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 5738,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 7048,
       },
     },
@@ -1268,10 +1421,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 5821,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 7150,
       },
     },
@@ -1285,10 +1440,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 5903,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 7252,
       },
     },
@@ -1302,14 +1459,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 15549,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 22960,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 3630,
       },
     },
@@ -1323,14 +1483,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 15765,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 23278,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 3680,
       },
     },
@@ -1344,14 +1507,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 15981,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 23597,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 3730,
       },
     },
@@ -1365,10 +1531,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 6752,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 8297,
       },
     },
@@ -1382,10 +1550,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 6842,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 8408,
       },
     },
@@ -1399,10 +1569,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 6931,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 8518,
       },
     },
@@ -1416,10 +1588,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 7290,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 8960,
       },
     },
@@ -1433,10 +1607,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 7383,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 9075,
       },
     },
@@ -1450,10 +1626,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 7476,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 9190,
       },
     },
@@ -1467,10 +1645,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 7849,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 9649,
       },
     },
@@ -1484,10 +1664,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 7946,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 9768,
       },
     },
@@ -1501,10 +1683,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 8042,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 9887,
       },
     },
@@ -1518,10 +1702,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 8429,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 10363,
       },
     },
@@ -1535,10 +1721,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 8529,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 10486,
       },
     },
@@ -1552,10 +1740,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 8629,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 10609,
       },
     },
@@ -1569,14 +1759,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 22536,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 33287,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 5255,
       },
     },
@@ -1590,14 +1783,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 22795,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 33670,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 5315,
       },
     },
@@ -1611,14 +1807,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 23053,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 34052,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 5375,
       },
     },
@@ -1632,10 +1831,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 9650,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 11867,
       },
     },
@@ -1649,10 +1850,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 9757,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 11999,
       },
     },
@@ -1666,10 +1869,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 9864,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 12131,
       },
     },
@@ -1683,10 +1888,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 10292,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 12658,
       },
     },
@@ -1700,10 +1907,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 10402,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 12794,
       },
     },
@@ -1717,10 +1926,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 10513,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 12930,
       },
     },
@@ -1734,10 +1945,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 10954,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 13474,
       },
     },
@@ -1751,10 +1964,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 11068,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 13614,
       },
     },
@@ -1768,10 +1983,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 11182,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 13754,
       },
     },
@@ -1785,10 +2002,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 11637,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 14315,
       },
     },
@@ -1802,10 +2021,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 11755,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 14460,
       },
     },
@@ -1819,10 +2040,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 11872,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 14604,
       },
     },
@@ -1836,14 +2059,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 30816,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 45527,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 7180,
       },
     },
@@ -1857,14 +2083,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 31118,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 45973,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 7250,
       },
     },
@@ -1878,14 +2107,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 31419,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 46420,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 7320,
       },
     },
@@ -1899,10 +2131,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 13065,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 16075,
       },
     },
@@ -1916,10 +2150,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 13190,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 16228,
       },
     },
@@ -1933,10 +2169,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 13314,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 16381,
       },
     },
@@ -1950,10 +2188,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 13811,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 16993,
       },
     },
@@ -1967,10 +2207,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 13938,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 17150,
       },
     },
@@ -1984,10 +2226,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 14066,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 17307,
       },
     },
@@ -2001,10 +2245,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 14577,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 17936,
       },
     },
@@ -2018,10 +2264,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 14708,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 18098,
       },
     },
@@ -2035,10 +2283,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 14839,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 18259,
       },
     },
@@ -2052,10 +2302,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 15363,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 18905,
       },
     },
@@ -2069,10 +2321,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 15498,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 19071,
       },
     },
@@ -2086,10 +2340,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 15632,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 19237,
       },
     },
@@ -2103,14 +2359,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 40389,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 59680,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 9405,
       },
     },
@@ -2124,14 +2383,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 40734,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 60190,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 9485,
       },
     },
@@ -2145,14 +2407,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 41080,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 60700,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 9565,
       },
     },
@@ -2166,10 +2431,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 16999,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 20920,
       },
     },
@@ -2183,10 +2450,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 17140,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 21094,
       },
     },
@@ -2200,10 +2469,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 17281,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 21268,
       },
     },
@@ -2217,10 +2488,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 17847,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 21965,
       },
     },
@@ -2234,10 +2507,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 17992,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 22144,
       },
     },
@@ -2251,10 +2526,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 18137,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 22322,
       },
     },
@@ -2268,10 +2545,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 18717,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 23036,
       },
     },
@@ -2285,10 +2564,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 18865,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 23219,
       },
     },
@@ -2302,10 +2583,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 19013,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 23402,
       },
     },
@@ -2319,10 +2602,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 19607,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 24133,
       },
     },
@@ -2336,10 +2621,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 19759,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 24320,
       },
     },
@@ -2353,10 +2640,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 19910,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 24507,
       },
     },
@@ -2370,14 +2659,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 51257,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 75745,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 11930,
       },
     },
@@ -2391,14 +2683,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 51645,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 76318,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 12020,
       },
     },
@@ -2412,14 +2707,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 52033,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 76892,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 12110,
       },
     },
@@ -2433,10 +2731,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 21449,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 26402,
       },
     },
@@ -2450,10 +2750,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 21608,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 26598,
       },
     },
@@ -2467,10 +2769,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 21766,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 26793,
       },
     },
@@ -2484,10 +2788,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 22401,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 27575,
       },
     },
@@ -2501,10 +2807,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 22563,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 27775,
       },
     },
@@ -2518,10 +2826,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 22726,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 27975,
       },
     },
@@ -2535,10 +2845,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 23374,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 28774,
       },
     },
@@ -2552,10 +2864,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 23540,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 28978,
       },
     },
@@ -2569,10 +2883,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 23705,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 29182,
       },
     },
@@ -2586,10 +2902,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 24368,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 29998,
       },
     },
@@ -2603,10 +2921,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 24537,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 30206,
       },
     },
@@ -2620,10 +2940,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 24706,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 30414,
       },
     },
@@ -2637,14 +2959,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 63418,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 93722,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 14755,
       },
     },
@@ -2658,14 +2983,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 63849,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 94360,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 14855,
       },
     },
@@ -2679,14 +3007,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 64281,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 94997,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 14955,
       },
     },
@@ -2700,10 +3031,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 26417,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 32522,
       },
     },
@@ -2717,10 +3050,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 26593,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 32739,
       },
     },
@@ -2734,10 +3069,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 26769,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 32956,
       },
     },
@@ -2751,10 +3088,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 27473,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 33823,
       },
     },
@@ -2768,10 +3107,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 27652,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 34044,
       },
     },
@@ -2785,10 +3126,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 27831,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 34265,
       },
     },
@@ -2802,10 +3145,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 28549,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 35149,
       },
     },
@@ -2819,10 +3164,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 28732,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 35374,
       },
     },
@@ -2836,10 +3183,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 28915,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 35599,
       },
     },
@@ -2853,10 +3202,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 29646,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 36500,
       },
     },
@@ -2870,10 +3221,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 29832,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 36730,
       },
     },
@@ -2887,10 +3240,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 30019,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 36959,
       },
     },
@@ -2904,14 +3259,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 76873,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 113612,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 17880,
       },
     },
@@ -2925,14 +3283,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 77348,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 114313,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 17990,
       },
     },
@@ -2946,14 +3307,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 77822,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 115015,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 18100,
       },
     },
@@ -2967,10 +3331,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 31902,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 39280,
       },
     },
@@ -2984,10 +3350,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 32096,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 39518,
       },
     },
@@ -3001,10 +3369,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 32289,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 39756,
       },
     },
@@ -3018,10 +3388,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 33062,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 40708,
       },
     },
@@ -3035,10 +3407,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 33258,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 40950,
       },
     },
@@ -3052,10 +3426,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 33455,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 41192,
       },
     },
@@ -3069,10 +3445,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 34242,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 42161,
       },
     },
@@ -3086,10 +3464,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 34442,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 42408,
       },
     },
@@ -3103,10 +3483,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 34642,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 42654,
       },
     },
@@ -3120,10 +3502,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 35442,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 43640,
       },
     },
@@ -3137,10 +3521,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 35646,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 43891,
       },
     },
@@ -3154,10 +3540,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 35849,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 44142,
       },
     },
@@ -3171,14 +3559,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 91622,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 135415,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 21305,
       },
     },
@@ -3192,14 +3583,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 92140,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 136180,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 21425,
       },
     },
@@ -3213,14 +3607,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 92657,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 136945,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 21545,
       },
     },
@@ -3234,10 +3631,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 37906,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 46675,
       },
     },
@@ -3251,10 +3650,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 38116,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 46934,
       },
     },
@@ -3268,10 +3669,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 38326,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 47193,
       },
     },
@@ -3285,10 +3688,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 39168,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 48230,
       },
     },
@@ -3302,10 +3707,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 39382,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 48494,
       },
     },
@@ -3319,10 +3726,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 39596,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 48757,
       },
     },
@@ -3336,10 +3745,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 40452,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 49811,
       },
     },
@@ -3353,10 +3764,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 40669,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 50079,
       },
     },
@@ -3370,10 +3783,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 40886,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 50347,
       },
     },
@@ -3387,10 +3802,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 41756,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 51418,
       },
     },
@@ -3404,10 +3821,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 41977,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 51690,
       },
     },
@@ -3421,10 +3840,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 42197,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 51962,
       },
     },
@@ -3438,14 +3859,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 107665,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 159130,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 25030,
       },
     },
@@ -3459,14 +3883,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 108225,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 159958,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 25160,
       },
     },
@@ -3480,14 +3907,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 108786,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 160787,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 25290,
       },
     },
@@ -3501,10 +3931,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 44426,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 54707,
       },
     },
@@ -3518,10 +3950,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 44654,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 54988,
       },
     },
@@ -3535,10 +3969,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 44881,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 55268,
       },
     },
@@ -3552,10 +3988,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 45792,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 56390,
       },
     },
@@ -3569,10 +4007,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 46023,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 56675,
       },
     },
@@ -3586,10 +4026,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 46255,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 56960,
       },
     },
@@ -3603,10 +4045,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 47179,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 58099,
       },
     },
@@ -3620,10 +4064,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 47414,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 58388,
       },
     },
@@ -3637,10 +4083,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 47648,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 58677,
       },
     },
@@ -3654,10 +4102,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 48587,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 59833,
       },
     },
@@ -3671,10 +4121,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 48825,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 60126,
       },
     },
@@ -3688,10 +4140,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 49063,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 60419,
       },
     },
@@ -3705,14 +4159,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 125001,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 184757,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 29055,
       },
     },
@@ -3726,14 +4183,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 125604,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 185650,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 29195,
       },
     },
@@ -3747,14 +4207,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 126208,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 186542,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 29335,
       },
     },
@@ -3768,10 +4231,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 51464,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 63377,
       },
     },
@@ -3785,10 +4250,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 51709,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 63679,
       },
     },
@@ -3802,10 +4269,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 51954,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 63981,
       },
     },
@@ -3819,10 +4288,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 52934,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 65188,
       },
     },
@@ -3836,10 +4307,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 53182,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 65494,
       },
     },
@@ -3853,10 +4326,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 53430,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 65800,
       },
     },
@@ -3870,10 +4345,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 54424,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 67024,
       },
     },
@@ -3887,10 +4364,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 54676,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 67334,
       },
     },
@@ -3904,10 +4383,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 54928,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 67644,
       },
     },
@@ -3921,10 +4402,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 55935,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 68885,
       },
     },
@@ -3938,10 +4421,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 56190,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 69200,
       },
     },
@@ -3955,10 +4440,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 56446,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 69514,
       },
     },
@@ -3972,14 +4459,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 143631,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 212297,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 33380,
       },
     },
@@ -3993,14 +4483,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 144278,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 213253,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 33530,
       },
     },
@@ -4014,14 +4507,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 144924,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 214210,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 33680,
       },
     },
@@ -4035,10 +4531,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 59019,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 72685,
       },
     },
@@ -4052,10 +4550,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 59282,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 73008,
       },
     },
@@ -4069,10 +4569,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 59544,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 73331,
       },
     },
@@ -4086,10 +4588,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 60593,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 74623,
       },
     },
@@ -4103,10 +4607,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 60858,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 74950,
       },
     },
@@ -4120,10 +4626,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 61124,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 75277,
       },
     },
@@ -4137,10 +4645,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 62187,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 76586,
       },
     },
@@ -4154,10 +4664,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 62456,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 76918,
       },
     },
@@ -4171,10 +4683,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 62725,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 77249,
       },
     },
@@ -4188,10 +4702,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 63801,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 78575,
       },
     },
@@ -4205,10 +4721,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 64074,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 78911,
       },
     },
@@ -4222,10 +4740,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 64346,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 79247,
       },
     },
@@ -4239,14 +4759,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 163554,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 241750,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 38005,
       },
     },
@@ -4260,14 +4783,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 164245,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 242770,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 38165,
       },
     },
@@ -4281,14 +4807,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 164935,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 243790,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 38325,
       },
     },
@@ -4302,10 +4831,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 67093,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 82630,
       },
     },
@@ -4319,10 +4850,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 67372,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 82974,
       },
     },
@@ -4336,10 +4869,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 67651,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 83318,
       },
     },
@@ -4353,10 +4888,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 68769,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 84695,
       },
     },
@@ -4370,10 +4907,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 69052,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 85044,
       },
     },
@@ -4387,10 +4926,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 69335,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 85392,
       },
     },
@@ -4404,10 +4945,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 70467,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 86786,
       },
     },
@@ -4421,10 +4964,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 70753,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 87139,
       },
     },
@@ -4438,10 +4983,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 71039,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 87492,
       },
     },
@@ -4455,10 +5002,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 72185,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 88903,
       },
     },
@@ -4472,10 +5021,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 72475,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 89260,
       },
     },
@@ -4489,10 +5040,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 72764,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 89617,
       },
     },
@@ -4506,14 +5059,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 184772,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 273115,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 42930,
       },
     },
@@ -4527,14 +5083,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 185505,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 274198,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 43100,
       },
     },
@@ -4548,14 +5107,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 186238,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 275282,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 43270,
       },
     },
@@ -4569,10 +5131,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 75683,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 93212,
       },
     },
@@ -4586,10 +5150,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 75980,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 93578,
       },
     },
@@ -4603,10 +5169,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 76276,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 93943,
       },
     },
@@ -4620,10 +5188,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 77463,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 95405,
       },
     },
@@ -4637,10 +5207,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 77763,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 95775,
       },
     },
@@ -4654,10 +5226,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 78064,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 96145,
       },
     },
@@ -4671,10 +5245,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 79264,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 97624,
       },
     },
@@ -4688,10 +5264,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 79568,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 97998,
       },
     },
@@ -4705,10 +5283,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 79871,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 98372,
       },
     },
@@ -4722,10 +5302,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 81086,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 99868,
       },
     },
@@ -4739,10 +5321,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 81393,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 100246,
       },
     },
@@ -4756,10 +5340,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 81700,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 100624,
       },
     },
@@ -4773,14 +5359,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 207283,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 306392,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 48155,
       },
     },
@@ -4794,14 +5383,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 208060,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 307540,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 48335,
       },
     },
@@ -4815,14 +5407,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 208836,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 308687,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 48515,
       },
     },
@@ -4836,10 +5431,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 84791,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 104432,
       },
     },
@@ -4853,10 +5450,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 85105,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 104819,
       },
     },
@@ -4870,10 +5469,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 85419,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 105206,
       },
     },
@@ -4887,10 +5488,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 86675,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 106753,
       },
     },
@@ -4904,10 +5507,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 86992,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 107144,
       },
     },
@@ -4921,10 +5526,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 87310,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 107535,
       },
     },
@@ -4938,10 +5545,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 88579,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 109099,
       },
     },
@@ -4955,10 +5564,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 88900,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 109494,
       },
     },
@@ -4972,10 +5583,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 89221,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 109889,
       },
     },
@@ -4989,10 +5602,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 90504,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 111470,
       },
     },
@@ -5006,10 +5621,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 90829,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 111870,
       },
     },
@@ -5023,10 +5640,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 91153,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 112269,
       },
     },
@@ -5040,14 +5659,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 231088,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 341582,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 53680,
       },
     },
@@ -5061,14 +5683,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 231908,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 342793,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 53870,
       },
     },
@@ -5082,14 +5707,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 232727,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 344005,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 54060,
       },
     },
@@ -5103,10 +5731,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 94416,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 116290,
       },
     },
@@ -5120,10 +5750,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 94748,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 116698,
       },
     },
@@ -5137,10 +5769,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 95079,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 117106,
       },
     },
@@ -5154,10 +5788,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 96404,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 118738,
       },
     },
@@ -5171,10 +5807,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 96738,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 119150,
       },
     },
@@ -5188,10 +5826,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 97073,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 119562,
       },
     },
@@ -5205,10 +5845,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 98412,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 121211,
       },
     },
@@ -5222,10 +5864,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 98750,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 121628,
       },
     },
@@ -5239,10 +5883,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 99088,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 122044,
       },
     },
@@ -5256,10 +5902,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 100440,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 123710,
       },
     },
@@ -5273,10 +5921,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 100782,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 124131,
       },
     },
@@ -5290,10 +5940,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 101123,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 124552,
       },
     },
@@ -5307,14 +5959,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 256187,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 378685,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 59505,
       },
     },
@@ -5328,14 +5983,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 257049,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 379960,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 59705,
       },
     },
@@ -5349,14 +6007,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 257912,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 381235,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 59905,
       },
     },
@@ -5370,10 +6031,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 104559,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 128785,
       },
     },
@@ -5387,10 +6050,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 104908,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 129214,
       },
     },
@@ -5404,10 +6069,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 105256,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 129643,
       },
     },
@@ -5421,10 +6088,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 106650,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 131360,
       },
     },
@@ -5438,10 +6107,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 107002,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 131794,
       },
     },
@@ -5455,10 +6126,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 107354,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 132227,
       },
     },
@@ -5472,10 +6145,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 108762,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 133961,
       },
     },
@@ -5489,10 +6164,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 109117,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 134399,
       },
     },
@@ -5506,10 +6183,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 109472,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 134837,
       },
     },
@@ -5523,10 +6202,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 110894,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 136588,
       },
     },
@@ -5540,10 +6221,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 111252,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 137030,
       },
     },
@@ -5557,10 +6240,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 111611,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 137472,
       },
     },
@@ -5574,14 +6259,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 282579,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 417700,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 65630,
       },
     },
@@ -5595,14 +6283,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 283485,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 419038,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 65840,
       },
     },
@@ -5616,14 +6307,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 284391,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 420377,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 66050,
       },
     },
@@ -5637,10 +6331,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 115220,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 141917,
       },
     },
@@ -5654,10 +6350,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 115586,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 142368,
       },
     },
@@ -5671,10 +6369,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 115951,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 142818,
       },
     },
@@ -5688,10 +6388,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 117414,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 144620,
       },
     },
@@ -5705,10 +6407,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 117783,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 145075,
       },
     },
@@ -5722,10 +6426,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 118152,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 145530,
       },
     },
@@ -5739,10 +6445,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 119629,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 147349,
       },
     },
@@ -5756,10 +6464,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 120002,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 147808,
       },
     },
@@ -5773,10 +6483,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 120374,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 148267,
       },
     },
@@ -5790,10 +6502,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 121865,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 150103,
       },
     },
@@ -5807,10 +6521,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 122241,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 150566,
       },
     },
@@ -5824,10 +6540,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 122617,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 151029,
       },
     },
@@ -5841,14 +6559,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 310266,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 458627,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 72055,
       },
     },
@@ -5862,14 +6583,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 311214,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 460030,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 72275,
       },
     },
@@ -5883,14 +6607,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 312163,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 461432,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 72495,
       },
     },
@@ -5904,10 +6631,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 126398,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 155687,
       },
     },
@@ -5921,10 +6650,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 126781,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 156159,
       },
     },
@@ -5938,10 +6669,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 127164,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 156631,
       },
     },
@@ -5955,10 +6688,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 128696,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 158518,
       },
     },
@@ -5972,10 +6707,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 129082,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 158994,
       },
     },
@@ -5989,10 +6726,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 129468,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 159470,
       },
     },
@@ -6006,10 +6745,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 131014,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 161374,
       },
     },
@@ -6023,10 +6764,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 131404,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 161854,
       },
     },
@@ -6040,10 +6783,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 131794,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 162334,
       },
     },
@@ -6057,10 +6802,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 133353,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 164255,
       },
     },
@@ -6074,10 +6821,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 133747,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 164740,
       },
     },
@@ -6091,10 +6840,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 134140,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 165224,
       },
     },
@@ -6108,14 +6859,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 339246,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 501467,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 78780,
       },
     },
@@ -6129,14 +6883,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 340238,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 502933,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 79010,
       },
     },
@@ -6150,14 +6907,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 341230,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 504400,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 79240,
       },
     },
@@ -6171,10 +6931,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 138094,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 170095,
       },
     },
@@ -6188,10 +6950,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 138494,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 170588,
       },
     },
@@ -6205,10 +6969,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 138894,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 171081,
       },
     },
@@ -6222,10 +6988,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 140495,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 173053,
       },
     },
@@ -6239,10 +7007,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 140898,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 173550,
       },
     },
@@ -6256,10 +7026,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 141302,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 174047,
       },
     },
@@ -6273,10 +7045,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 142917,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 176036,
       },
     },
@@ -6290,10 +7064,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 143324,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 176538,
       },
     },
@@ -6307,10 +7083,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 143731,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 177039,
       },
     },
@@ -6324,10 +7102,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 145359,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 179045,
       },
     },
@@ -6341,10 +7121,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 145770,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 179551,
       },
     },
@@ -6358,10 +7140,12 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 146180,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 180057,
       },
     },
@@ -6375,14 +7159,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 0,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 546220,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 85805,
       },
     },
@@ -6396,14 +7183,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 0,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 547750,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 86045,
       },
     },
@@ -6417,14 +7207,17 @@ export const ENEMIES: Enemy = {
     drops: {
       exp: {
         name: 'Exp',
+        image: 'src/assets/images/experience_icon.png',
         amount: 0,
       },
       GIL: {
         name: 'Gil',
+        image: 'src/assets/images/currency_gil.png',
         amount: 549280,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
+        image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 86285,
       },
     },
