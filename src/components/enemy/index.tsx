@@ -44,8 +44,8 @@ export const Enemy = () => {
         </div>
 
         <ProgressBar
-          currentValue={activeEnemy.currentHP.toLocaleString()}
-          maxValue={activeEnemy.maxHP.toLocaleString()}
+          currentValue={activeEnemy.currentHP}
+          maxValue={activeEnemy.maxHP}
         />
       </div>
 
