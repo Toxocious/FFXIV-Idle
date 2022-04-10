@@ -28,21 +28,24 @@ export const Enemy = () => {
           gap: 5,
         }}
       >
-        <div style={{
-          display: 'flex',
-          alignItems: 'baseline',
-          gap: 5
-        }}>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'baseline',
+            gap: 5,
+          }}
+        >
           <h2>{activeEnemy.name}</h2>
           <b>Lv.</b> {activeEnemy.level}
         </div>
         <div style={{ marginLeft: 'auto' }}>
-          <b>Health:</b> {activeEnemy.currentHP} / {activeEnemy.maxHP}
+          <b>Health:</b> {activeEnemy.currentHP.toLocaleString()} /{' '}
+          {activeEnemy.maxHP.toLocaleString()}
         </div>
 
         <ProgressBar
-          currentValue={activeEnemy.currentHP}
-          maxValue={activeEnemy.maxHP}
+          currentValue={activeEnemy.currentHP.toLocaleString()}
+          maxValue={activeEnemy.maxHP.toLocaleString()}
         />
       </div>
 
@@ -68,7 +71,7 @@ export const Enemy = () => {
             {Object.keys(activeEnemy.drops).map((drop: any) => (
               <div key={drop}>
                 <b>{activeEnemy.drops[drop].name}</b>:{' '}
-                {activeEnemy.drops[drop].amount}
+                {activeEnemy.drops[drop].amount.toLocaleString()}
               </div>
             ))}
           </div>
