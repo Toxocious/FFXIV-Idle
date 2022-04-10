@@ -47,7 +47,7 @@ export const GameWindow = ({}) => {
       <div className='body'>
         <div className='header'>
           <div className='view'>
-            <b style={{ fontSize: 18 }}>FFXIV &mdash; Incremental</b>
+            <b style={{ fontSize: 18 }}>FFXIV &mdash; An Incremental Game</b>
           </div>
         </div>
 
