@@ -64,7 +64,7 @@ export const Enemy = () => {
               alignItems: 'center',
               display: 'flex',
               flexDirection: 'row',
-              gap: 10,
+              gap: '1rem',
               maxHeight: 146,
               overflow: 'scroll',
             }}
@@ -72,13 +72,14 @@ export const Enemy = () => {
             {Object.keys(activeEnemy.drops).map((drop: any) => (
               <div
                 key={drop}
+                className='slot'
                 style={{
                   alignItems: 'center',
                   display: 'flex',
                   flexDirection: 'column',
                 }}
               >
-                <div>
+                <div className='icon'>
                   <img
                     src={activeEnemy.drops[drop].image}
                     height={32}
@@ -86,7 +87,9 @@ export const Enemy = () => {
                     title={activeEnemy.drops[drop].name}
                   />
                 </div>
-                <div>{activeEnemy.drops[drop].amount.toLocaleString()}</div>
+                <div className='value'>
+                  {activeEnemy.drops[drop].amount.toLocaleString()}
+                </div>
               </div>
             ))}
           </div>
