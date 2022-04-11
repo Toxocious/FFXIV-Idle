@@ -34,10 +34,9 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
       }
 
       if (activeEnemy.currentHP > 0) {
-        let randomMult = Math.floor(Math.random() * 15) + 1;
-        let damageRoll = Math.floor(
-          ACTIVE_JOB_DATA.level * 5 * randomMult * 1.1
-        );
+        let randomMult =
+          Math.floor(Math.random() * (ACTIVE_JOB_DATA.level * 0.4)) + 1;
+        let damageRoll = Math.floor(ACTIVE_JOB_DATA.level * 5 * randomMult);
 
         if (damageRoll > activeEnemy.currentHP) {
           damageRoll = activeEnemy.currentHP;
