@@ -1,6 +1,7 @@
 import { useStore } from '../../providers/game';
 
 import { ProgressBar } from '../../components/progress-bar';
+import { Slot } from '../../components/slot';
 
 export const Enemy = () => {
   const { activeEnemy } = useStore();
@@ -59,6 +60,8 @@ export const Enemy = () => {
       >
         <div>
           <h2>Drops</h2>
+          <br />
+
           <div
             style={{
               alignItems: 'center',
@@ -70,27 +73,13 @@ export const Enemy = () => {
             }}
           >
             {Object.keys(activeEnemy.drops).map((drop: any) => (
-              <div
-                key={drop}
-                className='slot'
-                style={{
-                  alignItems: 'center',
-                  display: 'flex',
-                  flexDirection: 'column',
-                }}
-              >
-                <div className='icon'>
-                  <img
-                    src={activeEnemy.drops[drop].image}
-                    height={32}
-                    alt={activeEnemy.drops[drop].name}
-                    title={activeEnemy.drops[drop].name}
-                  />
-                </div>
-                <div className='value'>
-                  {activeEnemy.drops[drop].amount.toLocaleString()}
-                </div>
-              </div>
+              <>
+                <Slot
+                  image={activeEnemy.drops[drop].image}
+                  name={activeEnemy.drops[drop].name}
+                  amount={activeEnemy.drops[drop].amount}
+                />
+              </>
             ))}
           </div>
         </div>
