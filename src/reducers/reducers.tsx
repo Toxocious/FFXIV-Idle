@@ -3,6 +3,7 @@ import cloneDeep from 'lodash.clonedeep';
 import { ACTIONS } from '../actions/actions';
 
 import { JOBS } from '../constants/jobs';
+import { ITEMS } from '../constants/items';
 import { CURRENCIES } from '../constants/currencies';
 import { LEVEL_EXP } from '../constants/level-exp';
 
@@ -60,9 +61,7 @@ export const storeReducer = (store: any, action: any) => {
       let Jobs = cloneDeep(store.jobs);
 
       Object.keys(drops).map((dropID) => {
-        if (dropID in CURRENCIES) {
-          Currencies[dropID].value += drops[dropID].amount;
-        } else if (dropID === 'exp') {
+        if (dropID === 'exp') {
           const ACTIVE_JOB: any = Object.keys(Jobs).filter(
             (job: any) => Jobs[job].active === true
           );
@@ -81,14 +80,33 @@ export const storeReducer = (store: any, action: any) => {
               Jobs[ACTIVE_JOB].exp
             ).LEVEL;
           }
+        } else if (dropID in CURRENCIES) {
+          Currencies[dropID].amount += drops[dropID].amount;
+        } else if (dropID in ITEMS) {
+          const ITEM_DROP = ITEMS[dropID];
+
+          let dropAmount: number = 0;
+          if (ITEM_DROP.minAmount !== ITEM_DROP.maxAmount) {
+            dropAmount = Math.floor(Math.random() * ITEM_DROP.maxAmount);
+          } else {
+            dropAmount = ITEM_DROP.minAmount;
+          }
+
+          if (typeof Items[dropID] === 'undefined') {
+            Items[dropID] = {
+              amount: dropAmount,
+            };
+          } else {
+            Items[dropID].amount += dropAmount;
+          }
         }
       });
 
       return {
         ...store,
         currencies: Currencies,
-        items: Items,
         jobs: Jobs,
+        items: Items,
       };
 
     default:
