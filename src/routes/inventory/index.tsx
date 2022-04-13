@@ -20,13 +20,15 @@ export function InventoryWindow() {
           gap: '1em 0.9em',
         }}
       >
-        {Object.keys(items).map((item) => (
-          <Slot
-            index={item}
-            amount={items[item].amount}
-            displayDropChance={false}
-          />
-        ))}
+        {Object.keys(items)
+          .filter((item) => items[item].amount > 0)
+          .map((item) => (
+            <Slot
+              index={item}
+              amount={items[item].amount}
+              displayDropChance={false}
+            />
+          ))}
       </div>
     </>
   );
