@@ -221,7 +221,7 @@ export const ITEMS: Item = {
     maxAmount: 1,
     dropChance: 10,
   },
-  RED_LANDLTRAP_LEAF: {
+  RED_LANDTRAP_LEAF: {
     name: 'Red Landtrap Leaf',
     image: 'src/assets/images/items/red_landtrap_leaf.png',
     minAmount: 1,
