@@ -1,4 +1,15 @@
 .active-job
 {
   margin-top: auto;
+  transition: display 150ms ease-in-out;
+}
+
+.active-job:hover .job-change
+{
+  display: block;
+}
+
+.active-job .job-change
+{
+  display: none;
 }

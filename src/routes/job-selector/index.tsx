@@ -1,6 +1,6 @@
 import { useStore } from '../../providers/game';
 import { JOBS } from '../../constants/jobs';
-import { JobButton } from '../job-button';
+import { JobButton } from '../../components/job-button';
 
 import './index.css';
 
@@ -64,11 +64,14 @@ const JobEntry = (props: Props) => {
   );
 };
 
-export const Jobs = (props: Props) => {
+export const JobSelector = (props: Props) => {
   const { jobs } = useStore();
 
   return (
     <div className='job-container'>
+      <div style={{ width: '100%' }}>
+        <h2>Select Your Job Class</h2>
+      </div>
       {Object.keys(JOBS).map((jobID) => (
         <JobEntry
           key={jobID}

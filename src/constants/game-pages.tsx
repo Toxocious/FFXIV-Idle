@@ -40,4 +40,10 @@ export const GAME_PAGES: Page = {
     link: '/inventory',
     unlocked: true,
   },
+  5: {
+    id: 6,
+    name: 'Job Selector',
+    link: '/job-selector',
+    unlocked: false,
+  },
 };

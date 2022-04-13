@@ -5,10 +5,9 @@ import { ChangeActivePage } from '../../actions/actions';
 
 import { GetActiveJob } from '../../utils/get-active-job';
 
-import { JobSelector } from '../../components/job-selector';
-
 import { ChangelogWindow } from '../../routes/changelog';
 import { ShopWindow } from '../../routes/shop';
+import { JobSelector } from '../../routes/job-selector';
 import { StatsWindow } from '../../routes/stats';
 import { BattleWindow } from '../../routes/battle';
 import { CraftingWindow } from '../../routes/crafting';
@@ -21,7 +20,7 @@ export const GameWindow = ({}) => {
 
   let WhatToRender: any;
   if (typeof ActiveJob === 'undefined') {
-    WhatToRender = <JobSelector />;
+    WhatToRender = <JobSelector clickToSwitch={true} />;
   } else {
     WhatToRender = (
       <Routes>
@@ -32,6 +31,10 @@ export const GameWindow = ({}) => {
         <Route path='/gathering' element={<GatheringWindow />} />
         <Route path='/shop' element={<ShopWindow />} />
         <Route path='/inventory' element={<InventoryWindow />} />
+        <Route
+          path='/job-selector'
+          element={<JobSelector showLevel={true} clickToSwitch={true} />}
+        />
       </Routes>
     );
   }

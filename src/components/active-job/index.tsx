@@ -1,10 +1,18 @@
+import { Link } from 'react-router-dom';
+
+import { useDispatch } from '../../providers/game';
+import { ChangeActivePage } from '../../actions/actions';
+
 import { CalcLevelFromExp } from '../../utils/calc-level';
 import { GetActiveJob } from '../../utils/get-active-job';
+
+import { JobSelector } from '../../routes/job-selector';
 
 import './index.css';
 
 // @ts-ignore
 export const ActiveJob = ({}) => {
+  const dispatch = useDispatch();
   const JOB_DATA: any = GetActiveJob();
 
   if (typeof JOB_DATA === 'undefined') {
@@ -19,7 +27,7 @@ export const ActiveJob = ({}) => {
         <div className='body'>
           <div className='header'>
             <div className='view'>
-              <span
+              <div
                 className={JOB_DATA.className}
                 style={{
                   display: 'flex',
@@ -27,9 +35,21 @@ export const ActiveJob = ({}) => {
                   gap: '1rem',
                 }}
               >
-                <i className={JOB_DATA.iconName}></i>
-                <b style={{ fontSize: 18 }}>{JOB_DATA.name}</b>
-              </span>
+                <div>
+                  <i className={JOB_DATA.iconName}></i>
+                </div>
+                <div>
+                  <b style={{ fontSize: 18 }}>{JOB_DATA.name}</b>
+                  <div className='job-change'>
+                    <Link
+                      to='/job-selector'
+                      onClick={() => dispatch(ChangeActivePage(5))}
+                    >
+                      Change Job
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
