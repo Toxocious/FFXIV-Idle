@@ -33,7 +33,6 @@ export const Slot = (props: Props) => {
     };
   } else if (index in ITEMS) {
     DROP_DATA = ITEMS[index];
-    console.log('[Slot] Item:', name, amount, minAmount, maxAmount, DROP_DATA);
 
     if (amount) {
       DROP_DATA.amount = amount;
