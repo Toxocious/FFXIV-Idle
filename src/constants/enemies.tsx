@@ -3713,7 +3713,7 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 21305,
       },
-      EARTH_SPRITE: null,
+      EARTH_CRYSTAL: null,
       LUMINOUS_CRYSTAL: null,
     },
   },
