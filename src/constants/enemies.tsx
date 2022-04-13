@@ -12,18 +12,18 @@ interface EnemyProps {
 }
 
 interface EnemyDrop {
-  [dropIndex: string]: EnemyDrops;
+  [dropIndex: string]: EnemyDrops | null;
 }
 
 interface EnemyDrops {
-  name: string;
-  amount: number;
-  image: string;
+  name?: string;
+  amount?: number;
+  image?: string;
 }
 
 export const ENEMIES: Enemy = {
   0: {
-    name: 'Cochineal Cactuar',
+    name: 'Roseling',
     boss: false,
     level: 1,
     maxHP: 15,
@@ -39,6 +39,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 10,
       },
+      RED_LANDTRAP_LEAF: null,
+      BLUE_LANDTRAP_LEAF: null,
+      ICETRAP_LEAF: null,
+      FRESH_MILKROOT: null,
     },
   },
   1: {
@@ -58,10 +62,22 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 14,
       },
+      ANIMAL_HIDE: {
+        name: 'Animal Hide',
+      },
+      DODO_EGG: {
+        name: 'Dodo Egg',
+      },
+      DODO_FEATHER: {
+        name: 'Dodo Feather',
+      },
+      DODO_TENDERLOIN: {
+        name: 'Dodo Tenderloin',
+      },
     },
   },
   2: {
-    name: 'Island Crab',
+    name: 'Puk Hatchling',
     boss: false,
     level: 1,
     maxHP: 25,
@@ -77,10 +93,12 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 18,
       },
+      PUK_EGG: null,
+      PUK_WING: null,
     },
   },
   3: {
-    name: 'Dormouse',
+    name: 'Nutmuncher Marmot',
     boss: false,
     level: 2,
     maxHP: 46,
@@ -96,10 +114,12 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 35,
       },
+      ANIMAL_SKIN: null,
+      MARMOT_BLOOD: null,
     },
   },
   4: {
-    name: 'Syrphid Cloud',
+    name: 'Coeurl Pup',
     boss: false,
     level: 2,
     maxHP: 56,
@@ -115,10 +135,12 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 44,
       },
+      ANIMAL_HIDE: null,
+      COEURL_SKIN: null,
     },
   },
   5: {
-    name: 'Wandering Wisp',
+    name: 'Naked Shrew',
     boss: false,
     level: 2,
     maxHP: 66,
@@ -152,6 +174,9 @@ export const ENEMIES: Enemy = {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
         amount: 86,
+      },
+      JACKAL_FANG: {
+        name: 'Jackal Fang',
       },
     },
   },
@@ -210,6 +235,9 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 163,
       },
+      LADYBUG_ELYTRON: {
+        name: 'Ladybug Elytron',
+      },
     },
   },
   10: {
@@ -248,10 +276,14 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 197,
       },
+      ALDGOAT_CHUCK: null,
+      ALDGOAT_HORN: null,
+      ANIMAL_SKIN: null,
+      BEAST_SINEW: null,
     },
   },
   12: {
-    name: 'Smolenkos',
+    name: 'Wind Sprite',
     boss: true,
     level: 5,
     maxHP: 654,
@@ -272,6 +304,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 130,
       },
+      LUMINOUS_CRYSTAL: null,
+      WIND_CRYSTAL: null,
     },
   },
   13: {
@@ -296,6 +330,9 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 140,
       },
+      BONE_CHIP: {
+        name: 'Bone Chip',
+      },
     },
   },
   14: {
@@ -319,6 +356,9 @@ export const ENEMIES: Enemy = {
         name: 'Allagan Tomestone',
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 150,
+      },
+      JELLYFISH_UMBRELLA: {
+        name: 'Jellyfish Umbrella',
       },
     },
   },
@@ -361,7 +401,7 @@ export const ENEMIES: Enemy = {
     },
   },
   17: {
-    name: 'Toxic Toad',
+    name: 'Star Marmot',
     boss: false,
     level: 6,
     maxHP: 530,
@@ -377,6 +417,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 443,
       },
+      ANIMAL_SKIN: null,
+      MARMOT_BLOOD: null,
     },
   },
   18: {
@@ -396,6 +438,9 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 545,
       },
+      ANIMAL_SKIN: null,
+      MARMOT_BLOOD: null,
+      MARMOT_PELT: null,
     },
   },
   19: {
@@ -452,6 +497,18 @@ export const ENEMIES: Enemy = {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
         amount: 724,
+      },
+      ANIMAL_HIDE: {
+        name: 'Animal Hide',
+      },
+      DODO_EGG: {
+        name: 'Dodo Egg',
+      },
+      DODO_FEATHER: {
+        name: 'Dodo Feather',
+      },
+      DODO_TENDERLOIN: {
+        name: 'Dodo Tenderloin',
       },
     },
   },
@@ -529,6 +586,9 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 966,
       },
+      RED_LANDTRAP_LEAF: {
+        name: 'Red Landtrap Leaf',
+      },
     },
   },
   26: {
@@ -551,7 +611,7 @@ export const ENEMIES: Enemy = {
     },
   },
   27: {
-    name: "Sultan's Trumpet",
+    name: 'Fire Sprite',
     boss: true,
     level: 10,
     maxHP: 2870,
@@ -572,10 +632,12 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 555,
       },
+      FIRE_SHARD: null,
+      LUMINOUS_CRYSTAL: null,
     },
   },
   28: {
-    name: 'Goobbue',
+    name: 'Lowland Billygoat',
     boss: true,
     level: 10,
     maxHP: 2975,
@@ -596,6 +658,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 575,
       },
+      ALDGOAT_CHUCK: null,
+      ALDGOAT_HORN: null,
+      ANIMAL_SKIN: null,
+      BEAST_SINEW: null,
     },
   },
   29: {
@@ -639,6 +705,9 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 1412,
       },
+      BEAST_SINEW: {
+        name: 'Beast Sinew',
+      },
     },
   },
   31: {
@@ -661,7 +730,7 @@ export const ENEMIES: Enemy = {
     },
   },
   32: {
-    name: 'Thistletail Marmot',
+    name: 'Wharf Rat',
     boss: false,
     level: 11,
     maxHP: 1785,
@@ -677,10 +746,12 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 1506,
       },
+      ANIMAL_SKIN: null,
+      MARMOT_BLOOD: null,
     },
   },
   33: {
-    name: 'Thistletail Marmot',
+    name: 'Puroboros',
     boss: false,
     level: 12,
     maxHP: 2006,
@@ -699,7 +770,7 @@ export const ENEMIES: Enemy = {
     },
   },
   34: {
-    name: 'Dodo',
+    name: 'Wild Dodo',
     boss: false,
     level: 12,
     maxHP: 2066,
@@ -715,10 +786,22 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 1744,
       },
+      ANIMAL_HIDE: {
+        name: 'Animal Hide',
+      },
+      DODO_EGG: {
+        name: 'Dodo Egg',
+      },
+      DODO_FEATHER: {
+        name: 'Dodo Feather',
+      },
+      DODO_TENDERLOIN: {
+        name: 'Dodo Tenderloin',
+      },
     },
   },
   35: {
-    name: 'Stray Dodo',
+    name: 'Prison Pteroc',
     boss: false,
     level: 12,
     maxHP: 2126,
@@ -734,10 +817,12 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 1795,
       },
+      PUK_EGG: null,
+      PUK_WING: null,
     },
   },
   36: {
-    name: 'Flamedrake',
+    name: 'Blood Dragon',
     boss: false,
     level: 13,
     maxHP: 2367,
@@ -752,6 +837,12 @@ export const ENEMIES: Enemy = {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
         amount: 1999,
+      },
+      DRAGON_BLOOD: {
+        name: 'Dragon Blood',
+      },
+      DRAGON_FANG: {
+        name: 'Dragon Fang',
       },
     },
   },
@@ -772,10 +863,13 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 2054,
       },
+      MARMOT_PELT: {
+        name: 'Marmot Pelt',
+      },
     },
   },
   38: {
-    name: 'Syrphid Swarm',
+    name: 'Jungle Coeurl',
     boss: false,
     level: 13,
     maxHP: 2497,
@@ -791,6 +885,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 2109,
       },
+      ANIMAL_HIDE: null,
+      COEURL_SKIN: null,
     },
   },
   39: {
@@ -851,7 +947,7 @@ export const ENEMIES: Enemy = {
     },
   },
   42: {
-    name: 'Morbol',
+    name: 'Lightning Sprite',
     boss: true,
     level: 15,
     maxHP: 6660,
@@ -872,6 +968,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 1280,
       },
+      LIGHTNING_CRYSTAL: null,
+      LUMINOUS_CRYSTAL: null,
     },
   },
   43: {
@@ -1075,7 +1173,7 @@ export const ENEMIES: Enemy = {
     },
   },
   53: {
-    name: 'Thistletail Marmot',
+    name: 'Snowshoe Mouse',
     boss: false,
     level: 18,
     maxHP: 4802,
@@ -1091,6 +1189,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 4064,
       },
+      ANIMAL_SKIN: null,
+      MARMOT_BLOOD: null,
     },
   },
   54: {
@@ -1148,6 +1248,18 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 4532,
       },
+      ANIMAL_HIDE: {
+        name: 'Animal Hide',
+      },
+      DODO_EGG: {
+        name: 'Dodo Egg',
+      },
+      DODO_FEATHER: {
+        name: 'Dodo Feather',
+      },
+      DODO_TENDERLOIN: {
+        name: 'Dodo Tenderloin',
+      },
     },
   },
   57: {
@@ -1175,7 +1287,7 @@ export const ENEMIES: Enemy = {
     },
   },
   58: {
-    name: 'Dodo',
+    name: 'Cockatrice',
     boss: true,
     level: 20,
     maxHP: 12236,
@@ -1196,10 +1308,22 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 2345,
       },
+      ANIMAL_HIDE: {
+        name: 'Animal Hide',
+      },
+      DODO_EGG: {
+        name: 'Dodo Egg',
+      },
+      DODO_FEATHER: {
+        name: 'Dodo Feather',
+      },
+      DODO_TENDERLOIN: {
+        name: 'Dodo Tenderloin',
+      },
     },
   },
   59: {
-    name: 'Yarzon Scavanger',
+    name: 'Crazed Sprite',
     boss: true,
     level: 20,
     maxHP: 12446,
@@ -1220,10 +1344,13 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 2385,
       },
+      FIRE_SHARD: null,
+      LIGHTNING_CRYSTAL: null,
+      LUMINOUS_CRYSTAL: null,
     },
   },
   60: {
-    name: 'Anemone',
+    name: 'Pit Coeurl',
     boss: false,
     level: 21,
     maxHP: 6335,
@@ -1239,6 +1366,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 5365,
       },
+      ANIMAL_HIDE: null,
+      COEURL_SKIN: null,
     },
   },
   61: {
@@ -1299,7 +1428,7 @@ export const ENEMIES: Enemy = {
     },
   },
   64: {
-    name: 'Wharf Rat',
+    name: '',
     boss: false,
     level: 22,
     maxHP: 7076,
@@ -1394,7 +1523,7 @@ export const ENEMIES: Enemy = {
     },
   },
   69: {
-    name: 'Cochineal Cactuar',
+    name: 'Poisonous Flytrap',
     boss: false,
     level: 24,
     maxHP: 8318,
@@ -1410,6 +1539,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 7048,
       },
+      RED_LANDTRAP_LEAF: null,
+      BLUE_LANDTRAP_LEAF: null,
+      ICETRAP_LEAF: null,
+      FRESH_MILKROOT: null,
     },
   },
   70: {
@@ -1451,7 +1584,7 @@ export const ENEMIES: Enemy = {
     },
   },
   72: {
-    name: 'Shore Slug',
+    name: 'Dark Sprite',
     boss: true,
     level: 25,
     maxHP: 18966,
@@ -1472,6 +1605,9 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 3630,
       },
+      FIRE_SHARD: null,
+      LIGHTNING_CRYSTAL: null,
+      WIND_CRYSTAL: null,
     },
   },
   73: {
@@ -1561,7 +1697,7 @@ export const ENEMIES: Enemy = {
     },
   },
   77: {
-    name: 'Blast',
+    name: 'Elder Longhorn',
     boss: false,
     level: 26,
     maxHP: 10050,
@@ -1577,10 +1713,14 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 8518,
       },
+      ALDGOAT_CHUCK: null,
+      ALDGOAT_HORN: null,
+      ANIMAL_SKIN: null,
+      BEAST_SINEW: null,
     },
   },
   78: {
-    name: 'Star Marmot',
+    name: 'Wet Rat',
     boss: false,
     level: 27,
     maxHP: 10571,
@@ -1596,6 +1736,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 8960,
       },
+      ANIMAL_SKIN: null,
+      MARMOT_BLOOD: null,
     },
   },
   79: {
@@ -1694,7 +1836,7 @@ export const ENEMIES: Enemy = {
     },
   },
   84: {
-    name: 'Dodo',
+    name: 'Diatryma',
     boss: false,
     level: 29,
     maxHP: 12223,
@@ -1709,6 +1851,18 @@ export const ENEMIES: Enemy = {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
         amount: 10363,
+      },
+      ANIMAL_HIDE: {
+        name: 'Animal Hide',
+      },
+      DODO_EGG: {
+        name: 'Dodo Egg',
+      },
+      DODO_FEATHER: {
+        name: 'Dodo Feather',
+      },
+      DODO_TENDERLOIN: {
+        name: 'Dodo Tenderloin',
       },
     },
   },
@@ -1751,7 +1905,7 @@ export const ENEMIES: Enemy = {
     },
   },
   87: {
-    name: 'Peridot Doblyn',
+    name: 'Deep-stained Sprite',
     boss: true,
     level: 30,
     maxHP: 27482,
@@ -1772,6 +1926,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 5255,
       },
+      FIRE_SHARD: null,
+      LIGHTNING_CRYSTAL: null,
+      LUMINOUS_CRYSTAL: null,
+      WIND_CRYSTAL: null,
     },
   },
   88: {
@@ -1799,7 +1957,7 @@ export const ENEMIES: Enemy = {
     },
   },
   89: {
-    name: 'Bomb',
+    name: 'Peryton',
     boss: true,
     level: 30,
     maxHP: 28112,
@@ -1820,6 +1978,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 5375,
       },
+      PUK_EGG: null,
+      PUK_WING: null,
     },
   },
   90: {
@@ -1953,6 +2113,18 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 13474,
       },
+      ANIMAL_HIDE: {
+        name: 'Animal Hide',
+      },
+      DODO_EGG: {
+        name: 'Dodo Egg',
+      },
+      DODO_FEATHER: {
+        name: 'Dodo Feather',
+      },
+      DODO_TENDERLOIN: {
+        name: 'Dodo Tenderloin',
+      },
     },
   },
   97: {
@@ -2051,7 +2223,7 @@ export const ENEMIES: Enemy = {
     },
   },
   102: {
-    name: 'Syrphid Swarm',
+    name: 'Master Coeurl',
     boss: true,
     level: 35,
     maxHP: 37572,
@@ -2072,6 +2244,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 7180,
       },
+      ANIMAL_HIDE: null,
+      COEURL_SKIN: null,
     },
   },
   103: {
@@ -2123,7 +2297,7 @@ export const ENEMIES: Enemy = {
     },
   },
   105: {
-    name: 'Cochineal Cactuar',
+    name: 'Milkroot Sapling',
     boss: false,
     level: 36,
     maxHP: 18950,
@@ -2139,6 +2313,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 16075,
       },
+      RED_LANDTRAP_LEAF: null,
+      BLUE_LANDTRAP_LEAF: null,
+      ICETRAP_LEAF: null,
+      FRESH_MILKROOT: null,
     },
   },
   106: {
@@ -2180,7 +2358,7 @@ export const ENEMIES: Enemy = {
     },
   },
   108: {
-    name: 'Qiqirn Mercenary',
+    name: 'Deepvoid Deathmouse',
     boss: false,
     level: 37,
     maxHP: 20031,
@@ -2196,10 +2374,12 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 16993,
       },
+      ANIMAL_SKIN: null,
+      MARMOT_BLOOD: null,
     },
   },
   109: {
-    name: 'Thistletail Marmot',
+    name: '',
     boss: false,
     level: 37,
     maxHP: 20216,
@@ -2218,7 +2398,7 @@ export const ENEMIES: Enemy = {
     },
   },
   110: {
-    name: 'Cactuar',
+    name: 'Val Icetrap',
     boss: false,
     level: 37,
     maxHP: 20401,
@@ -2234,6 +2414,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 17307,
       },
+      RED_LANDTRAP_LEAF: null,
+      BLUE_LANDTRAP_LEAF: null,
+      ICETRAP_LEAF: null,
+      FRESH_MILKROOT: null,
     },
   },
   111: {
@@ -2275,7 +2459,7 @@ export const ENEMIES: Enemy = {
     },
   },
   113: {
-    name: 'Rabid Jackal',
+    name: 'Mourning Billygoat',
     boss: false,
     level: 38,
     maxHP: 21522,
@@ -2291,6 +2475,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 18259,
       },
+      ALDGOAT_CHUCK: null,
+      ALDGOAT_HORN: null,
+      ANIMAL_SKIN: null,
+      BEAST_SINEW: null,
     },
   },
   114: {
@@ -2610,6 +2798,18 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 24133,
       },
+      ANIMAL_HIDE: {
+        name: 'Animal Hide',
+      },
+      DODO_EGG: {
+        name: 'Dodo Egg',
+      },
+      DODO_FEATHER: {
+        name: 'Dodo Feather',
+      },
+      DODO_TENDERLOIN: {
+        name: 'Dodo Tenderloin',
+      },
     },
   },
   130: {
@@ -2758,6 +2958,18 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 26598,
       },
+      AANIMAL_HIDE: {
+        name: 'Animal Hide',
+      },
+      DODO_EGG: {
+        name: 'Dodo Egg',
+      },
+      DODO_FEATHER: {
+        name: 'Dodo Feather',
+      },
+      DODO_TENDERLOIN: {
+        name: 'Dodo Tenderloin',
+      },
     },
   },
   137: {
@@ -2799,7 +3011,7 @@ export const ENEMIES: Enemy = {
     },
   },
   139: {
-    name: 'Pharosfly',
+    name: 'Loaghtan',
     boss: false,
     level: 47,
     maxHP: 32726,
@@ -2815,6 +3027,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 27775,
       },
+      ALDGOAT_CHUCK: null,
+      ALDGOAT_HORN: null,
+      ANIMAL_SKIN: null,
+      BEAST_SINEW: null,
     },
   },
   140: {
@@ -2894,7 +3110,7 @@ export const ENEMIES: Enemy = {
     },
   },
   144: {
-    name: 'Carrion Chiglet',
+    name: 'Dark Matter Coeurl',
     boss: false,
     level: 49,
     maxHP: 35343,
@@ -2910,6 +3126,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 29998,
       },
+      ANIMAL_HIDE: null,
+      COEURL_SKIN: null,
     },
   },
   145: {
@@ -2951,7 +3169,7 @@ export const ENEMIES: Enemy = {
     },
   },
   147: {
-    name: 'Fallen Pikeman',
+    name: 'White Joker',
     boss: true,
     level: 50,
     maxHP: 77294,
@@ -2972,6 +3190,9 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 14755,
       },
+      ANIMAL_SKIN: null,
+      BEAST_SINEW: null,
+      MARMOT_BLOOD: null,
     },
   },
   148: {
@@ -2999,7 +3220,7 @@ export const ENEMIES: Enemy = {
     },
   },
   149: {
-    name: 'Hoverfly Swarm',
+    name: 'Dark Matter Pteroc',
     boss: true,
     level: 50,
     maxHP: 78344,
@@ -3020,6 +3241,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 14955,
       },
+      PUK_EGG: null,
+      PUK_WING: null,
     },
   },
   150: {
@@ -3551,7 +3774,7 @@ export const ENEMIES: Enemy = {
     },
   },
   177: {
-    name: 'Ravenous Nannygoat',
+    name: 'Eroded Earth Sprite',
     boss: true,
     level: 60,
     maxHP: 111650,
@@ -3572,6 +3795,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 21305,
       },
+      EARTH_SPRITE: null,
+      LUMINOUS_CRYSTAL: null,
     },
   },
   178: {
@@ -3599,7 +3824,7 @@ export const ENEMIES: Enemy = {
     },
   },
   179: {
-    name: 'Flamedrake',
+    name: 'Corrupted Sprite',
     boss: true,
     level: 60,
     maxHP: 112910,
@@ -3620,6 +3845,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 21545,
       },
+      FIRE_SHARD: null,
+      LIGHTNING_CRYSTAL: null,
+      LUMINOUS_CRYSTAL: null,
+      WIND_CRYSTAL: null,
     },
   },
   180: {
@@ -3756,7 +3985,7 @@ export const ENEMIES: Enemy = {
     },
   },
   187: {
-    name: 'Flamedrake',
+    name: 'Bastet',
     boss: false,
     level: 63,
     maxHP: 58982,
@@ -3772,6 +4001,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 50079,
       },
+      ANIMAL_HIDE: null,
+      COEURL_SKIN: null,
     },
   },
   188: {
@@ -3813,7 +4044,7 @@ export const ENEMIES: Enemy = {
     },
   },
   190: {
-    name: 'Anemone',
+    name: 'Zadnor Yamaa',
     boss: false,
     level: 64,
     maxHP: 60878,
@@ -3829,6 +4060,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 51690,
       },
+      ALDGOAT_CHUCK: null,
+      ALDGOAT_HORN: null,
+      ANIMAL_SKIN: null,
+      BEAST_SINEW: null,
     },
   },
   191: {
@@ -4151,7 +4386,7 @@ export const ENEMIES: Enemy = {
     },
   },
   207: {
-    name: 'Devilet',
+    name: 'Jaculus',
     boss: true,
     level: 70,
     maxHP: 152306,
@@ -4172,6 +4407,8 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 29055,
       },
+      PUK_EGG: null,
+      PUK_WING: null,
     },
   },
   208: {
@@ -4471,6 +4708,18 @@ export const ENEMIES: Enemy = {
         name: 'Allagan Tomestone',
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 33380,
+      },
+      ANIMAL_HIDE: {
+        name: 'Animal Hide',
+      },
+      DODO_EGG: {
+        name: 'Dodo Egg',
+      },
+      DODO_FEATHER: {
+        name: 'Dodo Feather',
+      },
+      DODO_TERNDERLOIN: {
+        name: 'Dodo Tenderloin',
       },
     },
   },
@@ -5351,7 +5600,7 @@ export const ENEMIES: Enemy = {
     },
   },
   267: {
-    name: 'Rotting Corpse',
+    name: 'Kindling Sprite',
     boss: true,
     level: 90,
     maxHP: 252518,
@@ -5372,10 +5621,14 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 48155,
       },
+      FIRE_SHARD: null,
+      LIGHTNING_CRYSTAL: null,
+      LUMINOUS_CRYSTAL: null,
+      WIND_CRYSTAL: null,
     },
   },
   268: {
-    name: 'Game Dodo',
+    name: 'Cockatrice',
     boss: true,
     level: 90,
     maxHP: 253463,
@@ -5395,6 +5648,18 @@ export const ENEMIES: Enemy = {
         name: 'Allagan Tomestone',
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 48335,
+      },
+      ANIMAL_HIDE: {
+        name: 'Animal Hide',
+      },
+      DODO_EGG: {
+        name: 'Dodo Egg',
+      },
+      DODO_FEATHER: {
+        name: 'Dodo Feather',
+      },
+      DODO_TENDERLOIN: {
+        name: 'Dodo Tenderloin',
       },
     },
   },
@@ -5533,1692 +5798,6 @@ export const ENEMIES: Enemy = {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
         amount: 107535,
-      },
-    },
-  },
-  276: {
-    name: 'Brine Bogy',
-    boss: false,
-    level: 93,
-    maxHP: 128447,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 88579,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 109099,
-      },
-    },
-  },
-  277: {
-    name: 'undefined',
-    boss: false,
-    level: 93,
-    maxHP: 128912,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 88900,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 109494,
-      },
-    },
-  },
-  278: {
-    name: 'Raptor',
-    boss: false,
-    level: 93,
-    maxHP: 129377,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 89221,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 109889,
-      },
-    },
-  },
-  279: {
-    name: 'Ocean Roseling',
-    boss: false,
-    level: 94,
-    maxHP: 131238,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 90504,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 111470,
-      },
-    },
-  },
-  280: {
-    name: 'Fallen Pikeman',
-    boss: false,
-    level: 94,
-    maxHP: 131708,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 90829,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 111870,
-      },
-    },
-  },
-  281: {
-    name: 'Drybone Shrew',
-    boss: false,
-    level: 94,
-    maxHP: 132178,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 91153,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 112269,
-      },
-    },
-  },
-  282: {
-    name: 'Orobon',
-    boss: true,
-    level: 95,
-    maxHP: 281508,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 231088,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 341582,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 53680,
-      },
-    },
-  },
-  283: {
-    name: 'Wandering Wisp',
-    boss: true,
-    level: 95,
-    maxHP: 282506,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 231908,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 342793,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 53870,
-      },
-    },
-  },
-  284: {
-    name: 'Ocean Roseling',
-    boss: true,
-    level: 95,
-    maxHP: 283503,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 232727,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 344005,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 54060,
-      },
-    },
-  },
-  285: {
-    name: 'Syrphid Cloud',
-    boss: false,
-    level: 96,
-    maxHP: 136910,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 94416,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 116290,
-      },
-    },
-  },
-  286: {
-    name: 'Fallen Archmage',
-    boss: false,
-    level: 96,
-    maxHP: 137390,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 94748,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 116698,
-      },
-    },
-  },
-  287: {
-    name: 'Antelope',
-    boss: false,
-    level: 96,
-    maxHP: 137870,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 95079,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 117106,
-      },
-    },
-  },
-  288: {
-    name: 'Emerald Salamander',
-    boss: false,
-    level: 97,
-    maxHP: 139791,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 96404,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 118738,
-      },
-    },
-  },
-  289: {
-    name: 'Brine Bogy',
-    boss: false,
-    level: 97,
-    maxHP: 140276,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 96738,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 119150,
-      },
-    },
-  },
-  290: {
-    name: 'Sordes',
-    boss: false,
-    level: 97,
-    maxHP: 140761,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 97073,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 119562,
-      },
-    },
-  },
-  291: {
-    name: 'Giant Crab',
-    boss: false,
-    level: 98,
-    maxHP: 142702,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 98412,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 121211,
-      },
-    },
-  },
-  292: {
-    name: 'Kobold Supplicant',
-    boss: false,
-    level: 98,
-    maxHP: 143192,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 98750,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 121628,
-      },
-    },
-  },
-  293: {
-    name: 'Nightwolf',
-    boss: false,
-    level: 98,
-    maxHP: 143682,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 99088,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 122044,
-      },
-    },
-  },
-  294: {
-    name: 'Snipper',
-    boss: false,
-    level: 99,
-    maxHP: 145643,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 100440,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 123710,
-      },
-    },
-  },
-  295: {
-    name: 'Storm Blast',
-    boss: false,
-    level: 99,
-    maxHP: 146138,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 100782,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 124131,
-      },
-    },
-  },
-  296: {
-    name: 'Moraby Mole',
-    boss: false,
-    level: 99,
-    maxHP: 146633,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 101123,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 124552,
-      },
-    },
-  },
-  297: {
-    name: 'Bark Weevil',
-    boss: true,
-    level: 100,
-    maxHP: 312074,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 256187,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 378685,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 59505,
-      },
-    },
-  },
-  298: {
-    name: 'Frenzied Aurelia',
-    boss: true,
-    level: 100,
-    maxHP: 313124,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 257049,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 379960,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 59705,
-      },
-    },
-  },
-  299: {
-    name: 'Star Marmot',
-    boss: true,
-    level: 100,
-    maxHP: 314174,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 257912,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 381235,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 59905,
-      },
-    },
-  },
-  300: {
-    name: 'Errant Soul',
-    boss: false,
-    level: 101,
-    maxHP: 151615,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 104559,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 128785,
-      },
-    },
-  },
-  301: {
-    name: 'Kobold Supplicant',
-    boss: false,
-    level: 101,
-    maxHP: 152120,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 104908,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 129214,
-      },
-    },
-  },
-  302: {
-    name: 'Game Dodo',
-    boss: false,
-    level: 101,
-    maxHP: 152625,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 105256,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 129643,
-      },
-    },
-  },
-  303: {
-    name: 'Aldgoat Nanny',
-    boss: false,
-    level: 102,
-    maxHP: 154646,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 106650,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 131360,
-      },
-    },
-  },
-  304: {
-    name: 'Plains Rat',
-    boss: false,
-    level: 102,
-    maxHP: 155156,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 107002,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 131794,
-      },
-    },
-  },
-  305: {
-    name: 'Megalocrab',
-    boss: false,
-    level: 102,
-    maxHP: 155666,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 107354,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 132227,
-      },
-    },
-  },
-  306: {
-    name: 'Maidenbug',
-    boss: false,
-    level: 103,
-    maxHP: 157707,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 108762,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 133961,
-      },
-    },
-  },
-  307: {
-    name: 'Ladybug',
-    boss: false,
-    level: 103,
-    maxHP: 158222,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 109117,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 134399,
-      },
-    },
-  },
-  308: {
-    name: 'Pharosfly',
-    boss: false,
-    level: 103,
-    maxHP: 158737,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 109472,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 134837,
-      },
-    },
-  },
-  309: {
-    name: 'Aldgoat Billy',
-    boss: false,
-    level: 104,
-    maxHP: 160798,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 110894,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 136588,
-      },
-    },
-  },
-  310: {
-    name: 'Mossy Goobbue',
-    boss: false,
-    level: 104,
-    maxHP: 161318,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 111252,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 137030,
-      },
-    },
-  },
-  311: {
-    name: 'Vodyanoi',
-    boss: false,
-    level: 104,
-    maxHP: 161838,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 111611,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 137472,
-      },
-    },
-  },
-  312: {
-    name: 'Scalepuk',
-    boss: true,
-    level: 105,
-    maxHP: 344214,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 282579,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 417700,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 65630,
-      },
-    },
-  },
-  313: {
-    name: 'Ravenous Nannygoat',
-    boss: true,
-    level: 105,
-    maxHP: 345317,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 283485,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 419038,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 65840,
-      },
-    },
-  },
-  314: {
-    name: 'Devilet',
-    boss: true,
-    level: 105,
-    maxHP: 346419,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 284391,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 420377,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 66050,
-      },
-    },
-  },
-  315: {
-    name: 'Star Marmot',
-    boss: false,
-    level: 106,
-    maxHP: 167070,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 115220,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 141917,
-      },
-    },
-  },
-  316: {
-    name: 'Star Marmot',
-    boss: false,
-    level: 106,
-    maxHP: 167600,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 115586,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 142368,
-      },
-    },
-  },
-  317: {
-    name: 'Syrphid Cloud',
-    boss: false,
-    level: 106,
-    maxHP: 168130,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 115951,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 142818,
-      },
-    },
-  },
-  318: {
-    name: 'Carrion Chigoe',
-    boss: false,
-    level: 107,
-    maxHP: 170251,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 117414,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 144620,
-      },
-    },
-  },
-  319: {
-    name: 'Carrion Crow',
-    boss: false,
-    level: 107,
-    maxHP: 170786,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 117783,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 145075,
-      },
-    },
-  },
-  320: {
-    name: 'Rotting Corpse',
-    boss: false,
-    level: 107,
-    maxHP: 171321,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 118152,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 145530,
-      },
-    },
-  },
-  321: {
-    name: 'Ocean Roseling',
-    boss: false,
-    level: 108,
-    maxHP: 173462,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 119629,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 147349,
-      },
-    },
-  },
-  322: {
-    name: 'Nightwolf',
-    boss: false,
-    level: 108,
-    maxHP: 174002,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 120002,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 147808,
-      },
-    },
-  },
-  323: {
-    name: 'Pharosfly',
-    boss: false,
-    level: 108,
-    maxHP: 174542,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 120374,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 148267,
-      },
-    },
-  },
-  324: {
-    name: 'Rabid Jackal',
-    boss: false,
-    level: 109,
-    maxHP: 176703,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 121865,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 150103,
-      },
-    },
-  },
-  325: {
-    name: 'Midge Cloud',
-    boss: false,
-    level: 109,
-    maxHP: 177248,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 122241,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 150566,
-      },
-    },
-  },
-  326: {
-    name: 'Snipper',
-    boss: false,
-    level: 109,
-    maxHP: 177793,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 122617,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 151029,
-      },
-    },
-  },
-  327: {
-    name: 'Magicked Bones',
-    boss: true,
-    level: 110,
-    maxHP: 377930,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 310266,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 458627,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 72055,
-      },
-    },
-  },
-  328: {
-    name: 'Copper Coblyn',
-    boss: true,
-    level: 110,
-    maxHP: 379085,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 311214,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 460030,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 72275,
-      },
-    },
-  },
-  329: {
-    name: 'Blast',
-    boss: true,
-    level: 110,
-    maxHP: 380240,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 312163,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 461432,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 72495,
-      },
-    },
-  },
-  330: {
-    name: "Will-o'-the Wykes",
-    boss: false,
-    level: 111,
-    maxHP: 183275,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 126398,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 155687,
-      },
-    },
-  },
-  331: {
-    name: 'undefined',
-    boss: false,
-    level: 111,
-    maxHP: 183830,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 126781,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 156159,
-      },
-    },
-  },
-  332: {
-    name: 'Flytrap',
-    boss: false,
-    level: 111,
-    maxHP: 184385,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 127164,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 156631,
-      },
-    },
-  },
-  333: {
-    name: 'Thorned Roseling',
-    boss: false,
-    level: 112,
-    maxHP: 186606,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 128696,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 158518,
-      },
-    },
-  },
-  334: {
-    name: 'Snipper',
-    boss: false,
-    level: 112,
-    maxHP: 187166,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 129082,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 158994,
-      },
-    },
-  },
-  335: {
-    name: 'Bomb',
-    boss: false,
-    level: 112,
-    maxHP: 187726,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 129468,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 159470,
-      },
-    },
-  },
-  336: {
-    name: "Sultan's Trumpet",
-    boss: false,
-    level: 113,
-    maxHP: 189967,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 131014,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 161374,
-      },
-    },
-  },
-  337: {
-    name: "Sultan's Trumpet",
-    boss: false,
-    level: 113,
-    maxHP: 190532,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 131404,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 161854,
-      },
-    },
-  },
-  338: {
-    name: 'Beady Beetle',
-    boss: false,
-    level: 113,
-    maxHP: 191097,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 131794,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 162334,
-      },
-    },
-  },
-  339: {
-    name: 'Fallen Pikeman',
-    boss: false,
-    level: 114,
-    maxHP: 193358,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 133353,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 164255,
-      },
-    },
-  },
-  340: {
-    name: 'Bomb',
-    boss: false,
-    level: 114,
-    maxHP: 193928,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 133747,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 164740,
-      },
-    },
-  },
-  341: {
-    name: 'Hoverfly Swarm',
-    boss: false,
-    level: 114,
-    maxHP: 194498,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 134140,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 165224,
-      },
-    },
-  },
-  342: {
-    name: 'Westroad Footpad',
-    boss: true,
-    level: 115,
-    maxHP: 413220,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 339246,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 501467,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 78780,
-      },
-    },
-  },
-  343: {
-    name: 'Bloodshore Bell',
-    boss: true,
-    level: 115,
-    maxHP: 414428,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 340238,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 502933,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 79010,
-      },
-    },
-  },
-  344: {
-    name: 'Plains Footpad',
-    boss: true,
-    level: 115,
-    maxHP: 415635,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 341230,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 504400,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 79240,
-      },
-    },
-  },
-  345: {
-    name: 'Lost Ewe',
-    boss: false,
-    level: 116,
-    maxHP: 200230,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 138094,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 170095,
-      },
-    },
-  },
-  346: {
-    name: 'Young Galago',
-    boss: false,
-    level: 116,
-    maxHP: 200810,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 138494,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 170588,
-      },
-    },
-  },
-  347: {
-    name: 'Carrion Crow',
-    boss: false,
-    level: 116,
-    maxHP: 201390,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 138894,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 171081,
-      },
-    },
-  },
-  348: {
-    name: 'Devilet',
-    boss: false,
-    level: 117,
-    maxHP: 203711,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 140495,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 173053,
-      },
-    },
-  },
-  349: {
-    name: 'Westroad Footpad',
-    boss: false,
-    level: 117,
-    maxHP: 204296,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 140898,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 173550,
-      },
-    },
-  },
-  350: {
-    name: 'Dormouse',
-    boss: false,
-    level: 117,
-    maxHP: 204881,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 141302,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 174047,
-      },
-    },
-  },
-  351: {
-    name: 'Bloodshore Bell',
-    boss: false,
-    level: 118,
-    maxHP: 207222,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 142917,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 176036,
-      },
-    },
-  },
-  352: {
-    name: 'Stumbling Funguar',
-    boss: false,
-    level: 118,
-    maxHP: 207812,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 143324,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 176538,
-      },
-    },
-  },
-  353: {
-    name: 'Storm Blast',
-    boss: false,
-    level: 118,
-    maxHP: 208402,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 143731,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 177039,
-      },
-    },
-  },
-  354: {
-    name: 'Frenzied Aurelia',
-    boss: false,
-    level: 119,
-    maxHP: 210763,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 145359,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 179045,
-      },
-    },
-  },
-  355: {
-    name: 'Toxic Toad',
-    boss: false,
-    level: 119,
-    maxHP: 211358,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 145770,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 179551,
-      },
-    },
-  },
-  356: {
-    name: 'Nightwolf',
-    boss: false,
-    level: 119,
-    maxHP: 211953,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 146180,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 180057,
-      },
-    },
-  },
-  357: {
-    name: 'Nightwolf',
-    boss: true,
-    level: 120,
-    maxHP: 450086,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 0,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 546220,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 85805,
-      },
-    },
-  },
-  358: {
-    name: 'Poisonous Eft',
-    boss: true,
-    level: 120,
-    maxHP: 451346,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 0,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 547750,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 86045,
-      },
-    },
-  },
-  359: {
-    name: 'Puk',
-    boss: true,
-    level: 120,
-    maxHP: 452606,
-    currentHP: null,
-    drops: {
-      exp: {
-        name: 'Exp',
-        image: 'src/assets/images/experience_icon.png',
-        amount: 0,
-      },
-      GIL: {
-        name: 'Gil',
-        image: 'src/assets/images/currency_gil.png',
-        amount: 549280,
-      },
-      ALLAGAN_TOMESTONE: {
-        name: 'Allagan Tomestone',
-        image: 'src/assets/images/currency_tomestone_allagan.png',
-        amount: 86285,
       },
     },
   },
