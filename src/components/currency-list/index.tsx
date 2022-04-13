@@ -49,7 +49,7 @@ const CurrencyEntry = (props: Props) => {
               >
                 <b style={{ fontSize: '100%' }}>{CURRENCY_DATA.name}</b>
                 <br />
-                {CURRENCY_DATA.value.toLocaleString()}
+                {CURRENCY_DATA.amount.toLocaleString()}
               </div>
             </span>
           </div>
