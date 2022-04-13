@@ -8,6 +8,7 @@ interface ItemProps {
   minAmount: number;
   maxAmount: number;
   dropChance: number;
+  gatherable: boolean;
 }
 
 export const ITEMS: Item = {
@@ -17,6 +18,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 2,
     dropChance: 10,
+    gatherable: true,
   },
   ALDGOAT_CHUCK: {
     name: 'Aldgoat Chuck',
@@ -24,6 +26,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 30,
+    gatherable: true,
   },
   ALDGOAT_HORN: {
     name: 'Aldgoat Horn',
@@ -31,6 +34,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 30,
+    gatherable: true,
   },
   ANIMAL_HIDE: {
     name: 'Animal Hide',
@@ -38,6 +42,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 25,
+    gatherable: true,
   },
   ANIMAL_SKIN: {
     name: 'Animal Skin',
@@ -45,6 +50,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 15,
+    gatherable: true,
   },
   BAT_FANG: {
     name: 'Bat Fang',
@@ -52,6 +58,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 2,
     dropChance: 25,
+    gatherable: true,
   },
   BEAST_SINEW: {
     name: 'Beast Sinew',
@@ -59,6 +66,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 3,
     dropChance: 20,
+    gatherable: true,
   },
   BLUE_LANDTRAP_LEAF: {
     name: 'Blue Landtrap Leaf',
@@ -66,6 +74,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 4,
     dropChance: 20,
+    gatherable: true,
   },
   BONE_CHIP: {
     name: 'Bone Chip',
@@ -73,6 +82,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 10,
+    gatherable: true,
   },
   COEURL_SKIN: {
     name: 'Coeurl Skin',
@@ -80,6 +90,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 50,
+    gatherable: true,
   },
   DODO_EGG: {
     name: 'Animal Egg',
@@ -87,6 +98,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 10,
+    gatherable: true,
   },
   DODO_FEATHER: {
     name: 'Animal Feather',
@@ -94,6 +106,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 20,
+    gatherable: true,
   },
   DODO_TENDERLOIN: {
     name: 'Dodo Tenderloin',
@@ -101,6 +114,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 20,
+    gatherable: true,
   },
   DRAGON_BLOOD: {
     name: 'Dragon Blood',
@@ -108,6 +122,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 50,
+    gatherable: true,
   },
   DRAGON_FANG: {
     name: 'Dragon Fang',
@@ -115,6 +130,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 2,
     dropChance: 30,
+    gatherable: true,
   },
   EARTH_CRYSTAL: {
     name: 'Earth Crystal',
@@ -122,6 +138,7 @@ export const ITEMS: Item = {
     minAmount: 2,
     maxAmount: 5,
     dropChance: 33,
+    gatherable: true,
   },
   FIRE_SHARD: {
     name: 'Fire Shard',
@@ -129,6 +146,7 @@ export const ITEMS: Item = {
     minAmount: 2,
     maxAmount: 5,
     dropChance: 33,
+    gatherable: true,
   },
   FRESH_MILKROOT: {
     name: 'Fresh Milkroot',
@@ -136,6 +154,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 35,
+    gatherable: true,
   },
   HONEY: {
     name: 'Honey',
@@ -143,6 +162,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 2,
     dropChance: 20,
+    gatherable: true,
   },
   ICETRAP_LEAF: {
     name: 'Icetrap Leaf',
@@ -150,6 +170,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 3,
     dropChance: 15,
+    gatherable: true,
   },
   JACKAL_FANG: {
     name: 'Jackal Fang',
@@ -157,6 +178,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 2,
     dropChance: 35,
+    gatherable: true,
   },
   JELLYFISH_CNIDA: {
     name: 'Jellyfish Cnida',
@@ -164,6 +186,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 10,
+    gatherable: true,
   },
   JELLYFISH_UMBRELLA: {
     name: 'Jellyfish Umbrella',
@@ -171,6 +194,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 25,
+    gatherable: true,
   },
   LADYBUG_ELYTRON: {
     name: 'Ladybug Elytron',
@@ -178,6 +202,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 50,
+    gatherable: true,
   },
   LIGHTNING_CRYSTAL: {
     name: 'Lightning Crystal',
@@ -185,6 +210,7 @@ export const ITEMS: Item = {
     minAmount: 2,
     maxAmount: 5,
     dropChance: 33,
+    gatherable: true,
   },
   LUMINOUS_CRYSTAL: {
     name: 'Luminous Crystal',
@@ -192,6 +218,7 @@ export const ITEMS: Item = {
     minAmount: 2,
     maxAmount: 5,
     dropChance: 33,
+    gatherable: true,
   },
   MARMOT_BLOOD: {
     name: 'Marmot Blood',
@@ -199,6 +226,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 50,
+    gatherable: true,
   },
   MARMOT_PELT: {
     name: 'Marmot Pelt',
@@ -206,6 +234,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 25,
+    gatherable: true,
   },
   PUK_EGG: {
     name: 'Puk Egg',
@@ -213,6 +242,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 10,
+    gatherable: true,
   },
   PUK_WING: {
     name: 'Puk Wing',
@@ -220,6 +250,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 1,
     dropChance: 10,
+    gatherable: true,
   },
   RED_LANDTRAP_LEAF: {
     name: 'Red Landtrap Leaf',
@@ -227,6 +258,7 @@ export const ITEMS: Item = {
     minAmount: 1,
     maxAmount: 4,
     dropChance: 20,
+    gatherable: true,
   },
   WIND_CRYSTAL: {
     name: 'Wind Crystal',
@@ -234,5 +266,6 @@ export const ITEMS: Item = {
     minAmount: 2,
     maxAmount: 5,
     dropChance: 33,
+    gatherable: true,
   },
 };

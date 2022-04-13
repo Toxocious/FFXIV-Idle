@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { useDispatch } from '../../providers/game';
 import { ChangeActiveJob } from '../../actions/actions';
 

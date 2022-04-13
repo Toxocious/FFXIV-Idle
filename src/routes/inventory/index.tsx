@@ -4,7 +4,6 @@ import { Slot } from '../../components/slot';
 
 export function InventoryWindow() {
   const { items } = useStore();
-  console.log('[Inventory] Items:', items);
 
   return (
     <>

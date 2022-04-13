@@ -73,7 +73,7 @@ export const Enemy = () => {
             }}
           >
             {Object.keys(activeEnemy.drops).map((drop: any) => (
-              <div key={drop}>
+              <div data-drop-key={drop} key={drop}>
                 <Slot
                   index={drop}
                   image={activeEnemy.drops[drop]?.image ?? null}
