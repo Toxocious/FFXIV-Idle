@@ -62,7 +62,7 @@ export const ITEMS: Item = {
   },
   BLUE_LANDTRAP_LEAF: {
     name: 'Blue Landtrap Leaf',
-    image: '',
+    image: 'src/assets/images/items/blue_landtrap_leaf.png',
     minAmount: 1,
     maxAmount: 4,
     dropChance: 20,
@@ -132,7 +132,7 @@ export const ITEMS: Item = {
   },
   FRESH_MILKROOT: {
     name: 'Fresh Milkroot',
-    image: '',
+    image: 'src/assets/images/items/fresh_milkroot.png',
     minAmount: 1,
     maxAmount: 1,
     dropChance: 35,
@@ -146,7 +146,7 @@ export const ITEMS: Item = {
   },
   ICETRAP_LEAF: {
     name: 'Icetrap Leaf',
-    image: '',
+    image: 'src/assets/images/items/icetrap_leaf.png',
     minAmount: 1,
     maxAmount: 3,
     dropChance: 15,
