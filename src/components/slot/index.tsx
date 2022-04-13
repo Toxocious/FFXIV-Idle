@@ -14,33 +14,36 @@ interface Props {
 export const Slot = (props: Props) => {
   let { index, image, name, amount, displayDropChance } = props;
 
+  let dropAmount: string = '0';
   let DROP_DATA: any;
+
   if (index == 'exp') {
     DROP_DATA = {
       name: name,
       amount: amount,
       imageName: image,
     };
+
+    dropAmount = DROP_DATA.amount.toLocaleString();
   } else if (index in CURRENCIES) {
     DROP_DATA = {
       name: name,
       amount: amount,
       imageName: CURRENCIES[index].imageName,
     };
+
+    dropAmount = DROP_DATA.amount.toLocaleString();
   } else if (index in ITEMS) {
     DROP_DATA = ITEMS[index];
-    console.log('Amount:', amount, '|| Drop Data:', DROP_DATA);
 
     if (amount) {
-      DROP_DATA.amount = amount;
+      dropAmount = amount.toLocaleString();
     } else if (DROP_DATA.minAmount && DROP_DATA.maxAmount) {
       if (DROP_DATA.minAmount === DROP_DATA.maxAmount) {
-        DROP_DATA.amount = DROP_DATA.maxAmount;
+        dropAmount = DROP_DATA.maxAmount.toLocaleString();
       } else {
-        DROP_DATA.amount = Math.floor(Math.random() * DROP_DATA.maxAmount);
+        dropAmount = `${DROP_DATA.minAmount.toLocaleString()} - ${DROP_DATA.maxAmount.toLocaleString()}`;
       }
-    } else {
-      DROP_DATA.amount = 0;
     }
   }
 
@@ -57,7 +60,7 @@ export const Slot = (props: Props) => {
           title={DROP_DATA.name}
         />
       </div>
-      <div className='value'>x{DROP_DATA.amount.toLocaleString()}</div>
+      <div className='value'>{dropAmount}</div>
       {displayDropChance && DROP_DATA.dropChance > 0 ? (
         <div className='value'>{DROP_DATA.dropChance}%</div>
       ) : (
