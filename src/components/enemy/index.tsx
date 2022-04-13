@@ -64,7 +64,7 @@ export const Enemy = () => {
 
           <div
             style={{
-              alignItems: 'center',
+              alignItems: 'flex-start',
               display: 'flex',
               flexDirection: 'row',
               gap: '1rem',
@@ -73,11 +73,12 @@ export const Enemy = () => {
             }}
           >
             {Object.keys(activeEnemy.drops).map((drop: any) => (
-              <div key={activeEnemy.drops[drop].name}>
+              <div key={drop}>
                 <Slot
-                  image={activeEnemy.drops[drop].image}
-                  name={activeEnemy.drops[drop].name}
-                  amount={activeEnemy.drops[drop].amount}
+                  index={drop}
+                  image={activeEnemy.drops[drop]?.image ?? ''}
+                  name={activeEnemy.drops[drop]?.name ?? ''}
+                  amount={activeEnemy.drops[drop]?.amount ?? 0}
                 />
               </div>
             ))}
