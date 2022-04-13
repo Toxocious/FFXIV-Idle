@@ -6,11 +6,8 @@ import { ChangeActivePage } from '../../actions/actions';
 import { CalcLevelFromExp } from '../../utils/calc-level';
 import { GetActiveJob } from '../../utils/get-active-job';
 
-import { JobSelector } from '../../routes/job-selector';
-
 import './index.css';
 
-// @ts-ignore
 export const ActiveJob = ({}) => {
   const dispatch = useDispatch();
   const JOB_DATA: any = GetActiveJob();
