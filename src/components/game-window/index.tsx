@@ -13,6 +13,7 @@ import { StatsWindow } from '../../routes/stats';
 import { BattleWindow } from '../../routes/battle';
 import { CraftingWindow } from '../../routes/crafting';
 import { GatheringWindow } from '../../routes/gathering';
+import { InventoryWindow } from '../../routes/inventory';
 
 export const GameWindow = ({}) => {
   const dispatch = useDispatch();
@@ -30,6 +31,7 @@ export const GameWindow = ({}) => {
         <Route path='/crafting' element={<CraftingWindow />} />
         <Route path='/gathering' element={<GatheringWindow />} />
         <Route path='/shop' element={<ShopWindow />} />
+        <Route path='/inventory' element={<InventoryWindow />} />
       </Routes>
     );
   }
