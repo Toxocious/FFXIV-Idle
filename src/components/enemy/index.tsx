@@ -79,8 +79,7 @@ export const Enemy = () => {
                   image={activeEnemy.drops[drop]?.image ?? null}
                   name={activeEnemy.drops[drop]?.name ?? null}
                   amount={activeEnemy.drops[drop]?.amount ?? null}
-                  minAmount={activeEnemy.drops[drop]?.minAmount ?? null}
-                  maxAmount={activeEnemy.drops[drop]?.maxAmount ?? null}
+                  displayDropChance={true}
                 />
               </div>
             ))}

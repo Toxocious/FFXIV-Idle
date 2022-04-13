@@ -8,14 +8,11 @@ interface Props {
   image?: string;
   name?: string;
   amount?: number;
-  minAmount?: number;
-  maxAmount?: number;
   displayDropChance?: boolean;
 }
 
 export const Slot = (props: Props) => {
-  let { index, image, name, amount, minAmount, maxAmount, displayDropChance } =
-    props;
+  let { index, image, name, amount, displayDropChance } = props;
 
   let DROP_DATA: any;
   if (index == 'exp') {
@@ -24,8 +21,7 @@ export const Slot = (props: Props) => {
       amount: amount,
       imageName: image,
     };
-  }
-  if (index in CURRENCIES) {
+  } else if (index in CURRENCIES) {
     DROP_DATA = {
       name: name,
       amount: amount,
@@ -33,13 +29,10 @@ export const Slot = (props: Props) => {
     };
   } else if (index in ITEMS) {
     DROP_DATA = ITEMS[index];
+    console.log('Amount:', amount, '|| Drop Data:', DROP_DATA);
 
     if (amount) {
       DROP_DATA.amount = amount;
-    } else if (minAmount && maxAmount) {
-      DROP_DATA.amount = Math.floor(Math.random() * maxAmount);
-    } else if (DROP_DATA.amount) {
-      DROP_DATA.amount = DROP_DATA.amount;
     } else if (DROP_DATA.minAmount && DROP_DATA.maxAmount) {
       if (DROP_DATA.minAmount === DROP_DATA.maxAmount) {
         DROP_DATA.amount = DROP_DATA.maxAmount;
