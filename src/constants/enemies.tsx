@@ -62,18 +62,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 14,
       },
-      ANIMAL_HIDE: {
-        name: 'Animal Hide',
-      },
-      DODO_EGG: {
-        name: 'Dodo Egg',
-      },
-      DODO_FEATHER: {
-        name: 'Dodo Feather',
-      },
-      DODO_TENDERLOIN: {
-        name: 'Dodo Tenderloin',
-      },
+      ANIMAL_HIDE: null,
+      DODO_EGG: null,
+      DODO_FEATHER: null,
+      DODO_TENDERLOIN: null,
     },
   },
   2: {
@@ -235,9 +227,7 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 163,
       },
-      LADYBUG_ELYTRON: {
-        name: 'Ladybug Elytron',
-      },
+      LADYBUG_ELYTRON: null,
     },
   },
   10: {
@@ -330,9 +320,7 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 140,
       },
-      BONE_CHIP: {
-        name: 'Bone Chip',
-      },
+      BONE_CHIP: null,
     },
   },
   14: {
@@ -357,9 +345,7 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 150,
       },
-      JELLYFISH_UMBRELLA: {
-        name: 'Jellyfish Umbrella',
-      },
+      JELLYFISH_UMBRELLA: null,
     },
   },
   15: {
@@ -498,18 +484,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 724,
       },
-      ANIMAL_HIDE: {
-        name: 'Animal Hide',
-      },
-      DODO_EGG: {
-        name: 'Dodo Egg',
-      },
-      DODO_FEATHER: {
-        name: 'Dodo Feather',
-      },
-      DODO_TENDERLOIN: {
-        name: 'Dodo Tenderloin',
-      },
+      ANIMAL_HIDE: null,
+      DODO_EGG: null,
+      DODO_FEATHER: null,
+      DODO_TENDERLOIN: null,
     },
   },
   22: {
@@ -586,9 +564,7 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 966,
       },
-      RED_LANDTRAP_LEAF: {
-        name: 'Red Landtrap Leaf',
-      },
+      RED_LANDTRAP_LEAF: null,
     },
   },
   26: {
@@ -705,9 +681,7 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 1412,
       },
-      BEAST_SINEW: {
-        name: 'Beast Sinew',
-      },
+      BEAST_SINEW: null,
     },
   },
   31: {
@@ -786,18 +760,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 1744,
       },
-      ANIMAL_HIDE: {
-        name: 'Animal Hide',
-      },
-      DODO_EGG: {
-        name: 'Dodo Egg',
-      },
-      DODO_FEATHER: {
-        name: 'Dodo Feather',
-      },
-      DODO_TENDERLOIN: {
-        name: 'Dodo Tenderloin',
-      },
+      ANIMAL_HIDE: null,
+      DODO_EGG: null,
+      DODO_FEATHER: null,
+      DODO_TENDERLOIN: null,
     },
   },
   35: {
@@ -1248,18 +1214,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 4532,
       },
-      ANIMAL_HIDE: {
-        name: 'Animal Hide',
-      },
-      DODO_EGG: {
-        name: 'Dodo Egg',
-      },
-      DODO_FEATHER: {
-        name: 'Dodo Feather',
-      },
-      DODO_TENDERLOIN: {
-        name: 'Dodo Tenderloin',
-      },
+      ANIMAL_HIDE: null,
+      DODO_EGG: null,
+      DODO_FEATHER: null,
+      DODO_TENDERLOIN: null,
     },
   },
   57: {
@@ -1308,18 +1266,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 2345,
       },
-      ANIMAL_HIDE: {
-        name: 'Animal Hide',
-      },
-      DODO_EGG: {
-        name: 'Dodo Egg',
-      },
-      DODO_FEATHER: {
-        name: 'Dodo Feather',
-      },
-      DODO_TENDERLOIN: {
-        name: 'Dodo Tenderloin',
-      },
+      ANIMAL_HIDE: null,
+      DODO_EGG: null,
+      DODO_FEATHER: null,
+      DODO_TENDERLOIN: null,
     },
   },
   59: {
@@ -1852,18 +1802,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 10363,
       },
-      ANIMAL_HIDE: {
-        name: 'Animal Hide',
-      },
-      DODO_EGG: {
-        name: 'Dodo Egg',
-      },
-      DODO_FEATHER: {
-        name: 'Dodo Feather',
-      },
-      DODO_TENDERLOIN: {
-        name: 'Dodo Tenderloin',
-      },
+      ANIMAL_HIDE: null,
+      DODO_EGG: null,
+      DODO_FEATHER: null,
+      DODO_TENDERLOIN: null,
     },
   },
   85: {
@@ -2113,18 +2055,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 13474,
       },
-      ANIMAL_HIDE: {
-        name: 'Animal Hide',
-      },
-      DODO_EGG: {
-        name: 'Dodo Egg',
-      },
-      DODO_FEATHER: {
-        name: 'Dodo Feather',
-      },
-      DODO_TENDERLOIN: {
-        name: 'Dodo Tenderloin',
-      },
+      ANIMAL_HIDE: null,
+      DODO_EGG: null,
+      DODO_FEATHER: null,
+      DODO_TENDERLOIN: null,
     },
   },
   97: {
@@ -2798,18 +2732,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 24133,
       },
-      ANIMAL_HIDE: {
-        name: 'Animal Hide',
-      },
-      DODO_EGG: {
-        name: 'Dodo Egg',
-      },
-      DODO_FEATHER: {
-        name: 'Dodo Feather',
-      },
-      DODO_TENDERLOIN: {
-        name: 'Dodo Tenderloin',
-      },
+      ANIMAL_HIDE: null,
+      DODO_EGG: null,
+      DODO_FEATHER: null,
+      DODO_TENDERLOIN: null,
     },
   },
   130: {
@@ -2958,18 +2884,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_gil.png',
         amount: 26598,
       },
-      AANIMAL_HIDE: {
-        name: 'Animal Hide',
-      },
-      DODO_EGG: {
-        name: 'Dodo Egg',
-      },
-      DODO_FEATHER: {
-        name: 'Dodo Feather',
-      },
-      DODO_TENDERLOIN: {
-        name: 'Dodo Tenderloin',
-      },
+      AANIMAL_HIDE: null,
+      DODO_EGG: null,
+      DODO_FEATHER: null,
+      DODO_TENDERLOIN: null,
     },
   },
   137: {
@@ -4709,18 +4627,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 33380,
       },
-      ANIMAL_HIDE: {
-        name: 'Animal Hide',
-      },
-      DODO_EGG: {
-        name: 'Dodo Egg',
-      },
-      DODO_FEATHER: {
-        name: 'Dodo Feather',
-      },
-      DODO_TERNDERLOIN: {
-        name: 'Dodo Tenderloin',
-      },
+      ANIMAL_HIDE: null,
+      DODO_EGG: null,
+      DODO_FEATHER: null,
+      DODO_TERNDERLOIN: null,
     },
   },
   223: {
@@ -5649,18 +5559,10 @@ export const ENEMIES: Enemy = {
         image: 'src/assets/images/currency_tomestone_allagan.png',
         amount: 48335,
       },
-      ANIMAL_HIDE: {
-        name: 'Animal Hide',
-      },
-      DODO_EGG: {
-        name: 'Dodo Egg',
-      },
-      DODO_FEATHER: {
-        name: 'Dodo Feather',
-      },
-      DODO_TENDERLOIN: {
-        name: 'Dodo Tenderloin',
-      },
+      ANIMAL_HIDE: null,
+      DODO_EGG: null,
+      DODO_FEATHER: null,
+      DODO_TENDERLOIN: null,
     },
   },
   269: {

@@ -8,11 +8,14 @@ interface Props {
   image?: string;
   name?: string;
   amount?: number;
+  minAmount?: number;
+  maxAmount?: number;
   displayDropChance?: boolean;
 }
 
 export const Slot = (props: Props) => {
-  const { index, image, name, amount, displayDropChance } = props;
+  let { index, image, name, amount, minAmount, maxAmount, displayDropChance } =
+    props;
 
   let DROP_DATA: any;
   if (index == 'exp') {
@@ -30,25 +33,27 @@ export const Slot = (props: Props) => {
     };
   } else if (index in ITEMS) {
     DROP_DATA = ITEMS[index];
+    console.log('[Slot] Item:', name, amount, minAmount, maxAmount, DROP_DATA);
 
-    if (typeof amount !== 'undefined') {
+    if (amount) {
       DROP_DATA.amount = amount;
-    }
-  }
-
-  if (DROP_DATA.amount < 1) {
-    return <></>;
-  }
-
-  let dropAmount: number | string;
-  if (typeof amount === 'undefined') {
-    if (DROP_DATA.minAmount === DROP_DATA.maxAmount) {
-      dropAmount = DROP_DATA.minAmount ?? DROP_DATA.amount.toLocaleString();
+    } else if (minAmount && maxAmount) {
+      DROP_DATA.amount = Math.floor(Math.random() * maxAmount);
+    } else if (DROP_DATA.amount) {
+      DROP_DATA.amount = DROP_DATA.amount;
+    } else if (DROP_DATA.minAmount && DROP_DATA.maxAmount) {
+      if (DROP_DATA.minAmount === DROP_DATA.maxAmount) {
+        DROP_DATA.amount = DROP_DATA.maxAmount;
+      } else {
+        DROP_DATA.amount = Math.floor(Math.random() * DROP_DATA.maxAmount);
+      }
     } else {
-      dropAmount = `${DROP_DATA.minAmount.toLocaleString()} - ${DROP_DATA.maxAmount.toLocaleString()}`;
+      DROP_DATA.amount = 0;
     }
-  } else {
-    dropAmount = amount.toLocaleString();
+  }
+
+  if (!DROP_DATA || DROP_DATA.amount < 1) {
+    return <></>;
   }
 
   return (
@@ -60,7 +65,7 @@ export const Slot = (props: Props) => {
           title={DROP_DATA.name}
         />
       </div>
-      <div className='value'>x{dropAmount}</div>
+      <div className='value'>x{DROP_DATA.amount.toLocaleString()}</div>
       {displayDropChance && DROP_DATA.dropChance > 0 ? (
         <div className='value'>{DROP_DATA.dropChance}%</div>
       ) : (

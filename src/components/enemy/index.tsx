@@ -76,9 +76,11 @@ export const Enemy = () => {
               <div key={drop}>
                 <Slot
                   index={drop}
-                  image={activeEnemy.drops[drop]?.image ?? ''}
-                  name={activeEnemy.drops[drop]?.name ?? ''}
-                  amount={activeEnemy.drops[drop]?.amount ?? 0}
+                  image={activeEnemy.drops[drop]?.image ?? null}
+                  name={activeEnemy.drops[drop]?.name ?? null}
+                  amount={activeEnemy.drops[drop]?.amount ?? null}
+                  minAmount={activeEnemy.drops[drop]?.minAmount ?? null}
+                  maxAmount={activeEnemy.drops[drop]?.maxAmount ?? null}
                 />
               </div>
             ))}
