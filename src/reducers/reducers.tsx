@@ -18,7 +18,9 @@ export const storeReducer = (store: any, action: any) => {
 
       const JOB_LIST = cloneDeep(store.jobs);
 
-      Object.keys(JOB_LIST).forEach((job) => (JOBS[job].active = false));
+      Object.keys(JOB_LIST).forEach((job) => {
+        JOB_LIST[job].active = false;
+      });
 
       JOB_LIST[jobID].active = true;
 
