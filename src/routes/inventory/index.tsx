@@ -23,6 +23,7 @@ export function InventoryWindow() {
           .filter((item) => items[item].amount > 0)
           .map((item) => (
             <Slot
+              key={item}
               index={item}
               amount={items[item].amount}
               displayDropChance={false}
