@@ -1,19 +1,6 @@
-interface Props {
-  name: string;
-  type: string;
-  level: number;
-  exp: number;
-  iconName: string;
-  className: string;
-  unlocked: boolean;
-  active: boolean;
-}
+import { JobInterface } from '../types/job';
 
-interface Jobs {
-  [jobName: string]: Props;
-}
-
-export const JOBS: Jobs = {
+export const JOBS: JobInterface = {
   /**
    * Tanks
    */

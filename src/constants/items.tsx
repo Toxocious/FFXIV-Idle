@@ -1,17 +1,6 @@
-interface Item {
-  [itemIndex: string]: ItemProps;
-}
+import { ItemInterface } from '../types/item';
 
-interface ItemProps {
-  name: string;
-  image: string;
-  minAmount: number;
-  maxAmount: number;
-  dropChance: number;
-  gatherable: boolean;
-}
-
-export const ITEMS: Item = {
+export const ITEMS: ItemInterface = {
   AHRIMAN_WING: {
     name: 'Ahriman Wing',
     image: 'src/assets/images/items/ahriman_wing.png',

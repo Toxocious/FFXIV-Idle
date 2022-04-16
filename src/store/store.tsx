@@ -14,7 +14,6 @@ export const getInitialStore = () => {
   const STORE: any = Object.assign({}, schema.store);
 
   Object.keys(JOBS).forEach((JobID) => {
-    // @ts-ignore
     const JOB_DATA: any = JOBS[JobID];
 
     if (JOB_DATA.unlocked) {
@@ -23,7 +22,6 @@ export const getInitialStore = () => {
   });
 
   Object.keys(CURRENCIES).forEach((currencyID) => {
-    // @ts-ignore
     const CURRENCY_DATA: any = CURRENCIES[currencyID];
 
     if (CURRENCY_DATA.unlocked) {

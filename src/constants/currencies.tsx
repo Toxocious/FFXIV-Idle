@@ -1,15 +1,6 @@
-interface Currency {
-  [currencyID: string]: CurrencyProps;
-}
+import { CurrencyInterface } from '../types/currency';
 
-interface CurrencyProps {
-  name: string;
-  amount: number;
-  imageName: string;
-  unlocked: boolean;
-}
-
-export const CURRENCIES: Currency = {
+export const CURRENCIES: CurrencyInterface = {
   GIL: {
     name: 'Gil',
     amount: 0,

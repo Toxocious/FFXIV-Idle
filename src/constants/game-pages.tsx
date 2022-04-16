@@ -1,15 +1,6 @@
-interface Page {
-  [pageIndex: number]: PageProps;
-}
+import { PageInterface } from '../types/page';
 
-interface PageProps {
-  id: number;
-  name: string;
-  link: string;
-  unlocked: boolean;
-}
-
-export const GAME_PAGES: Page = {
+export const GAME_PAGES: PageInterface = {
   0: {
     id: 1,
     name: 'Battle',

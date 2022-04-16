@@ -1,13 +1,6 @@
-interface Props {
-  expToNextLevel: number;
-  totalAccumulatedExp: number;
-}
+import { LevelInterface } from '../types/level-exp';
 
-interface Levels {
-  [level: number]: Props;
-}
-
-export const LEVEL_EXP: Levels = {
+export const LEVEL_EXP: LevelInterface = {
   /* A Realm Reborn */
   1: { expToNextLevel: 0, totalAccumulatedExp: 0 },
   2: { expToNextLevel: 300, totalAccumulatedExp: 300 },

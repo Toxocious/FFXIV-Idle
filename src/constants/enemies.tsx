@@ -1,27 +1,6 @@
-interface Enemy {
-  [enemyIndex: number]: EnemyProps;
-}
+import { EnemyInterface } from '../types/enemy';
 
-interface EnemyProps {
-  name: string;
-  boss: boolean;
-  level: number;
-  maxHP: number;
-  currentHP: number | null;
-  drops: EnemyDrop;
-}
-
-interface EnemyDrop {
-  [dropIndex: string]: EnemyDrops | null;
-}
-
-interface EnemyDrops {
-  name?: string;
-  amount?: number;
-  image?: string;
-}
-
-export const ENEMIES: Enemy = {
+export const ENEMIES: EnemyInterface = {
   0: {
     name: 'Roseling',
     boss: false,
