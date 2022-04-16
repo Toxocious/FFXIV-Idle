@@ -3,10 +3,11 @@ export interface ItemInterface {
 }
 
 export interface ItemProps {
-  name: string;
-  image: string;
-  minAmount: number;
-  maxAmount: number;
-  dropChance: number;
-  gatherable: boolean;
+  name?: string;
+  image?: string;
+  amount?: number;
+  minAmount?: number;
+  maxAmount?: number;
+  dropChance?: number;
+  gatherable?: boolean;
 }

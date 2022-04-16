@@ -5,6 +5,11 @@ export interface CurrencyInterface {
 export interface CurrencyProps {
   name: string;
   amount: number;
-  imageName: string;
+  image: string;
   unlocked: boolean;
+}
+
+export interface CurrencyEntryProps {
+  readonly currencyID: any;
+  readonly currencies: [];
 }
