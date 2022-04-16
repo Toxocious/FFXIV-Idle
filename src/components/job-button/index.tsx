@@ -1,13 +1,11 @@
 import { useDispatch } from '../../providers/game';
 import { ChangeActiveJob } from '../../actions/actions';
 
+import { JobButtonInterface } from '../../types/job-button';
+
 import { Button } from '../button';
 
-interface Props {
-  jobID: number;
-}
-
-export const JobButton = (props: Props) => {
+export const JobButton = (props: JobButtonInterface) => {
   const dispatch = useDispatch();
 
   const { jobID } = props;

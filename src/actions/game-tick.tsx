@@ -1,3 +1,5 @@
+import { JobProps } from '../types/job';
+
 import { SetEnemy } from '../utils/set-active-enemy';
 import { SetActiveEnemy, SetPlayerRewards } from '../actions/actions';
 
@@ -12,7 +14,7 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
     (job: any) => store.jobs[job].active
   );
   // @ts-ignore
-  const ACTIVE_JOB_DATA: any = store.jobs[ACTIVE_JOB_ID];
+  const ACTIVE_JOB_DATA: JobProps = store.jobs[ACTIVE_JOB_ID];
 
   if (typeof ACTIVE_JOB_DATA === 'undefined') {
     return;

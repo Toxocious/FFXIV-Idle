@@ -14,11 +14,11 @@ import { CraftingWindow } from '../../routes/crafting';
 import { GatheringWindow } from '../../routes/gathering';
 import { InventoryWindow } from '../../routes/inventory';
 
-export const GameWindow = ({}) => {
+export const GameWindow = () => {
   const dispatch = useDispatch();
   const ActiveJob = GetActiveJob();
 
-  let WhatToRender: any;
+  let WhatToRender: JSX.Element;
   if (typeof ActiveJob === 'undefined') {
     WhatToRender = <JobSelector clickToSwitch={true} />;
   } else {

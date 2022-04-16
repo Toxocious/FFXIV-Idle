@@ -5,9 +5,11 @@ import { ChangeActivePage } from '../../actions/actions';
 
 import { GAME_PAGES } from '../../constants/game-pages';
 
+import { NavEntryInterface } from '../../types/navigation';
+
 import './index.css';
 
-const NavigationEntry = (props: any) => {
+const NavigationEntry = (props: NavEntryInterface) => {
   const { page } = props;
   const GAME_PAGE = GAME_PAGES[page];
 

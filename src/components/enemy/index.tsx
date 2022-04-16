@@ -72,7 +72,7 @@ export const Enemy = () => {
               overflow: 'scroll',
             }}
           >
-            {Object.keys(activeEnemy.drops).map((drop: any) => (
+            {Object.keys(activeEnemy.drops).map((drop: string) => (
               <div data-drop-key={drop} key={drop}>
                 <Slot
                   index={drop}

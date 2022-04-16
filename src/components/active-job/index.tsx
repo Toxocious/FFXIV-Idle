@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from '../../providers/game';
 import { ChangeActivePage } from '../../actions/actions';
 
+import { JobProps } from '../../types/job';
+
 import { CalcLevelFromExp } from '../../utils/calc-level';
 import { GetActiveJob } from '../../utils/get-active-job';
 
 import './index.css';
 
-export const ActiveJob = ({}) => {
+export const ActiveJob = () => {
   const dispatch = useDispatch();
-  const JOB_DATA: any = GetActiveJob();
+  const JOB_DATA: JobProps = GetActiveJob();
 
   if (typeof JOB_DATA === 'undefined') {
     return <></>;

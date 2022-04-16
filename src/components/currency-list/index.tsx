@@ -1,16 +1,13 @@
 import { useStore } from '../../providers/game';
 import { CURRENCIES } from '../../constants/currencies';
 
+import { CurrencyProps, CurrencyEntryProps } from '../../types/currency';
+
 import './index.css';
 
-interface Props {
-  readonly currencyID: any;
-  readonly currencies: [];
-}
-
-const CurrencyEntry = (props: Props) => {
+const CurrencyEntry = (props: CurrencyEntryProps) => {
   const { currencies, currencyID } = props;
-  const CURRENCY_DATA: any = currencies[currencyID];
+  const CURRENCY_DATA: CurrencyProps = currencies[currencyID];
 
   if (typeof CURRENCY_DATA === 'undefined') {
     return <></>;
@@ -35,7 +32,7 @@ const CurrencyEntry = (props: Props) => {
             >
               <div>
                 <img
-                  src={CURRENCY_DATA.imageName}
+                  src={CURRENCY_DATA.image}
                   style={{ height: 32, width: 32 }}
                 />
               </div>

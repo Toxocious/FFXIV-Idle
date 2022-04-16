@@ -88,10 +88,13 @@ export const storeReducer = (store: any, action: any) => {
           const ITEM_DROP = ITEMS[dropID];
 
           let dropAmount: number = 0;
-          if (ITEM_DROP.minAmount !== ITEM_DROP.maxAmount) {
+          if (
+            typeof ITEM_DROP.maxAmount !== 'undefined' &&
+            ITEM_DROP.minAmount !== ITEM_DROP.maxAmount
+          ) {
             dropAmount = Math.floor(Math.random() * ITEM_DROP.maxAmount);
           } else {
-            dropAmount = ITEM_DROP.minAmount;
+            dropAmount = ITEM_DROP.minAmount ?? 1;
           }
 
           if (typeof Items[dropID] === 'undefined') {

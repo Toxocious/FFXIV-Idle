@@ -1,38 +1,41 @@
 import { CURRENCIES } from '../../constants/currencies';
 import { ITEMS } from '../../constants/items';
 
+import { SlotInterface } from '../../types/slot';
+import { ItemProps } from '../../types/item';
+
 import './index.css';
 
-interface Props {
-  index: string;
-  image?: string;
-  name?: string;
-  amount?: number;
-  displayDropChance?: boolean;
-}
-
-export const Slot = (props: Props) => {
+export const Slot = (props: SlotInterface) => {
   let { index, image, name, amount, displayDropChance } = props;
 
-  let dropAmount: string = '0';
-  let DROP_DATA: any;
+  let dropAmount: string | number | null = null;
+  let DROP_DATA: ItemProps = {};
 
   if (index == 'exp') {
     DROP_DATA = {
       name: name,
       amount: amount,
-      imageName: image,
+      image: image,
     };
 
-    dropAmount = DROP_DATA.amount.toLocaleString();
+    if (typeof DROP_DATA.amount !== 'undefined') {
+      dropAmount = DROP_DATA.amount.toLocaleString();
+    } else {
+      dropAmount = '0';
+    }
   } else if (index in CURRENCIES) {
     DROP_DATA = {
       name: name,
       amount: amount,
-      imageName: CURRENCIES[index].imageName,
+      image: CURRENCIES[index].image,
     };
 
-    dropAmount = DROP_DATA.amount.toLocaleString();
+    if (typeof DROP_DATA.amount !== 'undefined') {
+      dropAmount = DROP_DATA.amount.toLocaleString();
+    } else {
+      dropAmount = '0';
+    }
   } else if (index in ITEMS) {
     DROP_DATA = ITEMS[index];
 
@@ -47,7 +50,7 @@ export const Slot = (props: Props) => {
     }
   }
 
-  if (!DROP_DATA || DROP_DATA.amount < 1) {
+  if (Object.keys(DROP_DATA).length === 0 || !dropAmount) {
     return <></>;
   }
 
@@ -55,17 +58,20 @@ export const Slot = (props: Props) => {
     <div className='slot'>
       <div className='icon'>
         <img
-          src={DROP_DATA.image ?? DROP_DATA.imageName}
+          src={DROP_DATA.image ?? DROP_DATA.image}
           alt={DROP_DATA.name}
           title={DROP_DATA.name}
         />
       </div>
       <div className='value'>{dropAmount}</div>
-      {displayDropChance && DROP_DATA.dropChance > 0 ? (
-        <div className='value'>{DROP_DATA.dropChance}%</div>
-      ) : (
-        ''
-      )}
+      {
+        //@ts-ignore
+        displayDropChance && DROP_DATA.dropChance > 0 ? (
+          <div className='value'>{DROP_DATA.dropChance}%</div>
+        ) : (
+          ''
+        )
+      }
     </div>
   );
 };

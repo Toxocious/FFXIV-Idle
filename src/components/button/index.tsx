@@ -1,22 +1,8 @@
-import React from 'react';
+import { ButtonProps } from '../../types/button';
 
 import './index.css';
 
-interface Props {
-  /** Button text */
-  text: string;
-
-  /** Whether or not the button is disabled */
-  disabled?: boolean;
-
-  /** Button class to use for styling */
-  className?: 'primary' | 'regal';
-
-  /** Onclick handler */
-  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
-}
-
-export const Button = (props: Props) => {
+export const Button = (props: ButtonProps) => {
   const { text, disabled, onClick, className } = props;
 
   return (
