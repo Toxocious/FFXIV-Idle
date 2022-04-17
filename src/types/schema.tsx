@@ -9,7 +9,11 @@ export interface SchemaInterface {
 
 export interface SchemaProps {
   game: SchemaGameProps;
+
+  stats: SchemaStatsProps;
+
   activeEnemy: EnemyInterface;
+
   currencies: CurrencyInterface;
   jobs: JobInterface;
   items: ItemInterface;
@@ -18,4 +22,16 @@ export interface SchemaProps {
 export interface SchemaGameProps {
   elapsedTime: number;
   activePage: number;
+}
+
+export interface SchemaStatsProps {
+  mobKills: number;
+  expEarned: number;
+  gilEarned: number;
+  tomestonesEarned: number;
+
+  mobDropsCollected: number;
+
+  itemsCrafted: number;
+  itemsGathered: number;
 }
