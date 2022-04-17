@@ -16,7 +16,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 10,
+        amount: 1,
       },
       RED_LANDTRAP_LEAF: null,
       BLUE_LANDTRAP_LEAF: null,
@@ -39,7 +39,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 14,
+        amount: 1,
       },
       ANIMAL_HIDE: null,
       DODO_EGG: null,
@@ -62,7 +62,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 18,
+        amount: 1,
       },
       PUK_EGG: null,
       PUK_WING: null,
@@ -83,7 +83,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 35,
+        amount: 3,
       },
       ANIMAL_SKIN: null,
       MARMOT_BLOOD: null,
@@ -104,7 +104,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 44,
+        amount: 4,
       },
       ANIMAL_HIDE: null,
       COEURL_SKIN: null,
@@ -125,7 +125,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 52,
+        amount: 5,
       },
     },
   },
@@ -144,7 +144,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 86,
+        amount: 8,
       },
       JACKAL_FANG: {
         name: 'Jackal Fang',
@@ -166,7 +166,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 99,
+        amount: 9,
       },
     },
   },
@@ -185,7 +185,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 112,
+        amount: 11,
       },
     },
   },
@@ -204,7 +204,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 163,
+        amount: 16,
       },
       LADYBUG_ELYTRON: null,
     },
@@ -224,7 +224,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 180,
+        amount: 18,
       },
     },
   },
@@ -243,7 +243,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 197,
+        amount: 19,
       },
       ALDGOAT_CHUCK: null,
       ALDGOAT_HORN: null,
@@ -266,7 +266,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 775,
+        amount: 77,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -292,7 +292,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 838,
+        amount: 83,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -317,7 +317,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 902,
+        amount: 90,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -342,7 +342,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 392,
+        amount: 39,
       },
     },
   },
@@ -361,7 +361,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 418,
+        amount: 41,
       },
     },
   },
@@ -380,7 +380,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 443,
+        amount: 44,
       },
       ANIMAL_SKIN: null,
       MARMOT_BLOOD: null,
@@ -401,7 +401,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 545,
+        amount: 54,
       },
       ANIMAL_SKIN: null,
       MARMOT_BLOOD: null,
@@ -423,7 +423,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 575,
+        amount: 57,
       },
     },
   },
@@ -442,7 +442,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 605,
+        amount: 60,
       },
     },
   },
@@ -461,7 +461,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 724,
+        amount: 72,
       },
       ANIMAL_HIDE: null,
       DODO_EGG: null,
@@ -484,7 +484,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 758,
+        amount: 75,
       },
     },
   },
@@ -503,7 +503,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 792,
+        amount: 79,
       },
     },
   },
@@ -522,7 +522,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 928,
+        amount: 92,
       },
     },
   },
@@ -541,7 +541,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 966,
+        amount: 96,
       },
       RED_LANDTRAP_LEAF: null,
     },
@@ -561,7 +561,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 1004,
+        amount: 100,
       },
     },
   },
@@ -580,7 +580,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 3452,
+        amount: 345,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -606,7 +606,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 3580,
+        amount: 358,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -634,7 +634,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 3707,
+        amount: 370,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -658,7 +658,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 1412,
+        amount: 141,
       },
       BEAST_SINEW: null,
     },
@@ -678,7 +678,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 1459,
+        amount: 145,
       },
     },
   },
@@ -697,7 +697,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 1506,
+        amount: 150,
       },
       ANIMAL_SKIN: null,
       MARMOT_BLOOD: null,
@@ -718,7 +718,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 1693,
+        amount: 169,
       },
     },
   },
@@ -737,7 +737,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 1744,
+        amount: 174,
       },
       ANIMAL_HIDE: null,
       DODO_EGG: null,
@@ -760,7 +760,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 1795,
+        amount: 179,
       },
       PUK_EGG: null,
       PUK_WING: null,
@@ -781,7 +781,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 1999,
+        amount: 199,
       },
       DRAGON_BLOOD: {
         name: 'Dragon Blood',
@@ -806,7 +806,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 2054,
+        amount: 205,
       },
       MARMOT_PELT: {
         name: 'Marmot Pelt',
@@ -828,7 +828,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 2109,
+        amount: 210,
       },
       ANIMAL_HIDE: null,
       COEURL_SKIN: null,
@@ -849,7 +849,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 2330,
+        amount: 233,
       },
     },
   },
@@ -868,7 +868,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 2390,
+        amount: 239,
       },
     },
   },
@@ -887,7 +887,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 2449,
+        amount: 244,
       },
     },
   },
@@ -906,7 +906,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 8042,
+        amount: 804,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -932,7 +932,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 8233,
+        amount: 823,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -956,7 +956,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 8425,
+        amount: 842,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -980,7 +980,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 3070,
+        amount: 307,
       },
     },
   },
@@ -999,7 +999,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 3138,
+        amount: 313,
       },
     },
   },
@@ -1018,7 +1018,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 3206,
+        amount: 320,
       },
     },
   },
@@ -1037,7 +1037,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 3478,
+        amount: 347,
       },
     },
   },
@@ -1056,7 +1056,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 3550,
+        amount: 355,
       },
     },
   },
@@ -1075,7 +1075,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 3622,
+        amount: 362,
       },
     },
   },
@@ -1094,7 +1094,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 3911,
+        amount: 391,
       },
     },
   },
@@ -1113,7 +1113,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 3988,
+        amount: 398,
       },
     },
   },
@@ -1132,7 +1132,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 4064,
+        amount: 406,
       },
       ANIMAL_SKIN: null,
       MARMOT_BLOOD: null,
@@ -1153,7 +1153,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 4370,
+        amount: 437,
       },
     },
   },
@@ -1172,7 +1172,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 4451,
+        amount: 445,
       },
     },
   },
@@ -1191,7 +1191,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 4532,
+        amount: 453,
       },
       ANIMAL_HIDE: null,
       DODO_EGG: null,
@@ -1214,7 +1214,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 14545,
+        amount: 1454,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -1238,7 +1238,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 14800,
+        amount: 1480,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -1266,7 +1266,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 15055,
+        amount: 1505,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -1293,7 +1293,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 5365,
+        amount: 536,
       },
       ANIMAL_HIDE: null,
       COEURL_SKIN: null,
@@ -1314,7 +1314,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 5454,
+        amount: 545,
       },
     },
   },
@@ -1333,7 +1333,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 5543,
+        amount: 554,
       },
     },
   },
@@ -1352,7 +1352,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 5900,
+        amount: 590,
       },
     },
   },
@@ -1371,7 +1371,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 5994,
+        amount: 599,
       },
     },
   },
@@ -1390,7 +1390,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 6087,
+        amount: 608,
       },
     },
   },
@@ -1409,7 +1409,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 6461,
+        amount: 646,
       },
     },
   },
@@ -1428,7 +1428,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 6559,
+        amount: 655,
       },
     },
   },
@@ -1447,7 +1447,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 6657,
+        amount: 665,
       },
     },
   },
@@ -1466,7 +1466,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 7048,
+        amount: 704,
       },
       RED_LANDTRAP_LEAF: null,
       BLUE_LANDTRAP_LEAF: null,
@@ -1489,7 +1489,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 7150,
+        amount: 715,
       },
     },
   },
@@ -1508,7 +1508,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 7252,
+        amount: 725,
       },
     },
   },
@@ -1527,7 +1527,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 22960,
+        amount: 2296,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -1554,7 +1554,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 23278,
+        amount: 2327,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -1578,7 +1578,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 23597,
+        amount: 2359,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -1602,7 +1602,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 8297,
+        amount: 829,
       },
     },
   },
@@ -1621,7 +1621,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 8408,
+        amount: 840,
       },
     },
   },
@@ -1640,7 +1640,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 8518,
+        amount: 851,
       },
       ALDGOAT_CHUCK: null,
       ALDGOAT_HORN: null,
@@ -1663,7 +1663,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 8960,
+        amount: 896,
       },
       ANIMAL_SKIN: null,
       MARMOT_BLOOD: null,
@@ -1684,7 +1684,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 9075,
+        amount: 907,
       },
     },
   },
@@ -1703,7 +1703,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 9190,
+        amount: 919,
       },
     },
   },
@@ -1722,7 +1722,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 9649,
+        amount: 964,
       },
     },
   },
@@ -1741,7 +1741,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 9768,
+        amount: 976,
       },
     },
   },
@@ -1760,7 +1760,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 9887,
+        amount: 988,
       },
     },
   },
@@ -1779,7 +1779,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 10363,
+        amount: 1036,
       },
       ANIMAL_HIDE: null,
       DODO_EGG: null,
@@ -1802,7 +1802,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 10486,
+        amount: 1048,
       },
     },
   },
@@ -1821,7 +1821,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 10609,
+        amount: 1060,
       },
     },
   },
@@ -1840,7 +1840,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 33287,
+        amount: 3328,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -1868,7 +1868,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 33670,
+        amount: 3367,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -1892,7 +1892,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 34052,
+        amount: 3405,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -1918,7 +1918,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 11867,
+        amount: 1186,
       },
     },
   },
@@ -1937,7 +1937,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 11999,
+        amount: 1199,
       },
     },
   },
@@ -1956,7 +1956,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 12131,
+        amount: 1213,
       },
     },
   },
@@ -1975,7 +1975,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 12658,
+        amount: 1265,
       },
     },
   },
@@ -1994,7 +1994,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 12794,
+        amount: 1279,
       },
     },
   },
@@ -2013,7 +2013,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 12930,
+        amount: 1293,
       },
     },
   },
@@ -2032,7 +2032,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 13474,
+        amount: 1347,
       },
       ANIMAL_HIDE: null,
       DODO_EGG: null,
@@ -2055,7 +2055,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 13614,
+        amount: 1361,
       },
     },
   },
@@ -2074,7 +2074,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 13754,
+        amount: 1375,
       },
     },
   },
@@ -2093,7 +2093,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 14315,
+        amount: 1431,
       },
     },
   },
@@ -2112,7 +2112,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 14460,
+        amount: 1446,
       },
     },
   },
@@ -2131,7 +2131,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 14604,
+        amount: 1460,
       },
     },
   },
@@ -2150,7 +2150,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 45527,
+        amount: 4552,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -2176,7 +2176,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 45973,
+        amount: 4597,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -2200,7 +2200,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 46420,
+        amount: 4642,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -2224,7 +2224,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 16075,
+        amount: 1607,
       },
       RED_LANDTRAP_LEAF: null,
       BLUE_LANDTRAP_LEAF: null,
@@ -2247,7 +2247,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 16228,
+        amount: 1622,
       },
     },
   },
@@ -2266,7 +2266,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 16381,
+        amount: 1638,
       },
     },
   },
@@ -2285,7 +2285,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 16993,
+        amount: 1699,
       },
       ANIMAL_SKIN: null,
       MARMOT_BLOOD: null,
@@ -2306,7 +2306,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 17150,
+        amount: 1715,
       },
     },
   },
@@ -2325,7 +2325,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 17307,
+        amount: 1730,
       },
       RED_LANDTRAP_LEAF: null,
       BLUE_LANDTRAP_LEAF: null,
@@ -2348,7 +2348,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 17936,
+        amount: 1793,
       },
     },
   },
@@ -2367,7 +2367,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 18098,
+        amount: 1809,
       },
     },
   },
@@ -2386,7 +2386,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 18259,
+        amount: 1825,
       },
       ALDGOAT_CHUCK: null,
       ALDGOAT_HORN: null,
@@ -2409,7 +2409,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 18905,
+        amount: 1890,
       },
     },
   },
@@ -2428,7 +2428,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 19071,
+        amount: 1907,
       },
     },
   },
@@ -2447,7 +2447,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 19237,
+        amount: 1923,
       },
     },
   },
@@ -2466,7 +2466,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 59680,
+        amount: 5968,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -2490,7 +2490,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 60190,
+        amount: 6019,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -2514,7 +2514,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 60700,
+        amount: 6070,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -2538,7 +2538,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 20920,
+        amount: 2092,
       },
     },
   },
@@ -2557,7 +2557,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 21094,
+        amount: 2109,
       },
     },
   },
@@ -2576,7 +2576,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 21268,
+        amount: 2126,
       },
     },
   },
@@ -2595,7 +2595,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 21965,
+        amount: 2196,
       },
     },
   },
@@ -2614,7 +2614,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 22144,
+        amount: 2214,
       },
     },
   },
@@ -2633,7 +2633,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 22322,
+        amount: 2232,
       },
     },
   },
@@ -2652,7 +2652,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 23036,
+        amount: 2303,
       },
     },
   },
@@ -2671,7 +2671,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 23219,
+        amount: 2321,
       },
     },
   },
@@ -2690,7 +2690,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 23402,
+        amount: 2340,
       },
     },
   },
@@ -2709,7 +2709,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 24133,
+        amount: 2413,
       },
       ANIMAL_HIDE: null,
       DODO_EGG: null,
@@ -2732,7 +2732,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 24320,
+        amount: 2432,
       },
     },
   },
@@ -2751,7 +2751,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 24507,
+        amount: 2450,
       },
     },
   },
@@ -2770,7 +2770,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 75745,
+        amount: 7574,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -2794,7 +2794,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 76318,
+        amount: 7631,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -2818,7 +2818,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 76892,
+        amount: 7689,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -2842,7 +2842,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 26402,
+        amount: 2640,
       },
     },
   },
@@ -2861,7 +2861,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 26598,
+        amount: 2659,
       },
       AANIMAL_HIDE: null,
       DODO_EGG: null,
@@ -2884,7 +2884,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 26793,
+        amount: 2679,
       },
     },
   },
@@ -2903,7 +2903,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 27575,
+        amount: 2757,
       },
     },
   },
@@ -2922,7 +2922,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 27775,
+        amount: 2777,
       },
       ALDGOAT_CHUCK: null,
       ALDGOAT_HORN: null,
@@ -2945,7 +2945,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 27975,
+        amount: 2797,
       },
     },
   },
@@ -2964,7 +2964,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 28774,
+        amount: 2877,
       },
     },
   },
@@ -2983,7 +2983,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 28978,
+        amount: 2897,
       },
     },
   },
@@ -3002,7 +3002,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 29182,
+        amount: 2918,
       },
     },
   },
@@ -3021,7 +3021,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 29998,
+        amount: 2999,
       },
       ANIMAL_HIDE: null,
       COEURL_SKIN: null,
@@ -3042,7 +3042,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 30206,
+        amount: 3020,
       },
     },
   },
@@ -3061,7 +3061,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 30414,
+        amount: 3041,
       },
     },
   },
@@ -3080,7 +3080,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 93722,
+        amount: 9372,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -3107,7 +3107,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 94360,
+        amount: 9436,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -3131,7 +3131,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 94997,
+        amount: 9499,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -3157,7 +3157,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 32522,
+        amount: 3252,
       },
     },
   },
@@ -3176,7 +3176,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 32739,
+        amount: 3273,
       },
     },
   },
@@ -3195,7 +3195,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 32956,
+        amount: 3295,
       },
     },
   },
@@ -3214,7 +3214,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 33823,
+        amount: 3382,
       },
     },
   },
@@ -3233,7 +3233,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 34044,
+        amount: 3404,
       },
     },
   },
@@ -3252,7 +3252,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 34265,
+        amount: 3426,
       },
     },
   },
@@ -3271,7 +3271,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 35149,
+        amount: 3514,
       },
     },
   },
@@ -3290,7 +3290,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 35374,
+        amount: 3537,
       },
     },
   },
@@ -3309,7 +3309,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 35599,
+        amount: 3559,
       },
     },
   },
@@ -3328,7 +3328,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 36500,
+        amount: 3650,
       },
     },
   },
@@ -3347,7 +3347,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 36730,
+        amount: 3673,
       },
     },
   },
@@ -3366,7 +3366,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 36959,
+        amount: 3695,
       },
     },
   },
@@ -3385,7 +3385,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 113612,
+        amount: 11361,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -3409,7 +3409,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 114313,
+        amount: 11431,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -3433,7 +3433,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 115015,
+        amount: 11501,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -3457,7 +3457,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 39280,
+        amount: 3928,
       },
     },
   },
@@ -3476,7 +3476,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 39518,
+        amount: 3951,
       },
     },
   },
@@ -3495,7 +3495,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 39756,
+        amount: 3975,
       },
     },
   },
@@ -3514,7 +3514,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 40708,
+        amount: 4070,
       },
     },
   },
@@ -3533,7 +3533,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 40950,
+        amount: 4095,
       },
     },
   },
@@ -3552,7 +3552,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 41192,
+        amount: 4119,
       },
     },
   },
@@ -3571,7 +3571,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 42161,
+        amount: 4216,
       },
     },
   },
@@ -3590,7 +3590,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 42408,
+        amount: 4240,
       },
     },
   },
@@ -3609,7 +3609,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 42654,
+        amount: 4265,
       },
     },
   },
@@ -3628,7 +3628,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 43640,
+        amount: 4364,
       },
     },
   },
@@ -3647,7 +3647,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 43891,
+        amount: 4389,
       },
     },
   },
@@ -3666,7 +3666,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 44142,
+        amount: 4414,
       },
     },
   },
@@ -3685,7 +3685,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 135415,
+        amount: 13541,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -3711,7 +3711,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 136180,
+        amount: 13618,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -3735,7 +3735,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 136945,
+        amount: 13694,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -3763,7 +3763,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 46675,
+        amount: 4667,
       },
     },
   },
@@ -3782,7 +3782,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 46934,
+        amount: 4693,
       },
     },
   },
@@ -3801,7 +3801,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 47193,
+        amount: 4719,
       },
     },
   },
@@ -3820,7 +3820,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 48230,
+        amount: 4823,
       },
     },
   },
@@ -3839,7 +3839,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 48494,
+        amount: 4849,
       },
     },
   },
@@ -3858,7 +3858,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 48757,
+        amount: 4875,
       },
     },
   },
@@ -3877,7 +3877,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 49811,
+        amount: 4981,
       },
     },
   },
@@ -3896,7 +3896,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 50079,
+        amount: 5007,
       },
       ANIMAL_HIDE: null,
       COEURL_SKIN: null,
@@ -3917,7 +3917,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 50347,
+        amount: 5034,
       },
     },
   },
@@ -3936,7 +3936,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 51418,
+        amount: 5141,
       },
     },
   },
@@ -3955,7 +3955,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 51690,
+        amount: 5169,
       },
       ALDGOAT_CHUCK: null,
       ALDGOAT_HORN: null,
@@ -3978,7 +3978,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 51962,
+        amount: 5196,
       },
     },
   },
@@ -3997,7 +3997,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 159130,
+        amount: 15913,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -4021,7 +4021,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 159958,
+        amount: 15995,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -4045,7 +4045,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 160787,
+        amount: 16078,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -4069,7 +4069,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 54707,
+        amount: 5470,
       },
     },
   },
@@ -4088,7 +4088,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 54988,
+        amount: 5498,
       },
     },
   },
@@ -4107,7 +4107,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 55268,
+        amount: 5526,
       },
     },
   },
@@ -4126,7 +4126,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 56390,
+        amount: 5639,
       },
     },
   },
@@ -4145,7 +4145,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 56675,
+        amount: 5667,
       },
     },
   },
@@ -4164,7 +4164,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 56960,
+        amount: 5696,
       },
     },
   },
@@ -4183,7 +4183,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 58099,
+        amount: 5809,
       },
     },
   },
@@ -4202,7 +4202,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 58388,
+        amount: 5838,
       },
     },
   },
@@ -4221,7 +4221,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 58677,
+        amount: 5867,
       },
     },
   },
@@ -4240,7 +4240,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 59833,
+        amount: 5983,
       },
     },
   },
@@ -4259,7 +4259,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 60126,
+        amount: 6012,
       },
     },
   },
@@ -4278,7 +4278,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 60419,
+        amount: 6041,
       },
     },
   },
@@ -4297,7 +4297,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 184757,
+        amount: 18475,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -4323,7 +4323,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 185650,
+        amount: 18565,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -4347,7 +4347,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 186542,
+        amount: 18654,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -4371,7 +4371,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 63377,
+        amount: 6337,
       },
     },
   },
@@ -4390,7 +4390,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 63679,
+        amount: 6367,
       },
     },
   },
@@ -4409,7 +4409,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 63981,
+        amount: 6398,
       },
     },
   },
@@ -4428,7 +4428,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 65188,
+        amount: 6518,
       },
     },
   },
@@ -4447,7 +4447,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 65494,
+        amount: 6549,
       },
     },
   },
@@ -4466,7 +4466,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 65800,
+        amount: 6580,
       },
     },
   },
@@ -4485,7 +4485,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 67024,
+        amount: 6702,
       },
     },
   },
@@ -4504,7 +4504,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 67334,
+        amount: 6733,
       },
     },
   },
@@ -4523,7 +4523,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 67644,
+        amount: 6764,
       },
     },
   },
@@ -4542,7 +4542,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 68885,
+        amount: 6888,
       },
     },
   },
@@ -4561,7 +4561,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 69200,
+        amount: 6920,
       },
     },
   },
@@ -4580,7 +4580,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 69514,
+        amount: 6951,
       },
     },
   },
@@ -4599,7 +4599,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 212297,
+        amount: 21229,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -4627,7 +4627,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 213253,
+        amount: 21325,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -4651,7 +4651,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 214210,
+        amount: 21421,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -4675,7 +4675,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 72685,
+        amount: 7268,
       },
     },
   },
@@ -4694,7 +4694,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 73008,
+        amount: 7300,
       },
     },
   },
@@ -4713,7 +4713,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 73331,
+        amount: 7333,
       },
     },
   },
@@ -4732,7 +4732,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 74623,
+        amount: 7462,
       },
     },
   },
@@ -4751,7 +4751,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 74950,
+        amount: 7495,
       },
     },
   },
@@ -4770,7 +4770,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 75277,
+        amount: 7527,
       },
     },
   },
@@ -4789,7 +4789,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 76586,
+        amount: 7658,
       },
     },
   },
@@ -4808,7 +4808,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 76918,
+        amount: 7691,
       },
     },
   },
@@ -4827,7 +4827,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 77249,
+        amount: 7724,
       },
     },
   },
@@ -4846,7 +4846,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 78575,
+        amount: 7857,
       },
     },
   },
@@ -4865,7 +4865,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 78911,
+        amount: 7891,
       },
     },
   },
@@ -4884,7 +4884,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 79247,
+        amount: 7924,
       },
     },
   },
@@ -4903,7 +4903,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 241750,
+        amount: 24175,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -4927,7 +4927,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 242770,
+        amount: 24277,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -4951,7 +4951,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 243790,
+        amount: 24379,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -4975,7 +4975,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 82630,
+        amount: 8263,
       },
     },
   },
@@ -4994,7 +4994,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 82974,
+        amount: 8297,
       },
     },
   },
@@ -5013,7 +5013,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 83318,
+        amount: 8331,
       },
     },
   },
@@ -5032,7 +5032,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 84695,
+        amount: 8469,
       },
     },
   },
@@ -5051,7 +5051,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 85044,
+        amount: 8504,
       },
     },
   },
@@ -5070,7 +5070,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 85392,
+        amount: 8539,
       },
     },
   },
@@ -5089,7 +5089,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 86786,
+        amount: 8678,
       },
     },
   },
@@ -5108,7 +5108,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 87139,
+        amount: 8713,
       },
     },
   },
@@ -5127,7 +5127,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 87492,
+        amount: 8749,
       },
     },
   },
@@ -5146,7 +5146,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 88903,
+        amount: 8890,
       },
     },
   },
@@ -5165,7 +5165,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 89260,
+        amount: 8926,
       },
     },
   },
@@ -5184,7 +5184,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 89617,
+        amount: 8961,
       },
     },
   },
@@ -5203,7 +5203,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 273115,
+        amount: 27311,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -5227,7 +5227,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 274198,
+        amount: 27419,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -5251,7 +5251,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 275282,
+        amount: 27528,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -5275,7 +5275,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 93212,
+        amount: 9321,
       },
     },
   },
@@ -5294,7 +5294,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 93578,
+        amount: 9357,
       },
     },
   },
@@ -5313,7 +5313,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 93943,
+        amount: 9394,
       },
     },
   },
@@ -5332,7 +5332,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 95405,
+        amount: 9540,
       },
     },
   },
@@ -5351,7 +5351,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 95775,
+        amount: 9577,
       },
     },
   },
@@ -5370,7 +5370,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 96145,
+        amount: 9614,
       },
     },
   },
@@ -5389,7 +5389,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 97624,
+        amount: 9762,
       },
     },
   },
@@ -5408,7 +5408,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 97998,
+        amount: 9799,
       },
     },
   },
@@ -5427,7 +5427,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 98372,
+        amount: 9837,
       },
     },
   },
@@ -5446,7 +5446,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 99868,
+        amount: 9986,
       },
     },
   },
@@ -5465,7 +5465,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 100246,
+        amount: 10024,
       },
     },
   },
@@ -5484,7 +5484,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 100624,
+        amount: 10062,
       },
     },
   },
@@ -5503,7 +5503,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 306392,
+        amount: 30639,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -5531,7 +5531,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 307540,
+        amount: 30754,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
@@ -5559,7 +5559,7 @@ export const ENEMIES: EnemyInterface = {
       GIL: {
         name: 'Gil',
         image: 'src/assets/images/currency_gil.png',
-        amount: 308687,
+        amount: 30868,
       },
       ALLAGAN_TOMESTONE: {
         name: 'Allagan Tomestone',
