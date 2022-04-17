@@ -1,10 +1,12 @@
 import { JOBS } from '../constants/jobs';
 import { CURRENCIES } from '../constants/currencies';
+import { STATS } from '../constants/stats';
 
 import { schema } from '../store/schema';
 
 import { JobProps } from '../types/job';
 import { CurrencyProps } from '../types/currency';
+import { StatsProps } from '../types/stats';
 import { SchemaProps } from '../types/schema';
 
 const STORE_KEY: string = 'ffxiv_incremental_beta_v_0_1';
@@ -32,6 +34,12 @@ export const getInitialStore = () => {
     if (CURRENCY_DATA.unlocked) {
       STORE.currencies[currencyID] = Object.assign({}, CURRENCY_DATA);
     }
+  });
+
+  Object.keys(STATS).forEach((statIndex) => {
+    const STAT_DATA: StatsProps = STATS[statIndex];
+
+    STORE.stats[statIndex] = Object.assign({}, STAT_DATA);
   });
 
   return STORE;

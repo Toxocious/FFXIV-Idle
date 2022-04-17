@@ -2,6 +2,7 @@ import { EnemyInterface } from './enemy';
 import { CurrencyInterface } from './currency';
 import { JobInterface } from './job';
 import { ItemInterface } from './item';
+import { StatsInterface } from './stats';
 
 export interface SchemaInterface {
   [store: symbol]: SchemaProps;
@@ -10,7 +11,7 @@ export interface SchemaInterface {
 export interface SchemaProps {
   game: SchemaGameProps;
 
-  stats: SchemaStatsProps;
+  stats: StatsInterface;
 
   activeEnemy: EnemyInterface;
 
@@ -22,16 +23,4 @@ export interface SchemaProps {
 export interface SchemaGameProps {
   elapsedTime: number;
   activePage: number;
-}
-
-export interface SchemaStatsProps {
-  mobKills: number;
-  expEarned: number;
-  gilEarned: number;
-  tomestonesEarned: number;
-
-  mobDropsCollected: number;
-
-  itemsCrafted: number;
-  itemsGathered: number;
 }
