@@ -8,14 +8,20 @@ export const STATS: StatsInterface = {
   expEarned: {
     name: 'Exp. Earned',
     amount: 0,
+    type: 'Currency',
+    index: 'exp',
   },
   gilEarned: {
     name: 'Gil Earned',
     amount: 0,
+    type: 'Currency',
+    index: 'GIL',
   },
   tomestonesEarned: {
     name: 'Tomestones Earned',
     amount: 0,
+    type: 'Currency',
+    index: 'ALLAGAN_TOMESTONES',
   },
   mobDropsCollected: {
     name: 'Mob Drops Collected',
@@ -23,6 +29,10 @@ export const STATS: StatsInterface = {
   },
   itemsCrafted: {
     name: 'Items Crafted',
+    amount: 0,
+  },
+  itemsFound: {
+    name: 'Items Found',
     amount: 0,
   },
   itemsGathered: {
