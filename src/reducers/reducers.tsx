@@ -4,6 +4,7 @@ import { ACTIONS } from '../actions/actions';
 
 import { JOBS } from '../constants/jobs';
 import { ITEMS } from '../constants/items';
+import { STATS } from '../constants/stats';
 import { CURRENCIES } from '../constants/currencies';
 import { LEVEL_EXP } from '../constants/level-exp';
 
@@ -61,6 +62,9 @@ export const storeReducer = (store: any, action: any) => {
       let Currencies = cloneDeep(store.currencies);
       let Items = cloneDeep(store.items);
       let Jobs = cloneDeep(store.jobs);
+      let Stats = cloneDeep(store.stats);
+
+      Stats.mobKills.amount++;
 
       Object.keys(drops).map((dropID) => {
         if (dropID === 'exp') {
@@ -82,8 +86,16 @@ export const storeReducer = (store: any, action: any) => {
               Jobs[ACTIVE_JOB].exp
             ).LEVEL;
           }
+
+          Stats.expEarned.amount += drops[dropID].amount;
         } else if (dropID in CURRENCIES) {
           Currencies[dropID].amount += drops[dropID].amount;
+
+          Object.keys(Stats).forEach((index) => {
+            if (Stats[index].index == dropID) {
+              Stats[index].amount += drops[dropID].amount;
+            }
+          });
         } else if (dropID in ITEMS) {
           const ITEM_DROP = ITEMS[dropID];
 
@@ -104,6 +116,8 @@ export const storeReducer = (store: any, action: any) => {
           } else {
             Items[dropID].amount += dropAmount;
           }
+
+          Stats.itemsFound.amount += dropAmount;
         }
       });
 
@@ -112,6 +126,7 @@ export const storeReducer = (store: any, action: any) => {
         currencies: Currencies,
         jobs: Jobs,
         items: Items,
+        stats: Stats,
       };
 
     default:
