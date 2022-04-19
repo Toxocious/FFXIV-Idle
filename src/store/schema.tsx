@@ -8,6 +8,8 @@ export const schema = {
     stats: {},
 
     activeEnemy: {},
+    activeGather: {},
+    activeCraft: {},
 
     currencies: {},
     jobs: {},

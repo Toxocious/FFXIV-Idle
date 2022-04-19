@@ -14,6 +14,8 @@ export interface SchemaProps {
   stats: StatsInterface;
 
   activeEnemy: EnemyInterface;
+  activeGather: ItemInterface;
+  activeCraft: ItemInterface;
 
   currencies: CurrencyInterface;
   jobs: JobInterface;
