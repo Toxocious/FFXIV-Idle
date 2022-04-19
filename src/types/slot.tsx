@@ -4,4 +4,6 @@ export interface SlotInterface {
   name?: string;
   amount?: number;
   displayDropChance?: boolean;
+  height?: number;
+  width?: number;
 }
