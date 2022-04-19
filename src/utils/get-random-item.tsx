@@ -1,6 +1,6 @@
 import { ITEMS } from '../constants/items';
 
-export const GetRandomItem = (gatherable: boolean) => {
+export const GetRandomItem = (gatherable: boolean = false) => {
   const POSSIBLE_ITEMS: string[] = Object.keys(ITEMS).filter(
     (index: any) => ITEMS[index].gatherable === gatherable
   );
