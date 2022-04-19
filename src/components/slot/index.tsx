@@ -7,7 +7,7 @@ import { ItemProps } from '../../types/item';
 import './index.css';
 
 export const Slot = (props: SlotInterface) => {
-  let { index, image, name, amount, displayDropChance } = props;
+  let { index, image, name, amount, displayDropChance, height, width } = props;
 
   let dropAmount: string | number | null = null;
   let DROP_DATA: ItemProps = {};
@@ -61,6 +61,8 @@ export const Slot = (props: SlotInterface) => {
           src={DROP_DATA.image ?? DROP_DATA.image}
           alt={DROP_DATA.name}
           title={DROP_DATA.name}
+          height={height ?? 32}
+          width={width ?? 32}
         />
       </div>
       <div className='value'>{dropAmount}</div>

@@ -19,8 +19,8 @@
 
   color: #d9d9d9;
   border-radius: .5rem;
-  height: 48px;
-  width: 48px;
+  min-height: 48px;
+  min-width: 48px;
   padding: 2px;
 
   transition: 150ms ease-in-out;
@@ -37,6 +37,6 @@
 }
 
 .slot > .icon > img {
-  height: 32px;
-  width: 32px;
+  min-height: 32px;
+  min-width: 32px;
 }
