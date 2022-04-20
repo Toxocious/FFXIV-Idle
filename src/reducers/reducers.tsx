@@ -4,7 +4,6 @@ import { ACTIONS } from '../actions/actions';
 
 import { JOBS } from '../constants/jobs';
 import { ITEMS } from '../constants/items';
-import { STATS } from '../constants/stats';
 import { CURRENCIES } from '../constants/currencies';
 import { LEVEL_EXP } from '../constants/level-exp';
 
@@ -13,35 +12,101 @@ import { CalcLevelFromExp } from '../utils/calc-level';
 export const storeReducer = (store: any, action: any) => {
   // console.log('[Store Reducer] Store:', store, '|| Action:', action);
 
+  const LEVEL_CAP_DATA =
+    Object.values(LEVEL_EXP)[Object.keys(LEVEL_EXP).length - 1];
+  let Game = cloneDeep(store.game);
+  let Currencies = cloneDeep(store.currencies);
+  let Items = cloneDeep(store.items);
+  let Jobs = cloneDeep(store.jobs);
+  let Stats = cloneDeep(store.stats);
+
   switch (action.type) {
     case ACTIONS.CHANGE_JOB:
       const { jobID } = action;
 
-      const JOB_LIST = cloneDeep(store.jobs);
-
-      Object.keys(JOB_LIST).forEach((job) => {
-        JOB_LIST[job].active = false;
+      Object.keys(Jobs).forEach((job) => {
+        Jobs[job].active = false;
       });
 
-      JOB_LIST[jobID].active = true;
+      Jobs[jobID].active = true;
 
       return {
         ...store,
         jobs: {
-          ...JOB_LIST,
-          [jobID]: Object.assign({}, JOB_LIST[jobID]),
+          ...Jobs,
+          [jobID]: Object.assign({}, Jobs[jobID]),
         },
       };
 
     case ACTIONS.CHANGE_PAGE:
-      const GAME_STORE = cloneDeep(store.game);
-
       return {
         ...store,
         game: {
-          ...GAME_STORE,
+          ...Game,
           activePage: action.pageID,
         },
+      };
+
+    case ACTIONS.SET_ACTIVE_GATHER:
+      const GATHERING_ITEM = action.item;
+      GATHERING_ITEM.currentDurability -= action.durabilityLost;
+
+      return {
+        ...store,
+        activeGather: Object.assign({}, GATHERING_ITEM),
+      };
+
+    case ACTIONS.PROCESS_GATHER_REWARD:
+      const GATHERABLE_ITEM = action.item;
+      const ITEM_INDEX = Object.keys(ITEMS).filter(
+        (item) => ITEMS[item].name === GATHERABLE_ITEM.name
+      )[0];
+      const ACTIVE_JOB: any = Object.keys(Jobs).filter(
+        (job: any) => Jobs[job].active === true
+      );
+
+      let dropAmount: number = 1;
+      if (
+        typeof GATHERABLE_ITEM.maxAmount !== 'undefined' &&
+        GATHERABLE_ITEM.minAmount !== GATHERABLE_ITEM.maxAmount
+      ) {
+        dropAmount = Math.floor(Math.random() * GATHERABLE_ITEM.maxAmount);
+      } else {
+        dropAmount = GATHERABLE_ITEM.minAmount ?? 1;
+      }
+
+      if (typeof Items[ITEM_INDEX] === 'undefined') {
+        Items[ITEM_INDEX] = {
+          amount: dropAmount,
+        };
+      } else {
+        Items[ITEM_INDEX].amount += dropAmount;
+      }
+
+      const EXP_YIELD = Jobs[ACTIVE_JOB].level * dropAmount * 100;
+
+      console.log(Jobs[ACTIVE_JOB], EXP_YIELD);
+      if (Jobs[ACTIVE_JOB].exp < LEVEL_CAP_DATA.totalAccumulatedExp) {
+        if (
+          Jobs[ACTIVE_JOB.exp] + EXP_YIELD >
+          LEVEL_CAP_DATA.totalAccumulatedExp
+        ) {
+          Jobs[ACTIVE_JOB].exp = LEVEL_CAP_DATA.totalAccumulatedExp;
+        } else {
+          Jobs[ACTIVE_JOB].exp += EXP_YIELD;
+        }
+
+        Jobs[ACTIVE_JOB].level = CalcLevelFromExp(Jobs[ACTIVE_JOB].exp).LEVEL;
+      }
+
+      Stats.expEarned.amount += EXP_YIELD;
+      Stats.itemsGathered.amount += dropAmount;
+
+      return {
+        ...store,
+        items: Items,
+        stats: Stats,
+        jobs: Jobs,
       };
 
     case ACTIONS.SET_ACTIVE_ENEMY:
@@ -55,14 +120,6 @@ export const storeReducer = (store: any, action: any) => {
 
     case ACTIONS.SET_PLAYER_REWARDS:
       const { drops } = action.enemy;
-
-      const LEVEL_CAP_DATA =
-        Object.values(LEVEL_EXP)[Object.keys(LEVEL_EXP).length - 1];
-
-      let Currencies = cloneDeep(store.currencies);
-      let Items = cloneDeep(store.items);
-      let Jobs = cloneDeep(store.jobs);
-      let Stats = cloneDeep(store.stats);
 
       Stats.mobKills.amount++;
 

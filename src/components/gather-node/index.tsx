@@ -4,7 +4,7 @@ import { ITEMS } from '../../constants/items';
 import { ProgressBar } from '../../components/progress-bar';
 import { Slot } from '../../components/slot';
 
-import './index.css';
+import './gather-node.css';
 
 export const GatherNode = () => {
   const { activeGather } = useStore();
@@ -23,7 +23,6 @@ export const GatherNode = () => {
   const ITEM_INDEX = Object.keys(ITEMS).filter(
     (item) => ITEMS[item].name === activeGather.name
   )[0];
-  console.log(activeGather, ITEM_INDEX);
 
   return (
     <>
@@ -40,8 +39,16 @@ export const GatherNode = () => {
       <h2>{activeGather?.name}</h2>
 
       <div className='node-durability'>
-        <b style={{ fontSize: 16 }}>Durability</b>
-        <ProgressBar currentValue={80} maxValue={100} />
+        <div style={{ display: 'flex', gap: 5, alignItems: 'baseline' }}>
+          <b style={{ fontSize: 16 }}>Node Durability:</b>
+          <span>
+            {activeGather?.currentDurability} / {activeGather?.nodeDurability}
+          </span>
+        </div>
+        <ProgressBar
+          currentValue={activeGather?.currentDurability}
+          maxValue={activeGather?.nodeDurability}
+        />
       </div>
     </>
   );
