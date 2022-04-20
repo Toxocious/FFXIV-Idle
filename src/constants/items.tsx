@@ -213,7 +213,7 @@ export const ITEMS: ItemInterface = {
   },
   JELLYFISH_CNIDA: {
     name: 'Jellyfish Cnida',
-    image: 'src/asses/images/items/jellyfish_cnida.png',
+    image: 'src/assets/images/items/jellyfish_cnida.png',
     minAmount: 1,
     maxAmount: 1,
     dropChance: 10,
