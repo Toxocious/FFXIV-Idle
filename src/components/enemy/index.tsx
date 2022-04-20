@@ -12,7 +12,7 @@ export const Enemy = () => {
   ) {
     return (
       <>
-        <h2>An active enemy is set.</h2>
+        <h2>No active enemy is set.</h2>
       </>
     );
   }
