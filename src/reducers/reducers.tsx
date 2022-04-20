@@ -98,26 +98,29 @@ export const storeReducer = (store: any, action: any) => {
           });
         } else if (dropID in ITEMS) {
           const ITEM_DROP = ITEMS[dropID];
+          const DROP_CHANCE = ITEM_DROP.dropChance ?? 20;
 
           let dropAmount: number = 0;
-          if (
-            typeof ITEM_DROP.maxAmount !== 'undefined' &&
-            ITEM_DROP.minAmount !== ITEM_DROP.maxAmount
-          ) {
-            dropAmount = Math.floor(Math.random() * ITEM_DROP.maxAmount);
-          } else {
-            dropAmount = ITEM_DROP.minAmount ?? 1;
-          }
+          if (Math.floor(Math.random() * 100) < DROP_CHANCE) {
+            if (
+              typeof ITEM_DROP.maxAmount !== 'undefined' &&
+              ITEM_DROP.minAmount !== ITEM_DROP.maxAmount
+            ) {
+              dropAmount = Math.floor(Math.random() * ITEM_DROP.maxAmount);
+            } else {
+              dropAmount = ITEM_DROP.minAmount ?? 1;
+            }
 
-          if (typeof Items[dropID] === 'undefined') {
-            Items[dropID] = {
-              amount: dropAmount,
-            };
-          } else {
-            Items[dropID].amount += dropAmount;
-          }
+            if (typeof Items[dropID] === 'undefined') {
+              Items[dropID] = {
+                amount: dropAmount,
+              };
+            } else {
+              Items[dropID].amount += dropAmount;
+            }
 
-          Stats.itemsFound.amount += dropAmount;
+            Stats.itemsFound.amount += dropAmount;
+          }
         }
       });
 
