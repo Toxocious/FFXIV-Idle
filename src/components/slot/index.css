@@ -48,13 +48,46 @@
   min-width: 48px;
 }
 
-.slot > .value {
-  background:rgba(0, 0, 0, 0.6);
+.slot > .drop-data {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
 
+.slot > .drop-data > div {
+  background:rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  height: 16px;
+
+  /*
   position: absolute;
   bottom: 0;
   right: 0;
 
-  border-top-left-radius: 0.5rem;
-  padding: 3px 6px;
+
+  */
+}
+
+
+.slot > .drop-data > div:first-child {
+  text-align: right;
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  padding: 1px 0px;
+  width: 100%;
+}
+
+.slot > .drop-data > div:not(:first-child):last-child {
+  position: absolute;
+  border-bottom-right-radius: 0.5rem;
+
+  padding: 1px 0px;
+
+  top: 0;
+  left: 0;
 }

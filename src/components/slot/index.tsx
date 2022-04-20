@@ -65,15 +65,17 @@ export const Slot = (props: SlotInterface) => {
           width={width ?? 32}
         />
       </div>
-      <div className='value'>{dropAmount}</div>
-      {
-        //@ts-ignore
-        displayDropChance && DROP_DATA.dropChance > 0 ? (
-          <div className='value'>{DROP_DATA.dropChance}%</div>
-        ) : (
-          ''
-        )
-      }
+      <div className='drop-data'>
+        <div className='value'>{dropAmount}</div>
+        {
+          //@ts-ignore
+          displayDropChance && DROP_DATA.dropChance > 0 ? (
+            <div className='value'>{DROP_DATA.dropChance}%</div>
+          ) : (
+            ''
+          )
+        }
+      </div>
     </div>
   );
 };
