@@ -11,4 +11,5 @@ export interface ItemProps {
   dropChance?: number;
   gatherable?: boolean;
   nodeDurability?: number;
+  currentDurability?: number;
 }

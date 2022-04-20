@@ -9,6 +9,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 10,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   ALDGOAT_CHUCK: {
     name: 'Aldgoat Chuck',
@@ -18,6 +19,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 30,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   ALDGOAT_HORN: {
     name: 'Aldgoat Horn',
@@ -27,6 +29,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 30,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   ANIMAL_HIDE: {
     name: 'Animal Hide',
@@ -36,6 +39,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 25,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   ANIMAL_SKIN: {
     name: 'Animal Skin',
@@ -45,6 +49,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 15,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   BAT_FANG: {
     name: 'Bat Fang',
@@ -54,6 +59,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 25,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   BEAST_SINEW: {
     name: 'Beast Sinew',
@@ -63,6 +69,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 20,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   BLUE_LANDTRAP_LEAF: {
     name: 'Blue Landtrap Leaf',
@@ -72,6 +79,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 20,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   BONE_CHIP: {
     name: 'Bone Chip',
@@ -81,6 +89,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 10,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   COEURL_SKIN: {
     name: 'Coeurl Skin',
@@ -90,6 +99,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 50,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   DODO_EGG: {
     name: 'Animal Egg',
@@ -99,6 +109,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 10,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   DODO_FEATHER: {
     name: 'Animal Feather',
@@ -108,6 +119,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 20,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   DODO_TENDERLOIN: {
     name: 'Dodo Tenderloin',
@@ -117,6 +129,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 20,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   DRAGON_BLOOD: {
     name: 'Dragon Blood',
@@ -126,6 +139,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 50,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   DRAGON_FANG: {
     name: 'Dragon Fang',
@@ -135,6 +149,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 30,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   EARTH_CRYSTAL: {
     name: 'Earth Crystal',
@@ -144,6 +159,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 33,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   FIRE_SHARD: {
     name: 'Fire Shard',
@@ -153,6 +169,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 33,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   FRESH_MILKROOT: {
     name: 'Fresh Milkroot',
@@ -162,6 +179,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 35,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   HONEY: {
     name: 'Honey',
@@ -171,6 +189,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 20,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   ICETRAP_LEAF: {
     name: 'Icetrap Leaf',
@@ -180,6 +199,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 15,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   JACKAL_FANG: {
     name: 'Jackal Fang',
@@ -189,6 +209,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 35,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   JELLYFISH_CNIDA: {
     name: 'Jellyfish Cnida',
@@ -198,6 +219,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 10,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   JELLYFISH_UMBRELLA: {
     name: 'Jellyfish Umbrella',
@@ -207,6 +229,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 25,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   LADYBUG_ELYTRON: {
     name: 'Ladybug Elytron',
@@ -216,6 +239,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 50,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   LIGHTNING_CRYSTAL: {
     name: 'Lightning Crystal',
@@ -225,6 +249,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 33,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   LUMINOUS_CRYSTAL: {
     name: 'Luminous Crystal',
@@ -234,6 +259,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 33,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   MARMOT_BLOOD: {
     name: 'Marmot Blood',
@@ -243,6 +269,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 50,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   MARMOT_PELT: {
     name: 'Marmot Pelt',
@@ -252,6 +279,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 25,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   PUK_EGG: {
     name: 'Puk Egg',
@@ -261,6 +289,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 10,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   PUK_WING: {
     name: 'Puk Wing',
@@ -270,6 +299,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 10,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   RED_LANDTRAP_LEAF: {
     name: 'Red Landtrap Leaf',
@@ -279,6 +309,7 @@ export const ITEMS: ItemInterface = {
     dropChance: 20,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
   WIND_CRYSTAL: {
     name: 'Wind Crystal',
@@ -288,5 +319,6 @@ export const ITEMS: ItemInterface = {
     dropChance: 33,
     gatherable: true,
     nodeDurability: 100,
+    currentDurability: 100,
   },
 };
