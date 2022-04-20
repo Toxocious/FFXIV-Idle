@@ -1,6 +1,6 @@
 import { Enemy } from '../../components/enemy';
 
-import './index.css';
+import './battle.css';
 
 export function BattleWindow() {
   return (

@@ -7,7 +7,7 @@ import { GAME_PAGES } from '../../constants/game-pages';
 
 import { NavEntryInterface } from '../../types/navigation';
 
-import './index.css';
+import './navigation.css';
 
 const NavigationEntry = (props: NavEntryInterface) => {
   const { page } = props;

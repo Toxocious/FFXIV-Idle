@@ -3,7 +3,7 @@ import { CURRENCIES } from '../../constants/currencies';
 
 import { CurrencyProps, CurrencyEntryProps } from '../../types/currency';
 
-import './index.css';
+import './currency-list.css';
 
 const CurrencyEntry = (props: CurrencyEntryProps) => {
   const { currencies, currencyID } = props;

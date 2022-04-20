@@ -1,6 +1,6 @@
 import { ButtonProps } from '../../types/button';
 
-import './index.css';
+import './button.css';
 
 export const Button = (props: ButtonProps) => {
   const { text, disabled, onClick, className } = props;

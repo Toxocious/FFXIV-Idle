@@ -8,7 +8,7 @@ import { JobProps } from '../../types/job';
 import { CalcLevelFromExp } from '../../utils/calc-level';
 import { GetActiveJob } from '../../utils/get-active-job';
 
-import './index.css';
+import './active-job.css';
 
 export const ActiveJob = () => {
   const dispatch = useDispatch();

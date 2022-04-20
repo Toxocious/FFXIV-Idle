@@ -2,7 +2,7 @@ import { useStore } from '../../providers/game';
 import { JOBS } from '../../constants/jobs';
 import { JobButton } from '../../components/job-button';
 
-import './index.css';
+import './job-selector.css';
 
 interface Props {
   jobID?: any;

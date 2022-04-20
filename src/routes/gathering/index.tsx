@@ -1,6 +1,6 @@
 import { GatherNode } from '../../components/gather-node';
 
-import './index.css';
+import './gathering.css';
 
 export function GatheringWindow() {
   return (

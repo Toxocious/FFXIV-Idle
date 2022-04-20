@@ -1,6 +1,6 @@
 import { ProgressBarInterface } from '../../types/progress-bar';
 
-import './index.css';
+import './progress-bar.css';
 
 export const ProgressBar = (props: ProgressBarInterface) => {
   const { currentValue = 100, maxValue = 100, progressType = 'health' } = props;

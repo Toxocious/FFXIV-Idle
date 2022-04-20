@@ -4,7 +4,7 @@ import { ITEMS } from '../../constants/items';
 import { SlotInterface } from '../../types/slot';
 import { ItemProps } from '../../types/item';
 
-import './index.css';
+import './slot.css';
 
 export const Slot = (props: SlotInterface) => {
   let { index, image, name, amount, displayDropChance, height, width } = props;
