@@ -9,7 +9,7 @@ import { CurrencyProps } from '../types/currency';
 import { StatsProps } from '../types/stats';
 import { SchemaProps } from '../types/schema';
 
-const STORE_KEY: string = 'ffxiv_incremental_beta_v_0_1';
+const STORE_KEY: string = 'ffxiv_idle_beta_v_0_1';
 
 export const getInitialStore = () => {
   const SAVE_DATA: string | null = localStorage.getItem(STORE_KEY);

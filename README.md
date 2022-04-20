@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="./src/assets/favicon/favicon.ico" title="FFXIV Incremental Game Logo" alt="FFXIV Incremental Game Logo" />
-  <h1 align="center">FFXIV &mdash; An Incremental Game</h1>
+  <img src="./src/assets/favicon/favicon.ico" title="FFXIV Idle Game Logo" alt="FFXIV Idle Game Logo" />
+  <h1 align="center">FFXIV &mdash; An Idle Game</h1>
 </div>
 
-**FFXIV &mdash; An Incremental Game** is an incremental game based on Final Fantasy XIV, comprised of features that have been adapted to be automatic, where you, the player, level up Job Classes, defeat FFXIV mobs, gather materials, and more.
+**FFXIV &mdash; An Idle Game** is an idle game based on Final Fantasy XIV, comprised of features that have been adapted to be automatic, where you, the player, level up Job Classes, defeat FFXIV mobs, gather materials, and more.
 
 
 
@@ -52,13 +52,13 @@ Clone the repository, open a terminal into the repository's location, install th
 
 ```bash
 ## Clone via HTTPS
-# git clone https://github.com/Toxocious/FFXIV-Incremental.git
+# git clone https://github.com/Toxocious/FFXIV-Idle.git
 
 ## Clone via SSH
-# git clone git@github.com:Toxocious/FFXIV-Incremental.git
+# git clone git@github.com:Toxocious/FFXIV-Idle.git
 
 ## CD into the repository directory
-cd FFXIV-Incremental
+cd FFXIV-Idle
 
 ## Install all needed modules.
 yarn install
