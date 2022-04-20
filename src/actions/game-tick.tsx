@@ -61,23 +61,18 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
      */
     case 2:
       if (ACTIVE_JOB_DATA.type !== 'Gatherer') return;
-      // console.log('[Game Tick] Processing Gather Page Data.');
 
       let { activeGather } = store;
       const DURABILITY_HIT = 10;
 
       if (Object.keys(activeGather).length === 0) {
-        console.log('Setting active gather action');
         // @ts-ignore
         return dispatch(SetActiveGather(SetGatherableItem(true)));
       }
 
       if (activeGather.currentDurability > 0) {
-        console.log('Processing Active Gather Action');
         dispatch(SetActiveGather(activeGather, DURABILITY_HIT));
       } else {
-        console.log('Node expired; resetting.');
-
         dispatch(ProcessGatherReward(activeGather));
         // @ts-ignore
         dispatch(SetActiveGather(SetGatherableItem(true)));

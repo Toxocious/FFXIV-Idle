@@ -85,7 +85,6 @@ export const storeReducer = (store: any, action: any) => {
 
       const EXP_YIELD = Jobs[ACTIVE_JOB].level * dropAmount * 100;
 
-      console.log(Jobs[ACTIVE_JOB], EXP_YIELD);
       if (Jobs[ACTIVE_JOB].exp < LEVEL_CAP_DATA.totalAccumulatedExp) {
         if (
           Jobs[ACTIVE_JOB.exp] + EXP_YIELD >
