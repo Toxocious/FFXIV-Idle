@@ -63,7 +63,11 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
       if (ACTIVE_JOB_DATA.type !== 'Gatherer') return;
 
       let { activeGather } = store;
-      const DURABILITY_HIT = 10;
+
+      let DURABILITY_HIT: number = 10;
+      if (Math.floor(Math.random() * 16) === 1) {
+        DURABILITY_HIT *= 5;
+      }
 
       if (Object.keys(activeGather).length === 0) {
         return dispatch(SetActiveGather(SetGatherableItem()));
