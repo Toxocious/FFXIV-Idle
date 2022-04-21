@@ -12,4 +12,6 @@ export interface ItemProps {
   gatherable?: boolean;
   nodeDurability?: number;
   currentDurability?: number;
+  nodeQuality?: number;
+  currentQuality?: number;
 }
