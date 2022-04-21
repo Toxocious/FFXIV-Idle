@@ -50,6 +50,20 @@ export const GatherNode = () => {
           maxValue={activeGather?.nodeDurability}
         />
       </div>
+
+      <div className='node-durability'>
+        <div style={{ display: 'flex', gap: 5, alignItems: 'baseline' }}>
+          <b style={{ fontSize: 16 }}>Node Quality:</b>
+          <span>
+            {activeGather?.currentQuality} / {activeGather?.nodeQuality}
+          </span>
+        </div>
+        <ProgressBar
+          progressType='experience'
+          currentValue={activeGather?.currentQuality}
+          maxValue={activeGather?.nodeQuality}
+        />
+      </div>
     </>
   );
 };
