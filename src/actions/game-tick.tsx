@@ -66,16 +66,14 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
       const DURABILITY_HIT = 10;
 
       if (Object.keys(activeGather).length === 0) {
-        // @ts-ignore
-        return dispatch(SetActiveGather(SetGatherableItem(true)));
+        return dispatch(SetActiveGather(SetGatherableItem()));
       }
 
       if (activeGather.currentDurability > 0) {
         dispatch(SetActiveGather(activeGather, DURABILITY_HIT));
       } else {
         dispatch(ProcessGatherReward(activeGather));
-        // @ts-ignore
-        dispatch(SetActiveGather(SetGatherableItem(true)));
+        dispatch(SetActiveGather(SetGatherableItem()));
       }
 
       break;

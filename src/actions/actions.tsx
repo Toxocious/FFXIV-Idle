@@ -1,5 +1,5 @@
 import { EnemyInterface } from '../types/enemy';
-import { ItemInterface } from '../types/item';
+import { ItemInterface, ItemProps } from '../types/item';
 
 export const ACTIONS = {
   CHANGE_JOB: 'ChangeActiveJob',
@@ -35,7 +35,7 @@ export const SetActiveEnemy = (
 });
 
 export const SetActiveGather = (
-  item: ItemInterface,
+  item: ItemProps,
   durabilityLost: number = 0
 ) => ({
   type: ACTIONS.SET_ACTIVE_GATHER,
