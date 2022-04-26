@@ -1,6 +1,41 @@
 import { ItemInterface } from '../types/item';
 
 export const ITEMS: ItemInterface = {
+  /** Materia */
+  SAVAGE_AIM_MATERIA: {
+    name: 'Savage Aim Materia',
+    image: 'src/assets/images/items/materia/savage_aim_materia.png',
+    minAmount: 1,
+    maxAmount: 1,
+    dropChance: 10,
+    gatherable: false,
+  },
+  HEAVENS_EYE_MATERIA: {
+    name: "Heavens' Eye Materia",
+    image: 'src/assets/images/items/materia/heavens_eye_materia.png',
+    minAmount: 1,
+    maxAmount: 1,
+    dropChance: 10,
+    gatherable: false,
+  },
+  GATHERERS_GUERDON_MATERIA: {
+    name: "Gatherer's Guerdon Materia",
+    image: 'src/assets/images/items/materia/gatherers_guerdon_materia.png',
+    minAmount: 1,
+    maxAmount: 1,
+    dropChance: 10,
+    gatherable: false,
+  },
+  CRAFTSMANS_COMPETENCE_MATERIA: {
+    name: "Craftsman's Competence Materia",
+    image: 'src/assets/images/items/materia/craftsmans_competence_materia.png',
+    minAmount: 1,
+    maxAmount: 1,
+    dropChance: 10,
+    gatherable: false,
+  },
+
+  /** Crafting Materials */
   AHRIMAN_WING: {
     name: 'Ahriman Wing',
     image: 'src/assets/images/items/ahriman_wing.png',
