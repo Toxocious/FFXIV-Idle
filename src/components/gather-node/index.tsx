@@ -24,8 +24,6 @@ export const GatherNode = () => {
     (item) => ITEMS[item].name === activeGather.name
   )[0];
 
-  console.log(activeGather);
-
   return (
     <>
       <Slot
