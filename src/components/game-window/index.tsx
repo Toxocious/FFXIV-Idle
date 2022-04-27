@@ -51,8 +51,35 @@ export const GameWindow = () => {
     >
       <div className='body'>
         <div className='header'>
-          <div className='view'>
-            <b style={{ fontSize: 18 }}>FFXIV &mdash; An Idle Game</b>
+          <div
+            className='view'
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+            }}
+          >
+            <Link
+              to='/battle'
+              onClick={() => dispatch(ChangeActivePage(1))}
+              style={{ textAlign: 'center', width: 'calc(100% / 3)' }}
+            >
+              <b style={{ fontSize: 18 }}>Battle</b>
+            </Link>
+            <Link
+              to='/gathering'
+              onClick={() => dispatch(ChangeActivePage(2))}
+              style={{ textAlign: 'center', width: 'calc(100% / 3)' }}
+            >
+              <b style={{ fontSize: 18 }}>Gather</b>
+            </Link>
+            <Link
+              to='/crafting'
+              onClick={() => dispatch(ChangeActivePage(3))}
+              style={{ textAlign: 'center', width: 'calc(100% / 3)' }}
+            >
+              <b style={{ fontSize: 18 }}>Craft</b>
+            </Link>
           </div>
         </div>
 

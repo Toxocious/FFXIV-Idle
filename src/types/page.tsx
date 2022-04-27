@@ -7,4 +7,5 @@ export interface PageProps {
   name: string;
   link: string;
   unlocked: boolean;
+  display: boolean;
 }

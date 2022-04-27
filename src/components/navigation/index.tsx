@@ -38,9 +38,12 @@ const NavigationEntry = (props: NavEntryInterface) => {
 export const Navigation = () => {
   return (
     <div className='navigation-container'>
-      {Object.keys(GAME_PAGES).map((page) => (
-        <NavigationEntry key={page} page={page} />
-      ))}
+      {Object.keys(GAME_PAGES)
+        // @ts-ignore
+        .filter((page) => GAME_PAGES[page].display === true)
+        .map((page) => (
+          <NavigationEntry key={page} page={page} />
+        ))}
     </div>
   );
 };
