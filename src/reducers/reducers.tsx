@@ -47,15 +47,6 @@ export const storeReducer = (store: any, action: any) => {
         },
       };
 
-    case ACTIONS.SET_ACTIVE_GATHER:
-      const GATHERING_ITEM = action.item;
-      GATHERING_ITEM.currentDurability -= action.durabilityLost;
-
-      return {
-        ...store,
-        activeGather: Object.assign({}, GATHERING_ITEM),
-      };
-
     case ACTIONS.PROCESS_GATHER_REWARD:
       const GATHERABLE_ITEM = action.item;
       const ITEM_INDEX = Object.keys(ITEMS).filter(
@@ -83,7 +74,11 @@ export const storeReducer = (store: any, action: any) => {
         Items[ITEM_INDEX].amount += dropAmount;
       }
 
-      const EXP_YIELD = Jobs[ACTIVE_JOB].level * dropAmount * 100;
+      const EXP_BONUS =
+        GATHERABLE_ITEM.currentQuality > 10
+          ? GATHERABLE_ITEM.currentQuality / 10
+          : 1;
+      const EXP_YIELD = Jobs[ACTIVE_JOB].level * dropAmount * 100 * EXP_BONUS;
 
       if (Jobs[ACTIVE_JOB].exp < LEVEL_CAP_DATA.totalAccumulatedExp) {
         if (
@@ -115,6 +110,16 @@ export const storeReducer = (store: any, action: any) => {
       return {
         ...store,
         activeEnemy: Object.assign({}, ENEMY_DATA),
+      };
+
+    case ACTIONS.SET_ACTIVE_GATHER:
+      const GATHERING_ITEM = action.item;
+      GATHERING_ITEM.currentDurability -= action.durabilityLost;
+      GATHERING_ITEM.currentQuality += action.qualityGain;
+
+      return {
+        ...store,
+        activeGather: Object.assign({}, GATHERING_ITEM),
       };
 
     case ACTIONS.SET_PLAYER_REWARDS:

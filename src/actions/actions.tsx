@@ -36,11 +36,13 @@ export const SetActiveEnemy = (
 
 export const SetActiveGather = (
   item: ItemProps,
-  durabilityLost: number = 0
+  durabilityLost: number = 0,
+  qualityGain: number = 0
 ) => ({
   type: ACTIONS.SET_ACTIVE_GATHER,
   item,
   durabilityLost,
+  qualityGain,
 });
 
 export const SetPlayerRewards = (enemy: EnemyInterface) => ({

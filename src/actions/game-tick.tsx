@@ -64,17 +64,22 @@ export const gameTick = ({ store, dispatch }, delta: number) => {
 
       let { activeGather } = store;
 
-      let DURABILITY_HIT: number = 10;
-      if (Math.floor(Math.random() * 16) === 1) {
-        DURABILITY_HIT *= 5;
-      }
-
       if (Object.keys(activeGather).length === 0) {
         return dispatch(SetActiveGather(SetGatherableItem()));
       }
 
+      let DURABILITY_HIT: number = 10;
+      if (Math.floor(Math.random() * 16) === 1) {
+        DURABILITY_HIT = 25;
+      }
+
+      let QUALITY_HIT: number = 0;
+      if (Math.floor(Math.random() * 5) === 1) {
+        QUALITY_HIT = 10;
+      }
+
       if (activeGather.currentDurability > 0) {
-        dispatch(SetActiveGather(activeGather, DURABILITY_HIT));
+        dispatch(SetActiveGather(activeGather, DURABILITY_HIT, QUALITY_HIT));
       } else {
         dispatch(ProcessGatherReward(activeGather));
         dispatch(SetActiveGather(SetGatherableItem()));
