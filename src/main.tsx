@@ -13,27 +13,25 @@ import { Currencies } from './components/currency-list';
 import './main.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <GameProvider>
-      <div className='App'>
-        <div className='background-image'></div>
+  <GameProvider>
+    <div className='App'>
+      <div className='background-image'></div>
 
-        <div className='container'>
-          <div className='game-container'>
-            <BrowserRouter>
-              <div className='left-sidebar-container'>
-                <Navigation />
-                <ActiveJob />
-              </div>
+      <div className='container'>
+        <div className='game-container'>
+          <BrowserRouter>
+            <div className='left-sidebar-container'>
+              <Navigation />
+              <ActiveJob />
+            </div>
 
-              <GameWindow />
-              <Currencies />
-            </BrowserRouter>
-          </div>
+            <GameWindow />
+            <Currencies />
+          </BrowserRouter>
         </div>
       </div>
-    </GameProvider>
-  </React.StrictMode>,
+    </div>
+  </GameProvider>,
 
   document.getElementById('root')
 );
