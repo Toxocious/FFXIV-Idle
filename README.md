@@ -1,9 +1,17 @@
 <div align="center">
   <img src="./src/assets/favicon/favicon.ico" title="FFXIV Idle Game Logo" alt="FFXIV Idle Game Logo" />
   <h1 align="center">FFXIV &mdash; An Idle Game</h1>
-</div>
 
-**FFXIV &mdash; An Idle Game** is an idle game based on Final Fantasy XIV, comprised of features that have been adapted to be automatic, where you, the player, level up Job Classes, defeat FFXIV mobs, gather materials, and more.
+  **FFXIV &mdash; An Idle Game** is an idle game based on Final Fantasy XIV, comprised of features that have been adapted to be automatic, where you, the player, level up Job Classes, defeat FFXIV mobs, gather materials, and more.
+
+  <img src='https://img.shields.io/github/issues/Toxocious/FFXIV-Idle?style=for-the-badge&logo=appveyor' />
+  <img src='https://img.shields.io/github/forks/Toxocious/FFXIV-Idle?style=for-the-badge&logo=appveyor' />
+  <img src='https://img.shields.io/github/stars/Toxocious/FFXIV-Idle?style=for-the-badge&logo=appveyor' />
+  <img src='https://img.shields.io/github/license/Toxocious/FFXIV-Idle?style=for-the-badge&logo=appveyor' />
+  <a href="https://hits.seeyoufarm.com">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FToxocious%2FFFXIV-Idle&count_bg=%234A618F&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
+  </a>
+</div>
 
 
 
