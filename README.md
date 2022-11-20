@@ -35,6 +35,7 @@
 </div>
 
 ### Tech Stack
+- Node.js
 - Typescript
 - React
 
